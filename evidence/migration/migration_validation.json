@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "cpu_only": true,
+  "gpu_tasks_started": false,
+  "checks": [
+    "explicit external checkout resolution",
+    "missing checkout rejected",
+    "launcher uses standalone paths and shard8",
+    "short IPC alias cleaned",
+    "all 94 source files unchanged",
+    "all Python scripts parse"
+  ],
+  "source_files_checked": 94,
+  "source_git_sha": "872f6bf2888c8899c1599dda8c722e1c551684fa",
+  "cpu_tests_passed": 7,
+  "offline_toy_report_validation": "passed",
+  "ruff_check": "passed",
+  "ruff_format": "passed",
+  "torch_distribution_version": "2.10.0+cu130"
+}

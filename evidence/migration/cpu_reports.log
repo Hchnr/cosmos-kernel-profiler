@@ -1,0 +1,8 @@
+test_count_corruption_is_rejected (__main__.ReportsTest.test_count_corruption_is_rejected) ... ok
+test_missing_cuda_is_rejected (__main__.ReportsTest.test_missing_cuda_is_rejected) ... ok
+test_variants_filtering_and_trace_coverage (__main__.ReportsTest.test_variants_filtering_and_trace_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.072s
+
+OK
