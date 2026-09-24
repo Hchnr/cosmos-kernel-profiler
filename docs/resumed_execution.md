@@ -25,3 +25,9 @@
 - torchrun PID558032；runtime.json确认Python3.13.14/Torch2.10.0+cu130/FA3 1.0.3+cu130.torch210，8个CUDA主进程。
 - 17:45:14 CST完整恢复model/optim/scheduler/trainer到12600；17:46:46 CST全部rank完成12601，rank0 loss0.1356，其他rank loss亦有限。初始编译和完整前后向已通过，显存约70–73GiB，无OOM。
 - 正在进行20步预热，尚未到active窗口；先前的checkpoint路径、IPC、缺失varlen后端问题未复现。
+
+## 根据真实训练记录修正离线验收
+
+- 实际配方使用callbacks/iter_speed.py的逐rank日志格式（`[RANK n] Iteration ...: Loss: ...`），并未启用旧IterationLogger格式；validator已兼容两者，对本次逐rank格式要求8个rank的active loss均完整、唯一且有限。
+- LoadBalanceTrace将样本元数据放在每条microbatch的data字段，原验收器按顶层读取会错误产生空统计；已按真实schema修正。另核验active记录的world8/shard8/replicate1/CP1以及physical UND3072/GEN98304。
+- 新增3项CPU验收用例通过：嵌套样本与逐rank loss、非rank0的NaN拒绝、缺失rank loss拒绝。仅修改离线验收代码，没有改变正在运行的训练。

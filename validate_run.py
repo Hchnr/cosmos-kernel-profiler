@@ -39,6 +39,23 @@ def validate_run(run):
         if counts != {step: ga for step in range(start, end)}:
             raise ValueError(f"Rank {rank} has missing/duplicated microbatches")
         active = [row for row in batches if row["iteration"] + 1 in active_steps]
+        for row in active:
+            if (
+                row["world_size"],
+                row["dp_shard"],
+                row["dp_replicate"],
+                row["cp_size"],
+            ) != (8, 8, 1, 1):
+                raise ValueError(f"Rank {rank} has unexpected parallelism")
+            output = row["output"]
+            if (
+                output["physical_und_token_length"],
+                output["physical_gen_token_length"],
+            ) != (3072, 98304):
+                raise ValueError(
+                    f"Rank {rank} has unexpected physical sequence lengths"
+                )
+
         ranks.append(
             {
                 "rank": rank,
@@ -56,20 +73,37 @@ def validate_run(run):
     if quality["phase_annotations"] != expected_phases:
         raise ValueError(f"Unexpected phase counts: {quality['phase_annotations']}")
     log = (run / "train.log").read_text(errors="replace")
-    losses = [
-        (int(step), float(value))
-        for step, value in re.findall(
-            r"Iteration: (\d+), average iter time: [^,]+, total loss ([^\s]+)", log
-        )
-    ]
-    active_losses = [(step, loss) for step, loss in losses if step in active_steps]
-    if set(step for step, _ in active_losses) != set(active_steps) or not all(
-        math.isfinite(loss) for _, loss in active_losses
-    ):
-        raise ValueError("Missing/non-finite active-step losses")
+    per_rank_matches = re.findall(
+        r"\[RANK (\d+)\] Iteration (\d+): Loss: ([^\s|]+)", log
+    )
+    active_losses_by_rank = {}
+    if per_rank_matches:
+        for rank in range(8):
+            active_losses_by_rank[str(rank)] = [
+                (int(step), float(value))
+                for r, step, value in per_rank_matches
+                if int(r) == rank and int(step) in active_steps
+            ]
+    else:
+        active_losses_by_rank["0"] = [
+            (int(step), float(value))
+            for step, value in re.findall(
+                r"Iteration: (\d+), average iter time: [^,]+, total loss ([^\s]+)", log
+            )
+            if int(step) in active_steps
+        ]
+    for rank, losses in active_losses_by_rank.items():
+        if Counter(step for step, _ in losses) != Counter(active_steps) or not all(
+            math.isfinite(loss) for _, loss in losses
+        ):
+            raise ValueError(
+                f"Missing/duplicate/non-finite active-step losses on rank {rank}"
+            )
+    active_losses = active_losses_by_rank["0"]
     datasets, conditions, modes, shapes = Counter(), Counter(), Counter(), Counter()
     sample_count = 0
-    for batch in captured:
+    for batch_record in captured:
+        batch = batch_record.get("data", batch_record)
         datasets.update(
             batch.get("source_dataset_names") or batch.get("dataset_names", [])
         )
@@ -88,12 +122,13 @@ def validate_run(run):
         "profile_rank": window["rank"],
         "phase_annotations": expected_phases,
         "active_losses": active_losses,
+        "active_losses_by_rank": active_losses_by_rank,
         "captured_samples": sample_count,
         "captured_dataset_sample_counts": dict(datasets),
         "captured_conditions": dict(conditions),
         "captured_vision_input_modes": dict(modes),
         "captured_latent_shapes": dict(shapes),
-        "scope": "One rank and three optimizer updates with the original weighted USR sampler. "
+        "scope": f"One rank and {len(active_steps)} optimizer updates with the original weighted USR sampler. "
         "Observed variants only; no claim of all 29 datasets or every model input shape.",
     }
 
