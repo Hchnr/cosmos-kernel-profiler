@@ -1,0 +1,961 @@
+2026-09-24 17:44:04.733 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.06ms
+2026-09-24 17:44:06.689 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+2026-09-24 17:44:07.379 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.10ms
+2026-09-24 17:44:07.761 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+2026-09-24 17:44:07.862 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+2026-09-24 17:44:07.916 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+2026-09-24 17:44:07.940 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.09ms
+2026-09-24 17:44:07.973 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.09ms
+2026-09-24 17:44:11.398 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6665.08ms
+2026-09-24 17:44:11.806 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 407.09ms
+2026-09-24 17:44:11.806 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7126.39ms
+2026-09-24 17:44:13.358 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6668.76ms
+[09-24 17:44:13|INFO] [RANK 5] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:13|CRITICAL] [RANK 5] Initialized distributed training with local rank 5 using nccl with timeout 1800
+2026-09-24 17:44:13.766 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 408.35ms
+2026-09-24 17:44:13.767 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7132.76ms
+2026-09-24 17:44:14.152 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6772.42ms
+2026-09-24 17:44:14.404 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6642.19ms
+2026-09-24 17:44:14.543 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6680.83ms
+2026-09-24 17:44:14.566 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 413.84ms
+2026-09-24 17:44:14.566 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7255.59ms
+2026-09-24 17:44:14.799 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6858.57ms
+2026-09-24 17:44:14.804 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6830.48ms
+2026-09-24 17:44:14.813 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 408.98ms
+2026-09-24 17:44:14.813 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7106.49ms
+2026-09-24 17:44:14.838 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 6921.70ms
+2026-09-24 17:44:14.951 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 407.61ms
+2026-09-24 17:44:14.951 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7147.48ms
+2026-09-24 17:44:15.233 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 433.38ms
+2026-09-24 17:44:15.233 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7351.58ms
+2026-09-24 17:44:15.242 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 437.87ms
+2026-09-24 17:44:15.243 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7325.84ms
+2026-09-24 17:44:15.293 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 454.85ms
+2026-09-24 17:44:15.293 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 7439.09ms
+[09-24 17:44:15|INFO] [RANK 3] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:15|CRITICAL] [RANK 3] Initialized distributed training with local rank 3 using nccl with timeout 1800
+[09-24 17:44:16|INFO] [RANK 4] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:16|CRITICAL] [RANK 4] Initialized distributed training with local rank 4 using nccl with timeout 1800
+[09-24 17:44:16|INFO] Heimdall telemetry is disabled, if using Heimdall,consider setting ENABLE_TELEMETRY=true to enable it
+[09-24 17:44:16|INFO] [RANK 1] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:16|CRITICAL] [RANK 1] Initialized distributed training with local rank 1 using nccl with timeout 1800
+[09-24 17:44:16|INFO] [RANK 7] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:16|CRITICAL] [RANK 7] Initialized distributed training with local rank 7 using nccl with timeout 1800
+[09-24 17:44:17|INFO] [RANK 2] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:17|CRITICAL] [RANK 2] Initialized distributed training with local rank 2 using nccl with timeout 1800
+[09-24 17:44:17|INFO] [RANK 6] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:17|CRITICAL] [RANK 6] Initialized distributed training with local rank 6 using nccl with timeout 1800
+[09-24 17:44:17|INFO] [RANK 0] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 17:44:17|CRITICAL] [RANK 0] Initialized distributed training with local rank 0 using nccl with timeout 1800
+[09-24 17:44:17|INFO] Training with 8 GPUs.
+[09-24 17:44:17|INFO] Time spent on init_distributed: 0.71 s
+NCCL version 2.28.9+cuda13.0
+[09-24 17:44:21|INFO] [RANK 4] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank4
+[09-24 17:44:21|INFO] [RANK 5] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank5
+[09-24 17:44:21|INFO] [RANK 2] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank2
+[09-24 17:44:21|INFO] [RANK 6] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank6
+[09-24 17:44:21|INFO] [RANK 0] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank0
+[09-24 17:44:21|INFO] Time spent on init_distributed: 0.00 s
+Config is saved using pickle at /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/config.pkl.
+[09-24 17:44:21|INFO] [RANK 1] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank1
+[09-24 17:44:21|INFO] [RANK 3] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank3
+[09-24 17:44:21|INFO] [RANK 7] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/inductor/rank7
+Config is saved using omegaconf at /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/config.yaml.
+/opt/venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[09-24 17:44:21|INFO] Environment variable HF_HOME: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/cache/huggingface
+[09-24 17:44:21|INFO] Environment variable IMAGINAIRE_OUTPUT_ROOT: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job
+[09-24 17:44:21|INFO] Using random seed 42.
+[09-24 17:44:21|CRITICAL] Instantiating callback iter_speed: {'hit_thres': 50, 'save_s3': False, 'save_s3_every_log_n': 500, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.iter_speed.IterSpeed'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback manual_gc: {'warm_up': 1, 'gc_level': 1, 'every_n': 5, '_target_': <class 'cosmos_framework.callbacks.manual_gc.ManualGarbageCollection'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback wandb: {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.WandBCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback wandb_2x: {'logging_iter_multipler': 2, 'save_logging_iter_multipler': 1, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log.WandbCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback param_count: {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.param_count.ParamCount'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback wandb_val: {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log_eval.WandbCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback moe_stability: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_stability_callback.MoEStabilityCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback moe_specialization: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoESpecializationCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback moe_router_geometry: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoERouterGeometryCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback parameter_geometry: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.parameter_geometry_callback.ParameterGeometryCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback expert_heatmap: {'every_n': 1000, '_target_': <class 'cosmos_framework.callbacks.expert_heatmap.ExpertHeatmap'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback load_pretrained: {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.callbacks.load_pretrained.LoadPretrained'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback norm_monitor: {'every_n': 100, 'step_size': 1, 'layer_norm_only': False, 'model_key': None, 'log_stat_wandb': True, 'save_s3': False, 'track_activations': True, '_target_': <class 'cosmos_framework.callbacks.norm_monitor.NormMonitor'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback sigma_loss_analysis: {'every_n': 500, 'every_n_viz': 500, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.sigma_loss_analysis.SigmaLossAnalysis'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback sequence_packing_padding: {'every_n': 50, '_target_': <class 'cosmos_framework.callbacks.sequence_packing_padding.SequencePackingPadding'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback sampled_media: {'enabled': False, 'output_uri': '/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/sampled_media.lance', 'creds_path': None, 'flush_every_n_batches': 100, 'record_caption': False, '_target_': <class 'cosmos_framework.callbacks.sampled_media_recorder.SampledMediaRecorder'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback load_balance_trace: {'enabled': False, 'output_dir': '/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/load_balance_trace', 'flush_every_n_batches': 100, 'record_cuda_timing': True, 'max_samples_per_record': 64, '_target_': <class 'cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback mfu: {'backwardpass_ratio': 2.0, 'hit_thres': 5, 'include_vae_encoder': True, 'include_padding': True, 'grad_accum_iter': 2, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.mfu.MFUCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback ofu: {'hit_thres': 5, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.ofu.OFUCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback skip_nan_step: {'max_consecutive_nan': 100, '_target_': <class 'cosmos_framework.callbacks.skip_nan_step.SkipNaNStep'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback grad_clip: {'clip_norm': 0.1, 'force_finite': True, 'track_per_modality': True, 'error_if_nonfinite': False, '_target_': <class 'cosmos_framework.callbacks.grad_clip.GradClip'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback low_precision: {'update_iter': 1, 'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.LowPrecisionCallback'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback heart_beat: {'step_size': 1, 'update_interval_in_minute': 20, 'save_s3': False, 'every_n': 200, '_target_': <class 'cosmos_framework.callbacks.heart_beat.HeartBeat'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback device_monitor: {'every_n': 200, 'step_size': 1, 'save_s3': False, 'upload_every_n_mul': 5, 'log_memory_detail': True, '_target_': <class 'cosmos_framework.callbacks.device_monitor.DeviceMonitor'>}
+[09-24 17:44:21|CRITICAL] Instantiating callback termination_signal_checkpoint: {'min_save_fraction': 0.3333333333333333, '_target_': <class 'cosmos_framework.callbacks.termination_signal_checkpoint.TerminationSignalCheckpoint'>}
+[09-24 17:44:21|CRITICAL] Callback dataloader_speed is missing the '_target_' field. 
+ SKip {'every_n': 100, 'save_s3': False, 'step_size': 1}
+[09-24 17:44:21|CRITICAL] Callback training_stats is missing the '_target_' field. 
+ SKip {'log_freq': 100}
+[09-24 17:44:21|CRITICAL] Instantiating callback kernel_phases: {'_target_': 'phase_audit.PhaseAudit'}
+[09-24 17:44:21|CRITICAL] Instantiating callback kernel_batches: {'_target_': 'cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace', 'enabled': True, 'output_dir': '/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/batches', 'record_cuda_timing': False, 'flush_every_n_batches': 1}
+[09-24 17:44:21|CRITICAL] Instantiating callback dataloader_state: {'outer_loader': None, '_target_': <class 'cosmos_framework.callbacks.cosmos_dataloader_state.JointCosmosDataLoaderStateCallback'>}
+[09-24 17:44:21|WARNING] S3 credentials not found. Skipping easy_io S3 setup.
+[09-24 17:44:21|WARNING] Job path: kernel-list/v0.2.3c/profile
+[09-24 17:44:21|CRITICAL] Job local path: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile
+[09-24 17:44:21|INFO] OmniMoTModel: config {'tokenizer': {'bucket_name': '', 'object_store_credential_path_pretrained': '', 'vae_path': 'pretrained/tokenizers/video/wan2pt2/Wan2.2_VAE.pth', 'chunk_duration': 93, 'keep_decoder_cache': False, 'use_streaming_encode': False, 'encode_chunk_frames': {'256': 68, '480': 24, '720': 8, '768': 8}, 'encode_exact_durations': None, 'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'temporal_window': None, 'encode_bucket_multiple': None, 'causal': True, '_target_': <class 'cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface'>}, 'load_vision_tokenizer': False, 'vision_vae_mode': 'offline', 'net': None, 'ema': {'enabled': False, 'rate': 0.1, 'iteration_shift': 0}, 'parallelism': {'data_parallel_shard_degree': 8, 'data_parallel_replicate_degree': 1, 'context_parallel_shard_degree': 1, 'cfg_parallel_shard_degree': 1, 'enable_inference_mode': False, 'fsdp_master_dtype': 'float32', 'fsdp_reduce_dtype': None}, 'attention_io_layout': 'sequence_sharded', 'compile': {'enabled': True, 'compiled_region': 'language', 'compile_dynamic': False, 'use_cuda_graphs': False, 'ar_post_saturation_mode': 'default', 'max_autotune_pointwise': False, 'coordinate_descent_tuning': False, 'mix_order_reduction_split_size': 32}, 'fixed_sequence_length': {'enabled': True, 'understanding_tokens': 0, 'und_tokens': 3072, 'gen_tokens': 98304, 'action_tokens': 0}, 'quantization': {'method': None, 'fp8_granularity': 'per_row', 'include_regex': [], 'exclude_regex': [], 'modelopt_fp8_checkpoint_path': None, 'modelopt_fp8_target_fqns': []}, 'activation_checkpointing': {'mode': 'full', 'save_ops_regex': ['fmha'], 'preserve_rng_state': True, 'determinism_check': 'default'}, 'precision': 'bfloat16', 'lora_enabled': False, 'lora_rank': 16, 'lora_alpha': 32, 'lora_target_modules': 'q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen', 'rectified_flow_training_config': {'shift': {'256': 3, '480': 5, '720': 10}, 'shift_image': None, 'use_dynamic_shift': False, 'train_time_image_distribution': 'logitnormal', 'train_time_video_distribution': 'waver', 'train_time_action_distribution': 'logitnormal', 'train_time_sound_distribution': 'logitnormal', 'train_time_weight': 'uniform', 'loss_scale': 1.0, 'image_loss_scale': 1.0, 'sound_loss_scale': None, 'use_discrete_rf': False, 'action_loss_weight': 10.0, 'independent_action_schedule': False, 'shift_action': None, 'independent_sound_schedule': False, 'shift_sound': None, 'normalize_loss_by_active': False, 'sample_level_loss_averaging': False}, 'rectified_flow_inference_config': {'scheduler_type': 'unipc', 'num_train_timesteps': 1000, 'shift': 1, 'use_dynamic_shifting': False}, 'fixed_step_sampler_config': None, 'vlm_config': {'model_name': 'Qwen/Qwen3-VL-8B-Instruct', 'safetensors_path': '', 'pretrained_weights': {'enabled': False, 'backbone_path': 's3://bucket0/cosmos3/pretrained/huggingface/Qwen/Qwen3-VL-8B-Instruct/', 'credentials_path': '', 'enable_gcs_patch_in_boto3': True, 'checkpoint_format': None}, 'model_instance': {'config': {'base_config': {'json_file': 'cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json', '_target_': <bound method _MoTConfigBase.from_json_file of <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig'>>}, 'freeze_und': False, 'layer_module': 'MoTDecoderLayer', 'qk_norm_for_text': True, 'tie_word_embeddings': True, '_target_': <function create_vlm_config at 0x7f3c2660f060>}, '_target_': <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM'>}, 'tokenizer': {'config_variant': 'hf', 'pretrained_model_name': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', '_target_': <function create_qwen2_tokenizer_with_download at 0x7f3c0260f4c0>}, 'layer_module': 'Qwen2MoTDecoderLayer', 'qk_norm': False, 'tie_word_embeddings': False, 'use_system_prompt': False}, 'diffusion_expert_config': {'timestep_range': 1.0, 'load_weights_from_pretrained': True, 'enable_vision_modality_embeddings': False, 'enable_media_modality_embedding': False, 'patch_spatial': 2, 'max_vae_latent_side_after_patchify': 20, 'enable_fps_modulation': True, 'base_fps': 24, 'sound_base_temporal_compression_factor': None, 'vision_temporal_position_mode': 'latent_index', 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000}, 'input_video_key': 'video', 'input_video_latent_key': 'video_latent', 'input_image_key': 'images', 'input_caption_key': 'ai_caption', 'gen_loss_scale': 1.0, 'und_loss_scale': 1.0, 'load_vlm_visual': False, 'train_vlm_visual': False, 'state_ch': 48, 'state_t': 300, 'latent_downsample_factor': 16, 'resolution': '480', 'max_num_tokens_after_packing': 101376, 'tower_structure': 'two_tower', 'action_tower_preset': 'full', 'action_tower_init': 'checkpoint', 'action_tower_execution': 'native', 'action_tower_attention_backend': 'auto', 'action_tower_und_short_tokens': 0, 'action_tower_projection_mode': 'routed', 'joint_attn_implementation': 'two_way', 'flex_attention': {'enabled': False, 'backend': 'auto', 'mask': {'noisy_attention_scope': 'all_views'}}, 'natten_parameter_list': None, 'video_temporal_causal': False, 'causal_training_strategy': 'none', 'lbl': {'method': 'local', 'coeff_und': None, 'coeff_gen': None}, 'vision_gen': True, 'predict_text_tokens': False, 'text_loss_weight': 1.0, 'action_gen': False, 'max_action_dim': 64, 'num_embodiment_domains': 32, 'sound_gen': False, 'sound_tokenizer': None, 'sound_dim': None, 'sound_latent_fps': 25, 'enable_input_bias': True, 'log_enc_time_every_n': 100, 'exclude_reasoner_weights_from_checkpoint': False}
+[09-24 17:44:21|WARNING] OmniMoTModel: precision torch.bfloat16
+[09-24 17:44:21|INFO] Vision tokenizer initialization skipped
+[09-24 17:44:21|INFO] Time spent on OmniMoTModel: set_up_tokenizers: 0.22 s
+[09-24 17:44:21|INFO] dp_replicate is set to -1, will be automatically determined based on world_size 8 // dp_shard 8.
+[09-24 17:44:21|INFO] dp_replicate is set to 1.
+[09-24 17:44:21|INFO] Building 2-D device mesh with ['dp_replicate', 'dp_shard'], [1, 8]
+[rank2]:W0924 17:44:22.504000 558190 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank1]:W0924 17:44:22.504000 558189 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank3]:W0924 17:44:22.504000 558191 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank5]:W0924 17:44:22.505000 558193 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank4]:W0924 17:44:22.505000 558192 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank6]:W0924 17:44:22.507000 558194 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank7]:W0924 17:44:22.507000 558195 torch/distributed/tensor/_random.py:215] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[09-24 17:44:22|INFO] Time spent on meta to cuda and broadcast model states: 0.61 s
+[09-24 17:44:22|INFO] Time spent on Creating PyTorch model and ema if enabled: 1.20 s
+[09-24 17:44:22|INFO] Time spent on OmniMoTModel: set_up_model: 1.20 s
+[09-24 17:44:22|INFO] Time spent on init_model: 1.43 s
+[09-24 17:44:23|INFO] Successfully loaded processor from local cache
+[09-24 17:44:24|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:25|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:26|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:26|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:26|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:27|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:28|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:28|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:29|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:30|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:30|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:32|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:33|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:33|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:34|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:34|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:34|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:36|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:37|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:37|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:38|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:39|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:39|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:39|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:40|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:40|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:41|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:41|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:42|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 17:44:42|INFO] JointCosmosDataLoader: 29 streams
+  agibot-world:0: ratio=4.835e+05 (11.4%)
+  agibot-world_lw2030:1: ratio=6.14e+04 (1.4%)
+  ego-exo4d:2: ratio=2.146e+04 (0.5%)
+  egocentric-10k:3: ratio=2.458e+05 (5.8%)
+  egocentric-10k_lw2030:4: ratio=1.362e+04 (0.3%)
+  egodex:5: ratio=6.934e+04 (1.6%)
+  egodex_lw2030:6: ratio=1.556e+04 (0.4%)
+  egolive:7: ratio=3.427e+05 (8.1%)
+  egolive_lw2030:8: ratio=7.156e+04 (1.7%)
+  egopro:9: ratio=6.607e+04 (1.6%)
+  egopro_lw2030:10: ratio=4.671e+04 (1.1%)
+  egostandard:11: ratio=6.303e+05 (14.8%)
+  egostandard_lw2030:12: ratio=3.471e+05 (8.2%)
+  epic-kitchens-55:13: ratio=4326 (0.1%)
+  galbot:14: ratio=1.37e+05 (3.2%)
+  galbot_lw2030:15: ratio=1.809e+04 (0.4%)
+  holoassist:16: ratio=1.697e+04 (0.4%)
+  lightwheel:17: ratio=8.396e+05 (19.8%)
+  lightwheel_lw2030:18: ratio=2.196e+05 (5.2%)
+  openaoe-2000h:19: ratio=1.592e+05 (3.7%)
+  openaoe-2000h_lw2030:20: ratio=3.942e+04 (0.9%)
+  robocoin:21: ratio=1.07e+05 (2.5%)
+  robocoin_lw2030:22: ratio=2.95e+04 (0.7%)
+  robomind1:23: ratio=2.272e+04 (0.5%)
+  robomind1_lw2030:24: ratio=572 (0.0%)
+  robomind2:25: ratio=1.861e+05 (4.4%)
+  robomind2_lw2030:26: ratio=2840 (0.1%)
+  stereo-550:27: ratio=3.483e+04 (0.8%)
+  stereo-550_lw2030:28: ratio=1.353e+04 (0.3%)
+[09-24 17:44:42|INFO] Time spent on init_data_loader: 19.97 s
+[09-24 17:44:42|INFO] Total tensors: 804, trainable tensors: 804, selected tensors: 405
+[09-24 17:44:42|INFO] Building optimizer for mesh 'dp_shard'
+[09-24 17:44:42|INFO] Param group (lr=0.0001, WD=True): 405 tensors, 6,965,486,784 elements
+[09-24 17:44:42|INFO] Created 1 optimizers
+[09-24 17:44:42|INFO] Created 1 schedulers
+[09-24 17:44:42|CRITICAL] Resuming ckpt /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP (warm-start, local) with keys: ['dataloader', 'model', 'optim', 'scheduler', 'trainer']
+[09-24 17:44:42|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader
+[09-24 17:44:42|INFO] [RANK 2] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 4] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 5] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 7] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 6] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 3] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 1] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|INFO] [RANK 0] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 17:44:42|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/model
+[09-24 17:44:42|INFO] Skipping loading of keys that match the following patterns: ['net_ema.']
+[09-24 17:44:42|INFO] - Loading the model...
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/opt/venv/lib/python3.13/site-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+[09-24 17:44:42|INFO] [RANK 5] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 4] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 7] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 2] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 1] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 3] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 0] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 6] [DCP-LOAD-SKIP-KEYS] kept_keys=804 dropped_keys=0
+[09-24 17:44:42|INFO] [RANK 4] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 7] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 5] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 2] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 1] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 0] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 6] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:44:42|INFO] [RANK 3] [DCP-LOAD-DEDUP] kept_read_items=804 dropped_read_items=0
+[09-24 17:45:07|INFO] [RANK 0] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 2] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 1] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 3] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 4] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 5] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 7] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|INFO] [RANK 6] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:07|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/optim
+[09-24 17:45:07|INFO] Skipping loading of keys that match the following patterns: ['net_ema.']
+[09-24 17:45:07|INFO] - Loading the optimizer...
+[09-24 17:45:08|INFO] [RANK 2] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:08|INFO] [RANK 4] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:08|INFO] [RANK 5] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:08|INFO] [RANK 7] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:08|INFO] [RANK 2] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:08|INFO] [RANK 4] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:08|INFO] [RANK 5] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:08|INFO] [RANK 7] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:09|INFO] [RANK 0] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:09|INFO] [RANK 6] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:09|INFO] [RANK 1] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:09|INFO] [RANK 3] [DCP-LOAD-SKIP-KEYS] kept_keys=6075 dropped_keys=0
+[09-24 17:45:09|INFO] [RANK 0] [DCP-LOAD-DEDUP] kept_read_items=6885 dropped_read_items=0
+[09-24 17:45:09|INFO] [RANK 6] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:09|INFO] [RANK 1] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:09|INFO] [RANK 3] [DCP-LOAD-DEDUP] kept_read_items=1620 dropped_read_items=5265
+[09-24 17:45:13|INFO] [RANK 0] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.0s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 6] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.2s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 5] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.4s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 3] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.3s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 1] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.3s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 4] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.4s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 7] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.4s, rebuild=0.0s
+[09-24 17:45:13|INFO] [RANK 2] [DCP-LOAD-TIMING] broadcast: tensors=0.0s, objects=0.9s, rebuild=0.0s
+[09-24 17:45:13|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/scheduler
+[09-24 17:45:13|INFO] - Loading the scheduler...
+[09-24 17:45:14|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/trainer
+[09-24 17:45:14|INFO] - Loading the trainer...
+[09-24 17:45:14|INFO] Loaded checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP (warm-start, local) in iteration 12600
+[09-24 17:45:14|INFO] Time spent on checkpoint loading: 31.34 s
+[09-24 17:45:14|CRITICAL] Distributed parallelism mode: fsdp
+[09-24 17:45:14|INFO] Starting training...
+[09-24 17:45:14|INFO] Generating new wandb ID: ugf0exoq
+Config is saved using omegaconf at /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/config.yaml.
+[09-24 17:45:14|INFO] [RANK 0] Total number of parameters on current rank: 6965486784
+[09-24 17:45:14|INFO] NormMonitor callback: local_dir: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/norm_monitor
+[09-24 17:45:14|INFO] NormMonitor: Registered activation hooks on 36 transformer blocks
+[09-24 17:45:14|INFO] OFUCallback: launched nvidia-smi dmon --gpm-metrics 5
+[09-24 17:45:14|INFO] DeviceMonitor callback: local_dir: /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/DeviceMonitor
+[09-24 17:45:14|INFO] [TerminationSignalCheckpoint] Installed SIGTERM handler.
+[09-24 17:45:14|INFO] OFUCallback: found mmaact at column 12, pclk at column 11
+[09-24 17:46:46|INFO] Time spent on norm_monitor: 3.94 s
+[09-24 17:46:46|INFO] [RANK 5] Iteration 12601: Loss: 0.1684 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 6
+[09-24 17:46:46|INFO] [RANK 0] Iteration 12601: Loss: 0.1356 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 6
+[09-24 17:46:46|INFO] [RANK 3] Iteration 12601: Loss: 0.0987 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 5
+[09-24 17:46:46|INFO] [RANK 7] Iteration 12601: Loss: 0.1278 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 7
+[09-24 17:46:46|INFO] [RANK 2] Iteration 12601: Loss: 0.1446 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 3
+[09-24 17:46:46|INFO] [RANK 6] Iteration 12601: Loss: 0.1610 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 5
+[09-24 17:46:46|INFO] [RANK 1] Iteration 12601: Loss: 0.1970 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 5
+[09-24 17:46:46|INFO] [RANK 4] Iteration 12601: Loss: 0.1163 | Time: 145.09s | Warmup: 1/50 | video_batch_size: 4
+[09-24 17:46:46|INFO] clip_grad_norm/video/global: 0.15527 (iteration 12601)
+[09-24 17:46:46|INFO] 
+JointCosmosDataLoader global_id=2
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+
+[09-24 17:47:26|INFO] [RANK 7] Iteration 12602: Loss: 0.1769 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 5
+[09-24 17:47:26|INFO] [RANK 6] Iteration 12602: Loss: 0.1893 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 7
+[09-24 17:47:26|INFO] [RANK 2] Iteration 12602: Loss: 0.1849 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 6
+[09-24 17:47:26|INFO] [RANK 4] Iteration 12602: Loss: 0.1750 | Time: 40.59s | Warmup: 2/50 | video_batch_size: 6
+[09-24 17:47:26|INFO] [RANK 1] Iteration 12602: Loss: 0.1959 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 5
+[09-24 17:47:26|INFO] [RANK 3] Iteration 12602: Loss: 0.3422 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 5
+[09-24 17:47:26|INFO] [RANK 0] Iteration 12602: Loss: 0.2098 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 5
+[09-24 17:47:26|INFO] [RANK 5] Iteration 12602: Loss: 0.2603 | Time: 40.60s | Warmup: 2/50 | video_batch_size: 6
+[09-24 17:47:26|INFO] clip_grad_norm/video/global: 0.21191 (iteration 12602)
+[09-24 17:47:26|INFO] 
+JointCosmosDataLoader global_id=4
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=5
+  [lightwheel:17] worker 0: epoch=0, index=4
+
+[09-24 17:48:18|INFO] [RANK 0] Iteration 12603: Loss: 0.2174 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 5
+[09-24 17:48:18|INFO] [RANK 5] Iteration 12603: Loss: 0.1886 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 7
+[09-24 17:48:18|INFO] [RANK 3] Iteration 12603: Loss: 0.1544 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 4
+[09-24 17:48:18|INFO] [RANK 4] Iteration 12603: Loss: 0.4215 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 5
+[09-24 17:48:18|INFO] [RANK 7] Iteration 12603: Loss: 0.1470 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 3
+[09-24 17:48:18|INFO] [RANK 1] Iteration 12603: Loss: 0.2909 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 4
+[09-24 17:48:18|INFO] [RANK 6] Iteration 12603: Loss: 0.2428 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 6
+[09-24 17:48:18|INFO] [RANK 2] Iteration 12603: Loss: 0.1737 | Time: 51.81s | Warmup: 3/50 | video_batch_size: 4
+[09-24 17:48:18|INFO] clip_grad_norm/video/global: 0.33398 (iteration 12603)
+[09-24 17:48:18|INFO] 
+JointCosmosDataLoader global_id=6
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=5
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=1
+
+[09-24 17:49:07|INFO] [RANK 4] Iteration 12604: Loss: 0.1817 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] [RANK 2] Iteration 12604: Loss: 0.1677 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] [RANK 1] Iteration 12604: Loss: 0.4731 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] [RANK 5] Iteration 12604: Loss: 0.1416 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 2
+[09-24 17:49:07|INFO] [RANK 3] Iteration 12604: Loss: 0.1845 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] [RANK 6] Iteration 12604: Loss: 0.1519 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] [RANK 0] Iteration 12604: Loss: 0.1389 | Time: 49.10s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] [RANK 7] Iteration 12604: Loss: 0.3607 | Time: 49.09s | Warmup: 4/50 | video_batch_size: 1
+[09-24 17:49:07|INFO] clip_grad_norm/video/global: 0.38867 (iteration 12604)
+[09-24 17:49:07|INFO] 
+JointCosmosDataLoader global_id=8
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=5
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=2
+  [ego-exo4d:2] worker 0: epoch=0, index=8
+
+[09-24 17:50:02|INFO] [RANK 7] Iteration 12605: Loss: 0.1420 | Time: 54.22s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|INFO] [RANK 6] Iteration 12605: Loss: 0.3273 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 2
+[09-24 17:50:02|INFO] [RANK 0] Iteration 12605: Loss: 0.1703 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|INFO] [RANK 4] Iteration 12605: Loss: 0.2226 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|INFO] [RANK 5] Iteration 12605: Loss: 0.1446 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|CRITICAL] Garbage collection disabled
+[09-24 17:50:02|INFO] [RANK 3] Iteration 12605: Loss: 0.1352 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|INFO] [RANK 1] Iteration 12605: Loss: 0.1069 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|INFO] [RANK 2] Iteration 12605: Loss: 0.2943 | Time: 54.23s | Warmup: 5/50 | video_batch_size: 1
+[09-24 17:50:02|INFO] clip_grad_norm/video/global: 0.15918 (iteration 12605)
+[09-24 17:50:02|INFO] 
+JointCosmosDataLoader global_id=10
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=5
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=2
+  [ego-exo4d:2] worker 0: epoch=0, index=8
+  [egostandard:11] worker 0: epoch=0, index=2
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+
+[09-24 17:50:45|INFO] [RANK 5] Iteration 12606: Loss: 0.1302 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 6
+[09-24 17:50:45|INFO] [RANK 6] Iteration 12606: Loss: 0.1312 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 2
+[09-24 17:50:45|INFO] [RANK 7] Iteration 12606: Loss: 0.1254 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 4
+[09-24 17:50:45|INFO] [RANK 3] Iteration 12606: Loss: 0.1448 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 6
+[09-24 17:50:45|INFO] [RANK 2] Iteration 12606: Loss: 0.1205 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 5
+[09-24 17:50:45|INFO] [RANK 1] Iteration 12606: Loss: 0.1243 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 6
+[09-24 17:50:45|INFO] [RANK 4] Iteration 12606: Loss: 0.1743 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 7
+[09-24 17:50:45|INFO] [RANK 0] Iteration 12606: Loss: 0.1372 | Time: 43.20s | Warmup: 6/50 | video_batch_size: 8
+[09-24 17:50:45|INFO] [RANK 0] 12606 : real_tokens_per_sec_per_gpu 4296.6 | physical_tokens_per_sec_per_gpu 4727.8 | effective_samples_per_sec_per_gpu 0.3265 | real_und_tokens 3272 | real_gen_tokens 180986 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.5326 | gen_utilization 0.9205 | effective_samples 14 | microbatches 2 | avg_time_per_step_s 42.8849
+/opt/venv/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[09-24 17:50:45|INFO] clip_grad_norm/video/global: 0.17090 (iteration 12606)
+[09-24 17:50:45|INFO] 
+JointCosmosDataLoader global_id=12
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=5
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=2
+  [ego-exo4d:2] worker 0: epoch=0, index=8
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=7
+
+[09-24 17:51:18|INFO] [RANK 5] Iteration 12607: Loss: 0.1694 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 9
+[09-24 17:51:18|INFO] [RANK 4] Iteration 12607: Loss: 0.2682 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 10
+[09-24 17:51:18|INFO] [RANK 0] Iteration 12607: Loss: 0.1881 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 9
+[09-24 17:51:18|INFO] [RANK 3] Iteration 12607: Loss: 0.1996 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 11
+[09-24 17:51:18|INFO] [RANK 6] Iteration 12607: Loss: 0.2654 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 13
+[09-24 17:51:18|INFO] [RANK 1] Iteration 12607: Loss: 0.1827 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 10
+[09-24 17:51:18|INFO] [RANK 2] Iteration 12607: Loss: 0.1757 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 9
+[09-24 17:51:18|INFO] [RANK 7] Iteration 12607: Loss: 0.1630 | Time: 33.45s | Warmup: 7/50 | video_batch_size: 11
+[09-24 17:51:18|INFO] [RANK 0] 12607 : real_tokens_per_sec_per_gpu 5495.3 | physical_tokens_per_sec_per_gpu 6108.2 | effective_samples_per_sec_per_gpu 0.4519 | real_und_tokens 3757 | real_gen_tokens 178650 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.6115 | gen_utilization 0.9087 | effective_samples 15 | microbatches 2 | avg_time_per_step_s 33.1935
+[09-24 17:51:18|INFO] clip_grad_norm/video/global: 0.20020 (iteration 12607)
+[09-24 17:51:18|INFO] 
+JointCosmosDataLoader global_id=14
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=11
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=2
+  [ego-exo4d:2] worker 0: epoch=0, index=8
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=7
+  [holoassist:16] worker 0: epoch=0, index=8
+
+[09-24 17:52:07|INFO] [RANK 7] Iteration 12608: Loss: 0.0805 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 5
+[09-24 17:52:07|INFO] [RANK 4] Iteration 12608: Loss: 0.0879 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 7
+[09-24 17:52:07|INFO] [RANK 0] Iteration 12608: Loss: 0.1186 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 6
+[09-24 17:52:07|INFO] [RANK 5] Iteration 12608: Loss: 0.0992 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 6
+[09-24 17:52:07|INFO] [RANK 6] Iteration 12608: Loss: 0.2362 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 7
+[09-24 17:52:07|INFO] [RANK 3] Iteration 12608: Loss: 0.0726 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 6
+[09-24 17:52:07|INFO] [RANK 2] Iteration 12608: Loss: 0.1467 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 10
+[09-24 17:52:07|INFO] [RANK 1] Iteration 12608: Loss: 0.1496 | Time: 48.32s | Warmup: 8/50 | video_batch_size: 7
+[09-24 17:52:07|INFO] [RANK 0] 12608 : real_tokens_per_sec_per_gpu 2726.3 | physical_tokens_per_sec_per_gpu 4221.7 | effective_samples_per_sec_per_gpu 0.1458 | real_und_tokens 933 | real_gen_tokens 130002 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.1519 | gen_utilization 0.6612 | effective_samples 7 | microbatches 2 | avg_time_per_step_s 48.0263
+[09-24 17:52:07|INFO] clip_grad_norm/video/global: 0.20312 (iteration 12608)
+[09-24 17:52:07|INFO] 
+JointCosmosDataLoader global_id=16
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=11
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=7
+  [holoassist:16] worker 0: epoch=0, index=8
+
+[09-24 17:52:47|INFO] [RANK 6] Iteration 12609: Loss: 0.1543 | Time: 40.23s | Warmup: 9/50 | video_batch_size: 7
+[09-24 17:52:47|INFO] [RANK 7] Iteration 12609: Loss: 0.1206 | Time: 40.23s | Warmup: 9/50 | video_batch_size: 6
+[09-24 17:52:47|INFO] [RANK 1] Iteration 12609: Loss: 0.1282 | Time: 40.23s | Warmup: 9/50 | video_batch_size: 6
+[09-24 17:52:47|INFO] [RANK 3] Iteration 12609: Loss: 0.1360 | Time: 40.23s | Warmup: 9/50 | video_batch_size: 5
+[09-24 17:52:47|INFO] [RANK 2] Iteration 12609: Loss: 0.1804 | Time: 40.23s | Warmup: 9/50 | video_batch_size: 6
+[09-24 17:52:47|INFO] [RANK 5] Iteration 12609: Loss: 0.1682 | Time: 40.23s | Warmup: 9/50 | video_batch_size: 5
+[09-24 17:52:47|INFO] [RANK 4] Iteration 12609: Loss: 0.1356 | Time: 40.24s | Warmup: 9/50 | video_batch_size: 3
+[09-24 17:52:47|INFO] [RANK 0] Iteration 12609: Loss: 0.2553 | Time: 40.24s | Warmup: 9/50 | video_batch_size: 3
+[09-24 17:52:47|INFO] [RANK 0] 12609 : real_tokens_per_sec_per_gpu 4643.0 | physical_tokens_per_sec_per_gpu 5072.9 | effective_samples_per_sec_per_gpu 0.2252 | real_und_tokens 2168 | real_gen_tokens 183400 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3529 | gen_utilization 0.9328 | effective_samples 9 | microbatches 2 | avg_time_per_step_s 39.9675
+[09-24 17:52:47|INFO] clip_grad_norm/video/global: 0.36328 (iteration 12609)
+[09-24 17:52:47|INFO] 
+JointCosmosDataLoader global_id=18
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=17
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=10
+  [holoassist:16] worker 0: epoch=0, index=8
+
+[09-24 17:53:19|INFO] [RANK 5] Iteration 12610: Loss: 0.2679 | Time: 32.27s | Warmup: 10/50 | video_batch_size: 7
+[09-24 17:53:19|INFO] [RANK 4] Iteration 12610: Loss: 0.2056 | Time: 32.27s | Warmup: 10/50 | video_batch_size: 6
+[09-24 17:53:19|INFO] [RANK 7] Iteration 12610: Loss: 0.3394 | Time: 32.28s | Warmup: 10/50 | video_batch_size: 6
+[09-24 17:53:19|INFO] [RANK 6] Iteration 12610: Loss: 0.1888 | Time: 32.28s | Warmup: 10/50 | video_batch_size: 7
+[09-24 17:53:19|INFO] [RANK 0] Iteration 12610: Loss: 0.1884 | Time: 32.27s | Warmup: 10/50 | video_batch_size: 10
+[09-24 17:53:19|INFO] [RANK 3] Iteration 12610: Loss: 0.1749 | Time: 32.28s | Warmup: 10/50 | video_batch_size: 7
+[09-24 17:53:19|INFO] [RANK 1] Iteration 12610: Loss: 0.2294 | Time: 32.28s | Warmup: 10/50 | video_batch_size: 6
+[09-24 17:53:19|INFO] [RANK 2] Iteration 12610: Loss: 0.3690 | Time: 32.28s | Warmup: 10/50 | video_batch_size: 7
+[09-24 17:53:19|INFO] [RANK 0] 12610 : real_tokens_per_sec_per_gpu 6140.3 | physical_tokens_per_sec_per_gpu 6363.0 | effective_samples_per_sec_per_gpu 0.6904 | real_und_tokens 4555 | real_gen_tokens 191100 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.7414 | gen_utilization 0.9720 | effective_samples 22 | microbatches 2 | avg_time_per_step_s 31.8643
+[09-24 17:53:19|INFO] clip_grad_norm/video/global: 0.21191 (iteration 12610)
+[09-24 17:53:19|INFO] 
+JointCosmosDataLoader global_id=20
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=5
+  [agibot-world:0] worker 0: epoch=0, index=17
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=10
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=11
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+
+[09-24 17:54:08|INFO] [RANK 5] Iteration 12611: Loss: 0.1237 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 4
+[09-24 17:54:08|INFO] [RANK 0] Iteration 12611: Loss: 0.1861 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 6
+[09-24 17:54:08|INFO] [RANK 4] Iteration 12611: Loss: 0.0986 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 4
+[09-24 17:54:08|INFO] [RANK 2] Iteration 12611: Loss: 0.1444 | Time: 48.55s | Warmup: 11/50 | video_batch_size: 4
+[09-24 17:54:08|INFO] [RANK 7] Iteration 12611: Loss: 0.1150 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 6
+[09-24 17:54:08|INFO] [RANK 6] Iteration 12611: Loss: 0.2289 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 5
+[09-24 17:54:08|INFO] [RANK 3] Iteration 12611: Loss: 0.1563 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 6
+[09-24 17:54:08|INFO] [RANK 1] Iteration 12611: Loss: 0.1109 | Time: 48.56s | Warmup: 11/50 | video_batch_size: 5
+[09-24 17:54:08|INFO] [RANK 0] 12611 : real_tokens_per_sec_per_gpu 3896.6 | physical_tokens_per_sec_per_gpu 4197.6 | effective_samples_per_sec_per_gpu 0.1656 | real_und_tokens 2194 | real_gen_tokens 186018 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3571 | gen_utilization 0.9461 | effective_samples 8 | microbatches 2 | avg_time_per_step_s 48.3019
+[09-24 17:54:08|INFO] clip_grad_norm/video/global: 0.32227 (iteration 12611)
+[09-24 17:54:08|INFO] 
+JointCosmosDataLoader global_id=22
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=17
+  [lightwheel:17] worker 0: epoch=0, index=9
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=10
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=11
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=1
+
+[09-24 17:54:46|INFO] [RANK 7] Iteration 12612: Loss: 0.1126 | Time: 38.16s | Warmup: 12/50 | video_batch_size: 7
+[09-24 17:54:46|INFO] [RANK 6] Iteration 12612: Loss: 0.1065 | Time: 38.16s | Warmup: 12/50 | video_batch_size: 6
+[09-24 17:54:46|INFO] [RANK 3] Iteration 12612: Loss: 0.1274 | Time: 38.16s | Warmup: 12/50 | video_batch_size: 7
+[09-24 17:54:46|INFO] [RANK 1] Iteration 12612: Loss: 0.1497 | Time: 38.16s | Warmup: 12/50 | video_batch_size: 8
+[09-24 17:54:46|INFO] [RANK 2] Iteration 12612: Loss: 0.1314 | Time: 38.16s | Warmup: 12/50 | video_batch_size: 5
+[09-24 17:54:46|INFO] [RANK 4] Iteration 12612: Loss: 0.0976 | Time: 38.17s | Warmup: 12/50 | video_batch_size: 6
+[09-24 17:54:46|INFO] [RANK 5] Iteration 12612: Loss: 0.1708 | Time: 38.17s | Warmup: 12/50 | video_batch_size: 8
+[09-24 17:54:46|INFO] [RANK 0] Iteration 12612: Loss: 0.1379 | Time: 38.17s | Warmup: 12/50 | video_batch_size: 7
+[09-24 17:54:46|INFO] [RANK 0] 12612 : real_tokens_per_sec_per_gpu 5080.5 | physical_tokens_per_sec_per_gpu 5357.8 | effective_samples_per_sec_per_gpu 0.4228 | real_und_tokens 4087 | real_gen_tokens 188168 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.6652 | gen_utilization 0.9571 | effective_samples 16 | microbatches 2 | avg_time_per_step_s 37.8421
+[09-24 17:54:46|INFO] clip_grad_norm/video/global: 0.20215 (iteration 12612)
+[09-24 17:54:46|INFO] 
+JointCosmosDataLoader global_id=24
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=24
+  [lightwheel:17] worker 0: epoch=0, index=18
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=8
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=10
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=11
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=1
+
+[09-24 17:55:21|INFO] [RANK 5] Iteration 12613: Loss: 0.1295 | Time: 35.26s | Warmup: 13/50 | video_batch_size: 13
+[09-24 17:55:21|INFO] [RANK 4] Iteration 12613: Loss: 0.1797 | Time: 35.26s | Warmup: 13/50 | video_batch_size: 13
+[09-24 17:55:21|INFO] [RANK 3] Iteration 12613: Loss: 0.1052 | Time: 35.26s | Warmup: 13/50 | video_batch_size: 10
+[09-24 17:55:21|INFO] [RANK 0] Iteration 12613: Loss: 0.1797 | Time: 35.26s | Warmup: 13/50 | video_batch_size: 12
+[09-24 17:55:21|INFO] [RANK 6] Iteration 12613: Loss: 0.1317 | Time: 35.27s | Warmup: 13/50 | video_batch_size: 10
+[09-24 17:55:21|INFO] [RANK 1] Iteration 12613: Loss: 0.1586 | Time: 35.27s | Warmup: 13/50 | video_batch_size: 11
+[09-24 17:55:21|INFO] [RANK 7] Iteration 12613: Loss: 0.1258 | Time: 35.27s | Warmup: 13/50 | video_batch_size: 11
+[09-24 17:55:21|INFO] [RANK 2] Iteration 12613: Loss: 0.1072 | Time: 35.27s | Warmup: 13/50 | video_batch_size: 10
+[09-24 17:55:21|INFO] [RANK 0] 12613 : real_tokens_per_sec_per_gpu 4860.3 | physical_tokens_per_sec_per_gpu 5800.6 | effective_samples_per_sec_per_gpu 0.4291 | real_und_tokens 3163 | real_gen_tokens 166722 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.5148 | gen_utilization 0.8480 | effective_samples 15 | microbatches 2 | avg_time_per_step_s 34.9537
+[09-24 17:55:21|INFO] clip_grad_norm/video/global: 0.35156 (iteration 12613)
+[09-24 17:55:21|INFO] 
+JointCosmosDataLoader global_id=26
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=24
+  [lightwheel:17] worker 0: epoch=0, index=18
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=11
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=10
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=1
+
+[09-24 17:56:07|INFO] [RANK 5] Iteration 12614: Loss: 0.2246 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 6
+[09-24 17:56:07|INFO] [RANK 2] Iteration 12614: Loss: 0.1377 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 6
+[09-24 17:56:07|INFO] [RANK 4] Iteration 12614: Loss: 0.3644 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 4
+[09-24 17:56:07|INFO] [RANK 0] Iteration 12614: Loss: 0.1552 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 6
+[09-24 17:56:07|INFO] [RANK 7] Iteration 12614: Loss: 0.1622 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 5
+[09-24 17:56:07|INFO] [RANK 3] Iteration 12614: Loss: 0.1668 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 4
+[09-24 17:56:07|INFO] [RANK 1] Iteration 12614: Loss: 0.1507 | Time: 46.44s | Warmup: 14/50 | video_batch_size: 3
+[09-24 17:56:07|INFO] [RANK 6] Iteration 12614: Loss: 0.1658 | Time: 46.45s | Warmup: 14/50 | video_batch_size: 6
+[09-24 17:56:07|INFO] [RANK 0] 12614 : real_tokens_per_sec_per_gpu 3779.5 | physical_tokens_per_sec_per_gpu 4386.6 | effective_samples_per_sec_per_gpu 0.1731 | real_und_tokens 1753 | real_gen_tokens 172937 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.2853 | gen_utilization 0.8796 | effective_samples 8 | microbatches 2 | avg_time_per_step_s 46.2205
+[09-24 17:56:07|INFO] clip_grad_norm/video/global: 0.21289 (iteration 12614)
+[09-24 17:56:07|INFO] 
+JointCosmosDataLoader global_id=28
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=24
+  [lightwheel:17] worker 0: epoch=0, index=18
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=11
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=16
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=1
+  [egopro:9] worker 0: epoch=0, index=1
+
+[09-24 17:57:02|INFO] [RANK 1] Iteration 12615: Loss: 0.1230 | Time: 54.14s | Warmup: 15/50 | video_batch_size: 2
+[09-24 17:57:02|INFO] [RANK 6] Iteration 12615: Loss: 0.1207 | Time: 54.14s | Warmup: 15/50 | video_batch_size: 2
+[09-24 17:57:02|INFO] [RANK 3] Iteration 12615: Loss: 0.1004 | Time: 54.14s | Warmup: 15/50 | video_batch_size: 1
+[09-24 17:57:02|INFO] [RANK 7] Iteration 12615: Loss: 0.1009 | Time: 54.14s | Warmup: 15/50 | video_batch_size: 1
+[09-24 17:57:02|INFO] [RANK 5] Iteration 12615: Loss: 0.1214 | Time: 54.15s | Warmup: 15/50 | video_batch_size: 1
+[09-24 17:57:02|INFO] [RANK 4] Iteration 12615: Loss: 0.2646 | Time: 54.15s | Warmup: 15/50 | video_batch_size: 1
+[09-24 17:57:02|INFO] [RANK 0] Iteration 12615: Loss: 0.1432 | Time: 54.15s | Warmup: 15/50 | video_batch_size: 1
+[09-24 17:57:02|INFO] [RANK 2] Iteration 12615: Loss: 0.1329 | Time: 54.15s | Warmup: 15/50 | video_batch_size: 1
+[09-24 17:57:02|INFO] [RANK 0] 12615 : real_tokens_per_sec_per_gpu 2698.1 | physical_tokens_per_sec_per_gpu 3768.8 | effective_samples_per_sec_per_gpu 0.1487 | real_und_tokens 2171 | real_gen_tokens 142981 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3534 | gen_utilization 0.7272 | effective_samples 8 | microbatches 2 | avg_time_per_step_s 53.7973
+[09-24 17:57:02|INFO] clip_grad_norm/video/global: 0.17871 (iteration 12615)
+[09-24 17:57:02|INFO] 
+JointCosmosDataLoader global_id=30
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=24
+  [lightwheel:17] worker 0: epoch=0, index=25
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=11
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=16
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=1
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+
+[09-24 17:57:50|INFO] [RANK 5] Iteration 12616: Loss: 0.2180 | Time: 48.06s | Warmup: 16/50 | video_batch_size: 7
+[09-24 17:57:50|INFO] [RANK 4] Iteration 12616: Loss: 0.1313 | Time: 48.06s | Warmup: 16/50 | video_batch_size: 7
+[09-24 17:57:50|INFO] [RANK 6] Iteration 12616: Loss: 0.1478 | Time: 48.07s | Warmup: 16/50 | video_batch_size: 6
+[09-24 17:57:50|INFO] [RANK 0] Iteration 12616: Loss: 0.2272 | Time: 48.06s | Warmup: 16/50 | video_batch_size: 7
+[09-24 17:57:50|INFO] [RANK 2] Iteration 12616: Loss: 0.1506 | Time: 48.06s | Warmup: 16/50 | video_batch_size: 9
+[09-24 17:57:50|INFO] [RANK 3] Iteration 12616: Loss: 0.1560 | Time: 48.07s | Warmup: 16/50 | video_batch_size: 4
+[09-24 17:57:50|INFO] [RANK 1] Iteration 12616: Loss: 0.1801 | Time: 48.07s | Warmup: 16/50 | video_batch_size: 7
+[09-24 17:57:50|INFO] [RANK 7] Iteration 12616: Loss: 0.1373 | Time: 48.07s | Warmup: 16/50 | video_batch_size: 6
+[09-24 17:57:50|INFO] [RANK 0] 12616 : real_tokens_per_sec_per_gpu 3821.1 | physical_tokens_per_sec_per_gpu 4238.4 | effective_samples_per_sec_per_gpu 0.1881 | real_und_tokens 2310 | real_gen_tokens 180480 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3760 | gen_utilization 0.9180 | effective_samples 9 | microbatches 2 | avg_time_per_step_s 47.8371
+[09-24 17:57:50|INFO] clip_grad_norm/video/global: 0.12061 (iteration 12616)
+[09-24 17:57:50|INFO] 
+JointCosmosDataLoader global_id=32
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=24
+  [lightwheel:17] worker 0: epoch=0, index=25
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=11
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=16
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=9
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+
+[09-24 17:58:29|INFO] [RANK 7] Iteration 12617: Loss: 0.3022 | Time: 39.02s | Warmup: 17/50 | video_batch_size: 5
+[09-24 17:58:29|INFO] [RANK 2] Iteration 12617: Loss: 0.2384 | Time: 39.02s | Warmup: 17/50 | video_batch_size: 3
+[09-24 17:58:29|INFO] [RANK 5] Iteration 12617: Loss: 0.1377 | Time: 39.03s | Warmup: 17/50 | video_batch_size: 4
+[09-24 17:58:29|INFO] [RANK 3] Iteration 12617: Loss: 0.1489 | Time: 39.02s | Warmup: 17/50 | video_batch_size: 5
+[09-24 17:58:29|INFO] [RANK 0] Iteration 12617: Loss: 0.1538 | Time: 39.03s | Warmup: 17/50 | video_batch_size: 7
+[09-24 17:58:29|INFO] [RANK 4] Iteration 12617: Loss: 0.1628 | Time: 39.03s | Warmup: 17/50 | video_batch_size: 4
+[09-24 17:58:29|INFO] [RANK 1] Iteration 12617: Loss: 0.1657 | Time: 39.02s | Warmup: 17/50 | video_batch_size: 5
+[09-24 17:58:29|INFO] [RANK 6] Iteration 12617: Loss: 0.1089 | Time: 39.03s | Warmup: 17/50 | video_batch_size: 3
+[09-24 17:58:29|INFO] [RANK 0] 12617 : real_tokens_per_sec_per_gpu 4811.9 | physical_tokens_per_sec_per_gpu 5230.6 | effective_samples_per_sec_per_gpu 0.3612 | real_und_tokens 3205 | real_gen_tokens 183320 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.5216 | gen_utilization 0.9324 | effective_samples 14 | microbatches 2 | avg_time_per_step_s 38.7629
+[09-24 17:58:29|INFO] clip_grad_norm/video/global: 0.22754 (iteration 12617)
+[09-24 17:58:29|INFO] 
+JointCosmosDataLoader global_id=34
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=24
+  [lightwheel:17] worker 0: epoch=0, index=25
+  [egostandard_lw2030:12] worker 0: epoch=0, index=3
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=11
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+
+[09-24 17:59:15|INFO] [RANK 6] Iteration 12618: Loss: 0.1797 | Time: 46.72s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 7] Iteration 12618: Loss: 0.2074 | Time: 46.72s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 1] Iteration 12618: Loss: 0.1993 | Time: 46.72s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 5] Iteration 12618: Loss: 0.1471 | Time: 46.72s | Warmup: 18/50 | video_batch_size: 2
+[09-24 17:59:15|INFO] [RANK 4] Iteration 12618: Loss: 0.1721 | Time: 46.72s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 3] Iteration 12618: Loss: 0.1467 | Time: 46.72s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 0] Iteration 12618: Loss: 0.1541 | Time: 46.73s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 2] Iteration 12618: Loss: 0.1099 | Time: 46.73s | Warmup: 18/50 | video_batch_size: 1
+[09-24 17:59:15|INFO] [RANK 0] 12618 : real_tokens_per_sec_per_gpu 3267.9 | physical_tokens_per_sec_per_gpu 4362.2 | effective_samples_per_sec_per_gpu 0.1936 | real_und_tokens 2086 | real_gen_tokens 149803 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3395 | gen_utilization 0.7619 | effective_samples 9 | microbatches 2 | avg_time_per_step_s 46.4793
+[09-24 17:59:15|INFO] clip_grad_norm/video/global: 0.11035 (iteration 12618)
+[09-24 17:59:15|INFO] 
+JointCosmosDataLoader global_id=36
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=32
+  [lightwheel:17] worker 0: epoch=0, index=25
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=11
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+
+[09-24 18:00:01|INFO] [RANK 4] Iteration 12619: Loss: 0.1761 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 9
+[09-24 18:00:01|INFO] [RANK 3] Iteration 12619: Loss: 0.1831 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 4
+[09-24 18:00:01|INFO] [RANK 6] Iteration 12619: Loss: 0.2194 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 7
+[09-24 18:00:01|INFO] [RANK 0] Iteration 12619: Loss: 0.1445 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 5
+[09-24 18:00:01|INFO] [RANK 2] Iteration 12619: Loss: 0.1779 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 8
+[09-24 18:00:01|INFO] [RANK 5] Iteration 12619: Loss: 0.2337 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 9
+[09-24 18:00:01|INFO] [RANK 7] Iteration 12619: Loss: 0.2522 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 6
+[09-24 18:00:01|INFO] [RANK 1] Iteration 12619: Loss: 0.1700 | Time: 46.03s | Warmup: 19/50 | video_batch_size: 6
+[09-24 18:00:01|INFO] [RANK 0] 12619 : real_tokens_per_sec_per_gpu 3649.4 | physical_tokens_per_sec_per_gpu 4438.6 | effective_samples_per_sec_per_gpu 0.1751 | real_und_tokens 1700 | real_gen_tokens 165002 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.2767 | gen_utilization 0.8392 | effective_samples 8 | microbatches 2 | avg_time_per_step_s 45.6793
+[09-24 18:00:01|INFO] clip_grad_norm/video/global: 0.15332 (iteration 12619)
+[09-24 18:00:01|INFO] 
+JointCosmosDataLoader global_id=38
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=32
+  [lightwheel:17] worker 0: epoch=0, index=30
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=14
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=23
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+
+[09-24 18:00:35|INFO] [RANK 3] Iteration 12620: Loss: 0.1827 | Time: 33.10s | Warmup: 20/50 | video_batch_size: 8
+[09-24 18:00:35|INFO] [RANK 0] Iteration 12620: Loss: 0.1489 | Time: 33.10s | Warmup: 20/50 | video_batch_size: 11
+[09-24 18:00:35|INFO] [RANK 5] Iteration 12620: Loss: 0.1559 | Time: 33.10s | Warmup: 20/50 | video_batch_size: 12
+[09-24 18:00:35|INFO] [RANK 2] Iteration 12620: Loss: 0.1349 | Time: 33.10s | Warmup: 20/50 | video_batch_size: 13
+[09-24 18:00:35|INFO] [RANK 4] Iteration 12620: Loss: 0.1364 | Time: 33.10s | Warmup: 20/50 | video_batch_size: 11
+[09-24 18:00:35|INFO] [RANK 6] Iteration 12620: Loss: 0.1663 | Time: 33.11s | Warmup: 20/50 | video_batch_size: 13
+[09-24 18:00:35|INFO] [RANK 7] Iteration 12620: Loss: 0.1587 | Time: 33.11s | Warmup: 20/50 | video_batch_size: 9
+[09-24 18:00:35|INFO] [RANK 1] Iteration 12620: Loss: 0.1745 | Time: 33.10s | Warmup: 20/50 | video_batch_size: 12
+[09-24 18:00:35|INFO] [RANK 0] 12620 : real_tokens_per_sec_per_gpu 5572.8 | physical_tokens_per_sec_per_gpu 6184.1 | effective_samples_per_sec_per_gpu 0.5185 | real_und_tokens 4260 | real_gen_tokens 178452 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.6934 | gen_utilization 0.9077 | effective_samples 17 | microbatches 2 | avg_time_per_step_s 32.7862
+[09-24 18:00:35|INFO] clip_grad_norm/video/global: 0.16309 (iteration 12620)
+[09-24 18:00:35|INFO] 
+JointCosmosDataLoader global_id=40
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=32
+  [lightwheel:17] worker 0: epoch=0, index=36
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=14
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=34
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+
+/opt/venv/lib/python3.13/site-packages/torch/profiler/profiler.py:217: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+[09-24 18:01:10|INFO] [RANK 5] Iteration 12621: Loss: 0.1579 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 9
+[09-24 18:01:10|INFO] [RANK 7] Iteration 12621: Loss: 0.1158 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 11
+[09-24 18:01:10|INFO] [RANK 1] Iteration 12621: Loss: 0.1557 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 11
+[09-24 18:01:10|INFO] [RANK 2] Iteration 12621: Loss: 0.1190 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 7
+[09-24 18:01:10|INFO] [RANK 4] Iteration 12621: Loss: 0.1394 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 12
+[09-24 18:01:10|INFO] [RANK 6] Iteration 12621: Loss: 0.2098 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 9
+[09-24 18:01:10|INFO] [RANK 3] Iteration 12621: Loss: 0.2232 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 8
+[09-24 18:01:10|INFO] [RANK 0] Iteration 12621: Loss: 0.2412 | Time: 34.94s | Warmup: 21/50 | video_batch_size: 9
+[09-24 18:01:10|INFO] [RANK 0] 12621 : real_tokens_per_sec_per_gpu 5439.4 | physical_tokens_per_sec_per_gpu 5867.9 | effective_samples_per_sec_per_gpu 0.4341 | real_und_tokens 3148 | real_gen_tokens 184800 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.5124 | gen_utilization 0.9399 | effective_samples 15 | microbatches 2 | avg_time_per_step_s 34.5528
+[09-24 18:01:10|INFO] clip_grad_norm/video/global: 0.19629 (iteration 12621)
+[09-24 18:01:10|INFO] 
+JointCosmosDataLoader global_id=42
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=38
+  [lightwheel:17] worker 0: epoch=0, index=36
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=14
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=34
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+  [robocoin:21] worker 0: epoch=0, index=8
+
+[09-24 18:01:57|INFO] [RANK 6] Iteration 12622: Loss: 0.2529 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 8
+[09-24 18:01:57|INFO] [RANK 7] Iteration 12622: Loss: 0.2073 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 6
+[09-24 18:01:57|INFO] [RANK 3] Iteration 12622: Loss: 0.1916 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 6
+[09-24 18:01:57|INFO] [RANK 5] Iteration 12622: Loss: 0.2591 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 7
+[09-24 18:01:57|INFO] [RANK 1] Iteration 12622: Loss: 0.1665 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 4
+[09-24 18:01:57|INFO] [RANK 4] Iteration 12622: Loss: 0.2241 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 6
+[09-24 18:01:57|INFO] [RANK 2] Iteration 12622: Loss: 0.1894 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 9
+[09-24 18:01:57|INFO] [RANK 0] Iteration 12622: Loss: 0.2728 | Time: 47.31s | Warmup: 22/50 | video_batch_size: 6
+[09-24 18:01:57|INFO] [RANK 0] 12622 : real_tokens_per_sec_per_gpu 3429.2 | physical_tokens_per_sec_per_gpu 4312.6 | effective_samples_per_sec_per_gpu 0.1914 | real_und_tokens 2328 | real_gen_tokens 158892 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3789 | gen_utilization 0.8082 | effective_samples 9 | microbatches 2 | avg_time_per_step_s 47.0135
+[09-24 18:01:57|INFO] clip_grad_norm/video/global: 0.12891 (iteration 12622)
+[09-24 18:01:57|INFO] 
+JointCosmosDataLoader global_id=44
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=38
+  [lightwheel:17] worker 0: epoch=0, index=36
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=17
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=34
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+  [robocoin:21] worker 0: epoch=0, index=8
+  [stereo-550:27] worker 0: epoch=0, index=5
+
+[09-24 18:02:42|INFO] [RANK 3] Iteration 12623: Loss: 0.1151 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 11
+[09-24 18:02:42|INFO] [RANK 4] Iteration 12623: Loss: 0.1248 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 12
+[09-24 18:02:42|INFO] [RANK 2] Iteration 12623: Loss: 0.1401 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 13
+[09-24 18:02:42|INFO] [RANK 5] Iteration 12623: Loss: 0.1364 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 11
+[09-24 18:02:42|INFO] [RANK 6] Iteration 12623: Loss: 0.1757 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 11
+[09-24 18:02:42|INFO] [RANK 7] Iteration 12623: Loss: 0.1973 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 8
+[09-24 18:02:42|INFO] [RANK 1] Iteration 12623: Loss: 0.1145 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 11
+[09-24 18:02:42|INFO] [RANK 0] Iteration 12623: Loss: 0.1815 | Time: 45.06s | Warmup: 23/50 | video_batch_size: 14
+[09-24 18:02:42|INFO] [RANK 0] 12623 : real_tokens_per_sec_per_gpu 3484.8 | physical_tokens_per_sec_per_gpu 4531.2 | effective_samples_per_sec_per_gpu 0.3352 | real_und_tokens 2901 | real_gen_tokens 153030 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.4722 | gen_utilization 0.7784 | effective_samples 15 | microbatches 2 | avg_time_per_step_s 44.7456
+[09-24 18:02:42|INFO] clip_grad_norm/video/global: 0.12354 (iteration 12623)
+[09-24 18:02:42|INFO] 
+JointCosmosDataLoader global_id=46
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=38
+  [lightwheel:17] worker 0: epoch=0, index=36
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=17
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=48
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+  [robocoin:21] worker 0: epoch=0, index=8
+  [stereo-550:27] worker 0: epoch=0, index=5
+  [egopro_lw2030:10] worker 0: epoch=0, index=0
+
+[09-24 18:03:24|INFO] [RANK 5] Iteration 12624: Loss: 0.2067 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 5
+[09-24 18:03:24|INFO] [RANK 4] Iteration 12624: Loss: 0.1832 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 5
+[09-24 18:03:24|INFO] [RANK 7] Iteration 12624: Loss: 0.1829 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 6
+[09-24 18:03:24|INFO] [RANK 2] Iteration 12624: Loss: 0.2333 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 8
+[09-24 18:03:24|INFO] [RANK 1] Iteration 12624: Loss: 0.1820 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 5
+[09-24 18:03:24|INFO] [RANK 3] Iteration 12624: Loss: 0.2823 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 5
+[09-24 18:03:24|INFO] [RANK 6] Iteration 12624: Loss: 0.1768 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 5
+[09-24 18:03:24|INFO] [RANK 0] Iteration 12624: Loss: 0.1772 | Time: 42.60s | Warmup: 24/50 | video_batch_size: 7
+[09-24 18:03:25|INFO] [RANK 0] 12624 : real_tokens_per_sec_per_gpu 4481.2 | physical_tokens_per_sec_per_gpu 4792.4 | effective_samples_per_sec_per_gpu 0.2600 | real_und_tokens 2300 | real_gen_tokens 187289 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.3743 | gen_utilization 0.9526 | effective_samples 11 | microbatches 2 | avg_time_per_step_s 42.3072
+[09-24 18:03:25|INFO] clip_grad_norm/video/global: 0.12793 (iteration 12624)
+[09-24 18:03:25|INFO] 
+JointCosmosDataLoader global_id=48
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=38
+  [lightwheel:17] worker 0: epoch=0, index=47
+  [egostandard_lw2030:12] worker 0: epoch=0, index=4
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=17
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=48
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+  [robocoin:21] worker 0: epoch=0, index=8
+  [stereo-550:27] worker 0: epoch=0, index=5
+  [egopro_lw2030:10] worker 0: epoch=0, index=0
+
+[09-24 18:04:12|INFO] [RANK 2] Iteration 12625: Loss: 0.1089 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 6
+[09-24 18:04:12|INFO] [RANK 6] Iteration 12625: Loss: 0.1840 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 6
+[09-24 18:04:12|INFO] [RANK 1] Iteration 12625: Loss: 0.0864 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 5
+[09-24 18:04:12|INFO] [RANK 3] Iteration 12625: Loss: 0.1267 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 7
+[09-24 18:04:12|INFO] [RANK 5] Iteration 12625: Loss: 0.1024 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 5
+[09-24 18:04:12|INFO] [RANK 7] Iteration 12625: Loss: 0.1508 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 7
+[09-24 18:04:12|INFO] [RANK 4] Iteration 12625: Loss: 0.1335 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 5
+[09-24 18:04:12|INFO] [RANK 0] Iteration 12625: Loss: 0.0873 | Time: 47.74s | Warmup: 25/50 | video_batch_size: 6
+[09-24 18:04:12|INFO] [RANK 0] 12625 : real_tokens_per_sec_per_gpu 3279.5 | physical_tokens_per_sec_per_gpu 4274.0 | effective_samples_per_sec_per_gpu 0.1476 | real_und_tokens 1471 | real_gen_tokens 154104 | physical_und_tokens 6144 | physical_gen_tokens 196608 | und_utilization 0.2394 | gen_utilization 0.7838 | effective_samples 7 | microbatches 2 | avg_time_per_step_s 47.4383
+[09-24 18:04:12|INFO] clip_grad_norm/video/global: 0.14453 (iteration 12625)
+[09-24 18:04:12|INFO] 
+JointCosmosDataLoader global_id=50
+  [egolive_lw2030:8] worker 0: epoch=0, index=0
+  [galbot:14] worker 0: epoch=0, index=11
+  [agibot-world:0] worker 0: epoch=0, index=44
+  [lightwheel:17] worker 0: epoch=0, index=47
+  [egostandard_lw2030:12] worker 0: epoch=0, index=5
+  [ego-exo4d:2] worker 0: epoch=0, index=14
+  [egostandard:11] worker 0: epoch=0, index=17
+  [lightwheel_lw2030:18] worker 0: epoch=0, index=0
+  [egolive:7] worker 0: epoch=0, index=23
+  [holoassist:16] worker 0: epoch=0, index=8
+  [robomind2:25] worker 0: epoch=0, index=48
+  [egocentric-10k:3] worker 0: epoch=0, index=16
+  [agibot-world_lw2030:1] worker 0: epoch=0, index=3
+  [egopro:9] worker 0: epoch=0, index=1
+  [openaoe-2000h_lw2030:20] worker 0: epoch=0, index=0
+  [egodex:5] worker 0: epoch=0, index=6
+  [robocoin:21] worker 0: epoch=0, index=8
+  [stereo-550:27] worker 0: epoch=0, index=5
+  [egopro_lw2030:10] worker 0: epoch=0, index=0
+
+KERNEL_LIST_EXPORT_BEGIN local_step=25 rank=0
+KERNEL_LIST_EXPORT_DONE /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/reports calls=35496
+[09-24 18:04:51|SUCCESS] Done with training.
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=0
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=11
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=44
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=47
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=5
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=14
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=17
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=0
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=23
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=8
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=48
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=16
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=3
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=1
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=0
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=6
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=8
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=5
+[09-24 18:04:51|INFO] Saved CosmosDataLoader state for worker 0: epoch=0, index=0
+[09-24 18:04:51|INFO] Creating a Gloo process group for DCP save metadata collectives
+[Gloo] Rank 0 is connected to 7 peer ranks. Expected number of connected peer ranks is : 7
+[Gloo] Rank [Gloo] Rank 3[Gloo] Rank [Gloo] Rank  is connected to 1[Gloo] Rank [Gloo] Rank [Gloo] Rank 247 is connected to 657 is connected to  is connected to  peer ranks. 7 is connected to  is connected to  is connected to 77Expected number of connected peer ranks is :  peer ranks. 777 peer ranks.  peer ranks. 7Expected number of connected peer ranks is :  peer ranks.  peer ranks.  peer ranks. Expected number of connected peer ranks is : Expected number of connected peer ranks is : 
+7Expected number of connected peer ranks is : Expected number of connected peer ranks is : Expected number of connected peer ranks is : 77
+777
+
+
+
+
+[09-24 18:05:02|INFO] Saved state to /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/checkpoints/iter_000012625/dataloader/rank_0.pkl
+[09-24 18:05:02|INFO] Saving last checkpoint file iter_000012625
+[09-24 18:05:02|INFO] Saved checkpoint to /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/resumed_capture001/job/kernel-list/v0.2.3c/profile/checkpoints/iter_000012625
+[09-24 18:05:02|INFO] Checkpoint save completed: Time taken: 10.87 seconds

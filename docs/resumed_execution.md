@@ -41,3 +41,12 @@
 
 - 18:00:35 CST完成12620，rank0 loss0.1489，20个等待step结束。此前8rank中途样本检查确认world8/shard8/replicate1/CP1、physical UND3072/GEN98304，所有loss有限。
 - 开始局部step21–22的profiler warmup，随后局部23–25 active；运行保持原长度，无缩短序列或关闭compile的覆盖。
+
+## 正式运行完成与验收
+
+- 18:04 CST完成12625并导出四文件；18:05:02 CST最终checkpoint保存完成，torchrun返回0，GPU计算进程清空。
+- 原始trace与CSV计算kernel调用均为35496，按kernel名核验无次数差异/超额；1534个变体、182条映射、87个operator分组、175个不同kernel名称。阶段6/6/3，active窗口没有编译事件。
+- 8rank各50microbatch（active各6），active全部loss有限。rank0 loss为0.1815/0.1772/0.0873；33个样本覆盖T2V15/I2V13/V2V5，均为offline。批级dataset标签与sample-ID前缀分开统计，修复原“样本数”字段名的歧义。
+- 12个变体/2065次调用缺少dtype，占计算kernel累计时间0.3083%；保留原空值。TensorList的shape/type展开存在上游可观测性边界，交付说明明确标注。
+- 独立通过External id抽查GEMM、FA3前后向、Triton融合计算、AdamW的CPU/GPU归属，五项均通过。未改动上游profiler_reports.py。
+- 正式报告、原始事件快照、配置、日志、全rank batch记录和验收结果归档到evidence/captures/resumed_capture001，四文件附SHA256。原项目代码、TOML和旧plans未修改。

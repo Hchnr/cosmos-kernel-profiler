@@ -1,8 +1,8 @@
 # Cosmos Kernel Profiler：详细采集流程
 
-独立保存 Cosmos 训练算子清单的采集实现、验证工具和历史证据。该仓库是本地 Git 仓库，没有配置远程，也未发布。原 Cosmos 工作树和 `plans/` 文件保留原样。
+独立保存 Cosmos 训练算子清单的采集实现、验证工具和历史证据。该仓库独立维护采集实现与验证证据。原 Cosmos 工作树和 `plans/` 文件保留原样。
 
-**当前状态：正式 USR 采集尚未完成，不能把 evidence 中的小型探针报告作为正式交付。用户已要求等待 GPU 资源通知，本次整理不启动训练、GPU 检查或资源等待器。**
+**当前状态：resumed_capture001已完成正式USR采集与验收，四文件见[正式采集结果](../evidence/captures/resumed_capture001/README.md)。**
 
 ## 内容
 
@@ -13,7 +13,7 @@
 - `probe_profiler.py`、`probe_attention.py`、`test_*.py`：小型CUDA探针、编译Attention数值验证和CPU单元检查。
 - `wait_and_launch.py`：资源等待工具，只有手动执行才会运行；空闲检测不等于独占资源预留。
 - `docs/`：迁移前的计划、过程记录和启动说明历史快照。
-- `evidence/`：已选取的中间结果、失败日志、配置、来源清单及本次迁移核验，详见 [证据说明](evidence/README.md)。
+- `evidence/`：已选取的中间结果、失败日志、配置、来源清单及本次迁移核验，详见 [证据说明](../evidence/README.md)。
 
 模型权重、数据集、安装环境、编译缓存与训练checkpoint没有复制进仓库。今后的 `env/`、`env-cache/`、`runs/`、`validation/` 默认忽略；需要归档的结果经选择后放入 `evidence/`。
 
@@ -25,7 +25,7 @@
 
 历史验证基础栈为Python3.12、容器Torch2.12.0a0/CUDA13.2/cuDNN9.21、NATTEN0.21.7对应wheel。最后一次等待器的预检因环境中无法导入Torch而退出；环境可能发生变化，恢复采集前必须重新核验解释器和依赖。本次迁移的CPU验证结果单独记录，不能替代训练/GPU验收。
 
-## 使用（收到GPU可用通知后再启动）
+## 使用（确认资源与环境后启动）
 
 脚本通过 `COSMOS_REPO` 定位框架，不再依赖本仓库位于 `plans/` 下。以下命令在本仓库根目录执行，Python应选择与原生Attention扩展匹配的训练环境。
 
@@ -60,7 +60,7 @@ python validate_reports.py evidence/validation/cuda-probe-001/reports --output v
 
 ## 四文件与边界
 
-有效run的 `reports/` 包含 `rank-0.json.gz`、`rank-0_kernel_details_report.csv`、`rank-0_kernel_summary.csv`、`rank-0_operator_list.csv`。上游FlagScale来源、固定SHA及许可证在 [references/README.md](references/README.md)。
+有效run的 `reports/` 包含 `rank-0.json.gz`、`rank-0_kernel_details_report.csv`、`rank-0_kernel_summary.csv`、`rank-0_operator_list.csv`。上游FlagScale来源、固定SHA及许可证在 [references/README.md](../references/README.md)。
 
 CSV排除通信和拷贝等事件；trace保留原始活动。时间百分比以已归属计算kernel累计时间为分母，并非端到端训练耗时占比。缺失shape/dtype保持空值，编译融合后的kernel不能凭名称还原未经观测的ATen操作。单rank短窗口仅代表实际执行到的变体。只有表格、训练完整性和归属质量均核验后才能标记为正式交付。
 

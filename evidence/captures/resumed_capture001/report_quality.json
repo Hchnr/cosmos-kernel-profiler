@@ -1,0 +1,222 @@
+{
+  "table_validation": "passed",
+  "rank": 0,
+  "detail_variants": 1534,
+  "operator_kernel_mappings": 182,
+  "operator_groups": 87,
+  "unique_report_kernels": 175,
+  "trace_cpu_ops": 139407,
+  "trace_kernel_events": 36223,
+  "trace_compute_kernel_events": 35496,
+  "trace_compute_kernel_time_us": 127866900.22300002,
+  "trace_communication_kernel_events": 727,
+  "trace_communication_kernel_time_us": 56733201.554000005,
+  "trace_memory_events": 11635,
+  "report_kernel_calls": 35496,
+  "report_kernel_time_us": 127866900.223,
+  "missing_metadata": {
+    "input_shapes": {
+      "variant_rows": 0,
+      "kernel_calls": 0,
+      "kernel_time_us": 0
+    },
+    "input_dtypes": {
+      "variant_rows": 12,
+      "kernel_calls": 2065,
+      "kernel_time_us": 394208.599
+    }
+  },
+  "kernel_name_count_mismatches": [],
+  "excess_report_kernel_names": [],
+  "phase_annotations": {
+    "kernel_list.forward": 6,
+    "kernel_list.backward": 6,
+    "kernel_list.optimizer": 3
+  },
+  "compile_timed_ranges": {},
+  "top_kernel_mappings": [
+    {
+      "custom_operator": "null",
+      "execution_operator": "flash_attn_3::bwd",
+      "kernel_name": "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnBwdSm90<flash::CollectiveMainloopBwdSm90<2, 2, 2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<80>, cute::C<128>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, true, false, true, 2, 1, 2, 1, false>, flash::CollectiveEpilogueBwdGQA<cute::tuple<cute::C<80>, cute::C<128>, cute::C<128> >, float, cutlass::arch::Sm90, 256, true, false>, flash::SingleTileScheduler<true, false, false, 128> > > >(flash::enable_sm90_or_later<flash::FlashAttnBwdSm90<flash::CollectiveMainloopBwdSm90<2, 2, 2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<80>, cute::C<128>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, true, false, true, 2, 1, 2, 1, false>, flash::CollectiveEpilogueBwdGQA<cute::tuple<cute::C<80>, cute::C<128>, cute::C<128> >, float, cutlass::arch::Sm90, 256, true, false>, flash::SingleTileScheduler<true, false, false, 128> > >::Params)",
+      "kernel_call_count": "216",
+      "kernel_time_us": "41879049.176",
+      "percent": "32.752%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "flash_attn_3::fwd",
+      "kernel_name": "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<128>, cute::C<176>, cute::C<128> >, 128, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, false, false, true, true, true, false, false>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<128>, cute::C<128>, cute::C<176> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 256, true, true, false, false>, flash::VarlenDynamicPersistentTileScheduler<128, 176, 256, 128, false, true, true, false, true, true> > > >(flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<128>, cute::C<176>, cute::C<128> >, 128, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, false, false, true, true, true, false, false>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<128>, cute::C<128>, cute::C<176> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 256, true, true, false, false>, flash::VarlenDynamicPersistentTileScheduler<128, 176, 256, 128, false, true, true, false, true, true> > >::Params)",
+      "kernel_call_count": "432",
+      "kernel_time_us": "33219800.113",
+      "percent": "25.980%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_192x192_64x4_2x1_v_bz_coopB_TNN",
+      "kernel_call_count": "1728",
+      "kernel_time_us": "12108099.169",
+      "percent": "9.469%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NTN",
+      "kernel_call_count": "648",
+      "kernel_time_us": "9801993.185",
+      "percent": "7.666%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_320x128_64x3_1x2_h_bz_coopB_NNT",
+      "kernel_call_count": "1296",
+      "kernel_time_us": "8889443.894",
+      "percent": "6.952%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_320x128_64x3_1x2_h_bz_coopB_TNT",
+      "kernel_call_count": "1080",
+      "kernel_time_us": "7285177.877",
+      "percent": "5.697%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_192x192_64x3_2x1_v_bz_coopB_NNN",
+      "kernel_call_count": "432",
+      "kernel_time_us": "3191411.232",
+      "percent": "2.496%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_256x128_64x4_1x2_h_bz_coopA_NTT",
+      "kernel_call_count": "864",
+      "kernel_time_us": "2523724.336",
+      "percent": "1.974%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_256x128_64x4_1x2_h_bz_coopA_TNT",
+      "kernel_call_count": "1944",
+      "kernel_time_us": "1450652.757",
+      "percent": "1.135%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "triton_poi_fused_mul_silu_silu_backward_12",
+      "kernel_name": "triton_poi_fused_mul_silu_silu_backward_12",
+      "kernel_call_count": "216",
+      "kernel_time_us": "1031155.215",
+      "percent": "0.806%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "triton_per_fused__to_copy_add_div_expand_mean_mul_pow_rsqrt_scalar_tensor_sum_unsqueeze_where_19",
+      "kernel_name": "triton_per_fused__to_copy_add_div_expand_mean_mul_pow_rsqrt_scalar_tensor_sum_unsqueeze_where_19",
+      "kernel_call_count": "216",
+      "kernel_time_us": "512647.181",
+      "percent": "0.401%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "triton_poi_fused_mul_silu_14",
+      "kernel_name": "triton_poi_fused_mul_silu_14",
+      "kernel_call_count": "216",
+      "kernel_time_us": "505719.664",
+      "percent": "0.396%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "triton_red_fused__to_copy_add_div_expand_mean_mul_pow_rsqrt_scalar_tensor_sum_unsqueeze_where_14",
+      "kernel_name": "triton_red_fused__to_copy_add_div_expand_mean_mul_pow_rsqrt_scalar_tensor_sum_unsqueeze_where_14",
+      "kernel_call_count": "216",
+      "kernel_time_us": "342799.601",
+      "percent": "0.268%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "void cutlass::Kernel2<cutlass_80_simt_sgemm_128x256_8x4_nt_align1>(cutlass_80_simt_sgemm_128x256_8x4_nt_align1::Params)",
+      "kernel_call_count": "8",
+      "kernel_time_us": "326041.196",
+      "percent": "0.255%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_256x128_64x4_1x2_h_bz_coopA_NNT",
+      "kernel_call_count": "1297",
+      "kernel_time_us": "323500.186",
+      "percent": "0.253%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "sm80_xmma_gemm_f32f32_f32f32_f32_nn_n_tilesize256x128x8_stage3_warpsize4x2x1_ffma_aligna4_alignc4_execute_kernel__5x_cublas",
+      "kernel_call_count": "4",
+      "kernel_time_us": "320143.276",
+      "percent": "0.250%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "triton_red_fused__to_copy_add_mean_mul_new_zeros_pow_rsqrt_scalar_tensor_unsqueeze_where_9",
+      "kernel_name": "triton_red_fused__to_copy_add_mean_mul_new_zeros_pow_rsqrt_scalar_tensor_unsqueeze_where_9",
+      "kernel_call_count": "216",
+      "kernel_time_us": "282441.083",
+      "percent": "0.221%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::addmm",
+      "kernel_name": "sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize128x128x8_stage3_warpsize2x2x1_ffma_aligna4_alignc4_execute_kernel__5x_cublas",
+      "kernel_call_count": "8",
+      "kernel_time_us": "274443.413",
+      "percent": "0.215%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::split_with_sizes_copy",
+      "kernel_name": "at::native::detail::split_with_sizes_copy_out_contiguous_no_cast_kernel(char**, char**, long*, long*, long*, long, long)",
+      "kernel_call_count": "438",
+      "kernel_time_us": "259986.495",
+      "percent": "0.203%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "flash_attn_3::bwd",
+      "kernel_name": "void cutlass::device_kernel<flash::FlashAttnBwdPreprocess<cute::tuple<cute::C<80>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, true> >(flash::FlashAttnBwdPreprocess<cute::tuple<cute::C<80>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, true>::Params)",
+      "kernel_call_count": "216",
+      "kernel_time_us": "258890.014",
+      "percent": "0.202%"
+    }
+  ],
+  "files": [
+    {
+      "name": "rank-0.json.gz",
+      "bytes": 11483570,
+      "sha256": "21db4ac35dcf73c355cdf1ee4a97ddaa12b42871fb73f84f2857eee0b32ac09f"
+    },
+    {
+      "name": "rank-0_kernel_details_report.csv",
+      "bytes": 990433,
+      "sha256": "1590d8f420e3e943cecf4ce65f70157c86647935fcdc8c301ddaa540e7ed1d0d"
+    },
+    {
+      "name": "rank-0_kernel_summary.csv",
+      "bytes": 69077,
+      "sha256": "b805ec8c830e829de7c01c0279e974263af2a9262979989417421154158a9942"
+    },
+    {
+      "name": "rank-0_operator_list.csv",
+      "bytes": 67387,
+      "sha256": "db09e6fa78ec7db9946157c981d73661683d6eccc1f87e60c38a9b8e6e44f3a6"
+    }
+  ],
+  "coverage_note": "GPU classification by kernel name; CPU communication-parent filtering can also exclude kernels. Count agreement is a coverage check, not independent proof of exact event attribution."
+}

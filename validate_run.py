@@ -101,11 +101,15 @@ def validate_run(run):
             )
     active_losses = active_losses_by_rank["0"]
     datasets, conditions, modes, shapes = Counter(), Counter(), Counter(), Counter()
+    sample_id_prefixes = Counter()
     sample_count = 0
     for batch_record in captured:
         batch = batch_record.get("data", batch_record)
         datasets.update(
             batch.get("source_dataset_names") or batch.get("dataset_names", [])
+        )
+        sample_id_prefixes.update(
+            str(value).partition(":")[0] for value in batch.get("local_sample_ids", [])
         )
         modes.update(batch.get("vision_input_mode", []))
         sample_count += batch.get("sample_count_from_ids", 0)
@@ -124,7 +128,10 @@ def validate_run(run):
         "active_losses": active_losses,
         "active_losses_by_rank": active_losses_by_rank,
         "captured_samples": sample_count,
-        "captured_dataset_sample_counts": dict(datasets),
+        "captured_dataset_label_occurrences": dict(datasets),
+        "captured_sample_id_prefix_counts": dict(sample_id_prefixes),
+        "dataset_count_note": "Dataset labels are batch metadata, not one entry per sample. "
+        "Sample-ID prefixes are counted separately from the observed local_sample_ids.",
         "captured_conditions": dict(conditions),
         "captured_vision_input_modes": dict(modes),
         "captured_latent_shapes": dict(shapes),

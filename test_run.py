@@ -54,6 +54,7 @@ class RunValidationTest(unittest.TestCase):
                                 "source_dataset_names": [],
                                 "vision_input_mode": ["offline"],
                                 "sample_count_from_ids": 1,
+                                "local_sample_ids": ["usr:sample"],
                                 "sequence_plans": [{"vision_conditioning": "t2v"}],
                                 "video_latent_shapes": [[[48, 150, 40, 40]]],
                             },
@@ -73,8 +74,9 @@ class RunValidationTest(unittest.TestCase):
     def test_nested_data_and_all_rank_losses(self):
         result = validate_run(self.run)
         self.assertEqual(result["captured_samples"], 4)
-        self.assertEqual(result["captured_dataset_sample_counts"], {"usr:1": 4})
+        self.assertEqual(result["captured_dataset_label_occurrences"], {"usr:1": 4})
         self.assertEqual(result["captured_conditions"], {"t2v": 4})
+        self.assertEqual(result["captured_sample_id_prefix_counts"], {"usr": 4})
         self.assertEqual(len(result["active_losses_by_rank"]), 8)
 
     def test_nonfinite_other_rank_rejected(self):

@@ -15,4 +15,4 @@
 - `runs/usr_capture005/`：恢复成功，因另一组8卡作业启动而主动中止；本次进程已清理。
 - `validation/usr_capture006-attention.log`：等待资源后，预检无法导入Torch；未启动正式训练。
 
-**没有一次正式USR active窗口完成，因而本仓库尚无最终交付清单。** 大型环境、缓存、权重、数据和checkpoint仍在原位置，没有打包或提交。
+**上述为迁移时的历史证据，当时尚未完成正式采集；后续已完成的正式交付见[captures/resumed_capture001](captures/resumed_capture001/README.md)。** 大型环境、缓存、权重、数据和checkpoint仍在原位置，没有打包或提交。

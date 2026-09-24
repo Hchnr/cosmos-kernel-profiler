@@ -1,0 +1,308 @@
+{
+  "status": "passed",
+  "method": "Independently match sampled GPU kernels to CPU ops by trace External id, across GEMM, FA3 forward/backward, compiled pointwise and optimizer.",
+  "sampled_correlations": {
+    "aten::mm": {
+      "kernel_name": "nvjet_sm90_tst_128x192_64x5_2x1_v_bz_coopB_TNN",
+      "external_id": 1866,
+      "correlation": 517024,
+      "cpu_input_dims": [
+        [
+          3072,
+          4096
+        ],
+        [
+          4096,
+          1024
+        ],
+        [
+          3072,
+          1024
+        ]
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16"
+      ]
+    },
+    "flash_attn_3::fwd": {
+      "kernel_name": "void flash::prepare_varlen_num_blocks_kernel<1, true>(int, int, int, int const*, int const*, int const*, int const*, int const*, int const*, int, int, int, int, int, cutlass::FastDivmod, cutlass::FastDivmod, int*, int*, int*, int*, int*, bool, bool, bool, int)",
+      "external_id": 1872,
+      "correlation": 517120,
+      "cpu_input_dims": [
+        [
+          3072,
+          32,
+          128
+        ],
+        [
+          3072,
+          8,
+          128
+        ],
+        [
+          3072,
+          8,
+          128
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          3
+        ],
+        [
+          3
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "",
+        "",
+        "",
+        "",
+        "int",
+        "int",
+        "",
+        "",
+        "",
+        "Scalar",
+        "Scalar",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "",
+        "Scalar",
+        "",
+        "Scalar"
+      ]
+    },
+    "aten::_fused_adamw_": {
+      "kernel_name": "void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::FusedOptimizerTensorListMetadata<4>, at::native::(anonymous namespace)::FusedAdamMathFunctor<c10::BFloat16, 4, (at::native::ADAM_MODE)1, false>, float const*, double, double, double, double, double, bool, float const*, float const*>(at::native::(anonymous namespace)::FusedOptimizerTensorListMetadata<4>, at::native::(anonymous namespace)::FusedAdamMathFunctor<c10::BFloat16, 4, (at::native::ADAM_MODE)1, false>, float const*, double, double, double, double, double, bool, float const*, float const*)",
+      "external_id": 49881,
+      "correlation": 771631,
+      "cpu_input_dims": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "",
+        ""
+      ]
+    },
+    "triton_poi_fused_mul_silu_silu_backward_12": {
+      "kernel_name": "triton_poi_fused_mul_silu_silu_backward_12",
+      "external_id": 88137,
+      "correlation": 962755,
+      "cpu_input_dims": [
+        [
+          98304,
+          12288
+        ],
+        [
+          98304,
+          12288
+        ],
+        [
+          98304,
+          12288
+        ],
+        [
+          98304,
+          12288
+        ],
+        [
+          98304,
+          12288
+        ],
+        [
+          98304,
+          12288
+        ],
+        []
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "Scalar"
+      ]
+    },
+    "flash_attn_3::bwd": {
+      "kernel_name": "void cutlass::device_kernel<flash::FlashAttnBwdPreprocess<cute::tuple<cute::C<80>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, true> >(flash::FlashAttnBwdPreprocess<cute::tuple<cute::C<80>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, true>::Params)",
+      "external_id": 88152,
+      "correlation": 963280,
+      "cpu_input_dims": [
+        [
+          98304,
+          32,
+          128
+        ],
+        [
+          98304,
+          32,
+          128
+        ],
+        [
+          101376,
+          8,
+          128
+        ],
+        [
+          101376,
+          8,
+          128
+        ],
+        [
+          98304,
+          32,
+          128
+        ],
+        [
+          32,
+          98304
+        ],
+        [
+          98304,
+          32,
+          128
+        ],
+        [
+          101376,
+          8,
+          128
+        ],
+        [
+          101376,
+          8,
+          128
+        ],
+        [
+          9
+        ],
+        [
+          9
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "float",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "int",
+        "int",
+        "",
+        "",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar"
+      ]
+    }
+  },
+  "dtype_missing_kernel_calls_by_operator": {
+    "aten::_chunk_cat": 222,
+    "aten::_foreach_copy_": 1344,
+    "aten::cat": 61,
+    "aten::split_with_sizes_copy": 438
+  },
+  "dtype_missing_time_percent": 0.3082960471494185,
+  "limitations": [
+    "TensorList and scalar input arguments may be represented as empty dimensions; nonempty input_shapes does not mean every tensor-list element shape is available.",
+    "All custom_operator values remain upstream null where no recognized Megatron/TE boundary exists.",
+    "Kernel-name count/time agreement does not prove every event attribution independently; representative External id links are checked here."
+  ],
+  "captured_sample_metadata_count_check": "33 sample IDs equal summed batch_size, conditions and observed source prefixes"
+}

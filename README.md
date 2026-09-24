@@ -37,7 +37,7 @@ python launch_profile.py --run-id <run-id> --dryrun
 
 ## 当前状态
 
-仓库包含迁移过程中的脚本、历史运行记录和验证证据。`evidence/` 中的结果主要用于说明工具行为和迁移过程；正式训练窗口是否完成，应以对应运行目录中的元数据和验证结果为准，不能仅凭局部探针结果判断。
+已完成原USR配置、DP shard=8的正式采集 `resumed_capture001`，并通过训练完整性、四文件一致性及kernel覆盖验收。结果和四份文件见 [正式采集结果](evidence/captures/resumed_capture001/README.md)。历史小型探针仍保留在evidence/validation，勿与正式报告混用。
 
 ## 说明
 

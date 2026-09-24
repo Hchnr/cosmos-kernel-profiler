@@ -1,0 +1,30 @@
+{
+  "run_id": "resumed_capture001",
+  "status": "validated",
+  "framework_git_sha": "872f6bf2888c8899c1599dda8c722e1c551684fa",
+  "collection_git_sha": "8d573c2fa9144da8431429888888ecc0e6455ede",
+  "validation_base_git_sha": "f23ceebb167bbffc567e754211a3f5a40ca3af5f",
+  "files": [
+    {
+      "path": "reports/rank-0.json.gz",
+      "bytes": 11483570,
+      "sha256": "21db4ac35dcf73c355cdf1ee4a97ddaa12b42871fb73f84f2857eee0b32ac09f"
+    },
+    {
+      "path": "reports/rank-0_kernel_details_report.csv",
+      "bytes": 990433,
+      "sha256": "1590d8f420e3e943cecf4ce65f70157c86647935fcdc8c301ddaa540e7ed1d0d"
+    },
+    {
+      "path": "reports/rank-0_kernel_summary.csv",
+      "bytes": 69077,
+      "sha256": "b805ec8c830e829de7c01c0279e974263af2a9262979989417421154158a9942"
+    },
+    {
+      "path": "reports/rank-0_operator_list.csv",
+      "bytes": 67387,
+      "sha256": "db09e6fa78ec7db9946157c981d73661683d6eccc1f87e60c38a9b8e6e44f3a6"
+    }
+  ],
+  "note": "The four reports are unmodified copies of the successful run. Auxiliary validation scripts and archive completion are included in the commit containing this manifest."
+}

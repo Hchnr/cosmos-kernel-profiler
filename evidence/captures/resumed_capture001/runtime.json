@@ -1,0 +1,16 @@
+{
+  "python": "3.13.14",
+  "packages": {
+    "torch": "2.10.0+cu130",
+    "triton": "3.6.0",
+    "natten": null,
+    "flash-attn": null,
+    "flash-attn-3-nv": "1.0.3+cu130.torch210",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.2"
+  },
+  "cuda": "13.0",
+  "cudnn": 91501,
+  "flash3_supported": true,
+  "natten_supported": false
+}
