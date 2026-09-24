@@ -48,6 +48,7 @@ def main():
             "triton",
             "natten",
             "flash-attn",
+            "flash-attn-3-nv",
             "transformers",
             "huggingface-hub",
         ):

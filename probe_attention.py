@@ -1,6 +1,7 @@
 """Check the actual compiled ragged attention backend before loading the checkpoint."""
 
 import argparse
+import importlib.metadata
 import json
 import os
 import subprocess
@@ -40,7 +41,6 @@ def main():
     args.output.mkdir(parents=True, exist_ok=False)
     os.environ["TORCHINDUCTOR_CACHE_DIR"] = str(args.output / "inductor")
     os.environ["TRITON_CACHE_DIR"] = str(args.output / "triton")
-    import natten
     import torch
 
     from cosmos_framework.model.attention import attention
@@ -125,13 +125,19 @@ def main():
                 "compiled_forward_backward_passed": True,
             }
         )
+    versions = {}
+    for name in ("natten", "flash-attn-3-nv"):
+        try:
+            versions[name] = importlib.metadata.version(name)
+        except importlib.metadata.PackageNotFoundError:
+            versions[name] = None
     summary = {
         "shared_numerical_check": args.shared_numerical_check,
         "cuda_visible_devices": os.environ.get("CUDA_VISIBLE_DEVICES"),
         "torch": torch.__version__,
         "cuda": torch.version.cuda,
         "cudnn": torch.backends.cudnn.version(),
-        "natten": natten.__version__,
+        "attention_packages": versions,
         "cases": results,
     }
     (args.output / "result.json").write_text(json.dumps(summary, indent=2) + "\n")
