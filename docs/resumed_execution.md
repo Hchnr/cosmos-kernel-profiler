@@ -19,3 +19,9 @@
 
 - resumed_preflight003在wandb导入时缺少protobuf；已按锁定版本补齐6.33.5。预检004返回0，完整配置构建成功，配置保存在runs/resumed_preflight004/job/kernel-list/v0.2.3c/profile/config.yaml。
 - 接下来使用新目录resumed_capture001运行8卡。已通过当前环境的FA3数值检查和四文件CUDA探针，保持原始USR长度/采样/GA/compile/full-state，仅按计划覆盖并行度和窗口。
+
+## resumed_capture001首步通过
+
+- torchrun PID558032；runtime.json确认Python3.13.14/Torch2.10.0+cu130/FA3 1.0.3+cu130.torch210，8个CUDA主进程。
+- 17:45:14 CST完整恢复model/optim/scheduler/trainer到12600；17:46:46 CST全部rank完成12601，rank0 loss0.1356，其他rank loss亦有限。初始编译和完整前后向已通过，显存约70–73GiB，无OOM。
+- 正在进行20步预热，尚未到active窗口；先前的checkpoint路径、IPC、缺失varlen后端问题未复现。
