@@ -1,65 +1,44 @@
-# Cosmos kernel profiler
+# Cosmos Kernel Profiler
 
-独立保存 Cosmos 训练算子清单的采集实现、验证工具和历史证据。该仓库是本地 Git 仓库，没有配置远程，也未发布。原 Cosmos 工作树和 `plans/` 文件保留原样。
+Cosmos Kernel Profiler 是一个面向 Cosmos 训练任务的算子与 kernel 分析工具集。它围绕训练过程中的性能数据采集、结果整理和质量验证展开，帮助使用者了解实际执行了哪些计算 kernel，以及这些 kernel 对应的算子、形状和数据类型等信息。
 
-**当前状态：正式 USR 采集尚未完成，不能把 evidence 中的小型探针报告作为正式交付。用户已要求等待 GPU 资源通知，本次整理不启动训练、GPU 检查或资源等待器。**
+这个仓库独立于 Cosmos 框架源码工作：通过外部框架 checkout 和启动配置运行目标任务，并在进程内接入 profiler。因此，分析工具和历史结果可以单独维护，不需要把实验性改动直接放进训练框架。
 
-## 内容
+## 能力概览
 
-- `launch_profile.py`、`run_profile.py`、`workspace.py`：读取外部 Cosmos checkout 的原始 TOML，以覆盖参数启动8卡训练；通过进程内替换接入 profiler，不修改框架源码。
-- `profile_hook.py`、`phase_audit.py`、`profiler_reports.py`：单窗口采集、训练阶段标记、FlagScale 四文件导出。
-- `validate_reports.py`、`validate_run.py`：表格统计、trace 覆盖及完整训练窗口验收。
-- `checkpoint_compat.py`：Python3.12读取较新Python写入的Path checkpoint元数据。
-- `probe_profiler.py`、`probe_attention.py`、`test_*.py`：小型CUDA探针、编译Attention数值验证和CPU单元检查。
-- `wait_and_launch.py`：资源等待工具，只有手动执行才会运行；空闲检测不等于独占资源预留。
-- `docs/`：迁移前的计划、过程记录和启动说明历史快照。
-- `evidence/`：已选取的中间结果、失败日志、配置、来源清单及本次迁移核验，详见 [证据说明](evidence/README.md)。
+- 在受控训练窗口中采集计算 kernel 和原始 trace。
+- 标记训练阶段，区分预热、采集和其他运行区间。
+- 将 profiler 输出整理为便于查看和后处理的报告文件。
+- 检查报告覆盖范围、字段质量和训练运行完整性。
+- 提供 checkpoint 兼容处理及 Attention、CUDA 等局部探针。
+- 保存配置、运行元数据和验证证据，支持复核分析过程。
 
-模型权重、数据集、安装环境、编译缓存与训练checkpoint没有复制进仓库。今后的 `env/`、`env-cache/`、`runs/`、`validation/` 默认忽略；需要归档的结果经选择后放入 `evidence/`。
+## 项目结构
 
-## 目标负载
+- `launch_profile.py`、`run_profile.py`：准备并启动 profiling 任务。
+- `profile_hook.py`、`phase_audit.py`、`profiler_reports.py`：采集、阶段标记和报告生成的核心逻辑。
+- `validate_reports.py`、`validate_run.py`：报告和运行结果的验证工具。
+- `probe_*.py`、`test_*.py`：局部运行探针和自动化检查。
+- `checkpoint_compat.py`、`workspace.py`：运行环境和 checkpoint 相关辅助逻辑。
+- `docs/`：详细流程、迁移记录和历史说明。
+- `evidence/`：经过选择的运行结果、配置和验证证据。
+- `references/`：上游工具来源与许可证信息。
 
-外部原始配方：`examples/toml/sft_config/vision_sft_nano_usr_128gpu_fixed_static_und3k_gen96k_ga2.toml`。
+## 基本工作方式
 
-保留Nano/BF16/two_way、UND3072/GEN98304、GA2、480p/offline VAE、29份USR数据及原权重、language static compile/full AC、完整训练状态恢复12600。必要覆盖为单机8卡、DP shard8/replicate1/CP1、关闭外部上传和验证、隔离输出，以及20步等待+2步warmup+3步active。正式采集目标为rank0、完成step12623–12625。
-
-历史验证基础栈为Python3.12、容器Torch2.12.0a0/CUDA13.2/cuDNN9.21、NATTEN0.21.7对应wheel。最后一次等待器的预检因环境中无法导入Torch而退出；环境可能发生变化，恢复采集前必须重新核验解释器和依赖。本次迁移的CPU验证结果单独记录，不能替代训练/GPU验收。
-
-## 使用（收到GPU可用通知后再启动）
-
-脚本通过 `COSMOS_REPO` 定位框架，不再依赖本仓库位于 `plans/` 下。以下命令在本仓库根目录执行，Python应选择与原生Attention扩展匹配的训练环境。
-
-```bash
-export COSMOS_REPO=/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance
-export LD_LIBRARY_PATH=''
-export PYTHONDONTWRITEBYTECODE=1
-export PYTHONPATH="$PWD/env:$PWD:$COSMOS_REPO"
-
-# 仅安装隔离overlay；不会替换基础Torch，不能直接用于其他Torch/CUDA ABI。
-UV_CACHE_DIR="$PWD/env-cache" uv pip install --target "$PWD/env" --no-deps -r requirements-overlay.txt
-
-python launch_profile.py --run-id preflight_new --dryrun
-python launch_profile.py --run-id capture_new
-# 或收到资源通知后手动启动等待器：
-# python wait_and_launch.py --run-id capture_new --probe-attention --idle-observations 11
-```
-
-每次必须使用新的run_id。运行输出放本仓库 `runs/<run_id>/`，资源等待及独立探针放 `validation/`。启动器保留原模型/数据的共享路径；在其他机器复现需要相同资产或明确修改相应配置。metadata同时记录框架和采集工具两份Git SHA，记录脚本指纹、原配方指纹、命令和受控环境变量。短TMPDIR链接只用于满足UNIX socket路径限制，临时文件仍位于本仓库run目录。
-
-CPU检查及报告验收：
+项目通常依赖一个外部 Cosmos 源码 checkout，以及与目标训练任务匹配的 Python、PyTorch、CUDA 和扩展环境。启动器通过 `COSMOS_REPO` 定位外部源码，运行前生成独立的运行目录，随后将采集结果和元数据写入该目录。
 
 ```bash
-mkdir -p validation
-TMPDIR="$PWD/validation" python test_reports.py -v
-python test_hook.py -v
-python validate_reports.py evidence/validation/cuda-probe-001/reports --output validation/toy_quality.json
-# 正式训练成功退出后：
-# python validate_reports.py runs/capture_new/reports --output runs/capture_new/report_quality.json
-# python validate_run.py runs/capture_new
+export COSMOS_REPO=/path/to/cosmos-framework
+python launch_profile.py --run-id <run-id> --dryrun
 ```
 
-## 四文件与边界
+完成环境和资源确认后，再按目标任务启动正式采集。详细参数、环境要求、报告格式和验收规则见 [详细采集流程](docs/profiling-workflow.md)。
 
-有效run的 `reports/` 包含 `rank-0.json.gz`、`rank-0_kernel_details_report.csv`、`rank-0_kernel_summary.csv`、`rank-0_operator_list.csv`。上游FlagScale来源、固定SHA及许可证在 [references/README.md](references/README.md)。
+## 当前状态
 
-CSV排除通信和拷贝等事件；trace保留原始活动。时间百分比以已归属计算kernel累计时间为分母，并非端到端训练耗时占比。缺失shape/dtype保持空值，编译融合后的kernel不能凭名称还原未经观测的ATen操作。单rank短窗口仅代表实际执行到的变体。只有表格、训练完整性和归属质量均核验后才能标记为正式交付。
+仓库包含迁移过程中的脚本、历史运行记录和验证证据。`evidence/` 中的结果主要用于说明工具行为和迁移过程；正式训练窗口是否完成，应以对应运行目录中的元数据和验证结果为准，不能仅凭局部探针结果判断。
+
+## 说明
+
+模型权重、数据集、训练 checkpoint、编译缓存和完整运行环境不随仓库分发。复现实验需要准备相应资产，并根据机器环境调整外部源码路径和启动配置。
