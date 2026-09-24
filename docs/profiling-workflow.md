@@ -63,3 +63,7 @@ python validate_reports.py evidence/validation/cuda-probe-001/reports --output v
 有效run的 `reports/` 包含 `rank-0.json.gz`、`rank-0_kernel_details_report.csv`、`rank-0_kernel_summary.csv`、`rank-0_operator_list.csv`。上游FlagScale来源、固定SHA及许可证在 [references/README.md](references/README.md)。
 
 CSV排除通信和拷贝等事件；trace保留原始活动。时间百分比以已归属计算kernel累计时间为分母，并非端到端训练耗时占比。缺失shape/dtype保持空值，编译融合后的kernel不能凭名称还原未经观测的ATen操作。单rank短窗口仅代表实际执行到的变体。只有表格、训练完整性和归属质量均核验后才能标记为正式交付。
+
+## 恢复执行的环境变更（2026-09-24）
+
+当前基础解释器已切换到Python3.13/Torch2.10.0+cu130/CUDA13.0，使用 `requirements-overlay-cu130-torch210.txt`，其中FA3为框架uv.lock固定的1.0.3+cu130.torch210 ABI3 wheel。不要在此环境安装上文旧的Python3.12/Torch2.12 NATTEN wheel。继续执行的记录见 [resumed_execution.md](resumed_execution.md)。基础环境不同，需先重新检查ABI和局部数值验证，再启动正式训练。

@@ -13,3 +13,4 @@
 - FA3 causal packed GQA和noncausal异长packed GQA的fullgraph编译前向/反向、缓存路径均通过，与FP32参考的最大输出绝对误差0.0082207/0.0044644；validation/attention-fa3-001/result.json。
 - Torch2.10的真实CUDA小型profiler探针通过，四文件导出24次计算kernel，validation/cuda-probe-torch210-001。7项CPU检查再次通过。
 - resumed_preflight001因新基础环境缺少python-dateutil失败；检查multi-storage-client的运行依赖后，按框架uv.lock在overlay补齐16个包（含wandb等训练导入依赖），未更换系统包。第二次预检使用新run_id保留旧日志。
+- resumed_preflight002继续暴露boto3缺失。新容器缺少原容器预装的训练库，按锁定版本补齐对象存储、Parquet/数据处理、Qwen图像处理和日志的必要导入依赖；Torchvision固定0.25.0+cu130以匹配Torch2.10。安装清单追加至当前环境requirements文件，所有包仅落在env目录。
