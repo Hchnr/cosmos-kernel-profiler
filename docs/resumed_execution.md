@@ -36,3 +36,8 @@
 
 - 17:53:19 CST全部rank完成12610（新增10步），rank0 loss0.1884；显存约72GiB，无OOM、异常或重编译告警。
 - 日志的Warmup x/50来自原框架iter_speed回调（包含每步末尾CUDA同步），并非profiler调度。本次仍采局部20/2/3窗口；四文件用于算子清单，不将这些带原回调/采集开销的耗时表述为无侵入吞吐基准。
+
+## 进入profiler窗口
+
+- 18:00:35 CST完成12620，rank0 loss0.1489，20个等待step结束。此前8rank中途样本检查确认world8/shard8/replicate1/CP1、physical UND3072/GEN98304，所有loss有限。
+- 开始局部step21–22的profiler warmup，随后局部23–25 active；运行保持原长度，无缩短序列或关闭compile的覆盖。
