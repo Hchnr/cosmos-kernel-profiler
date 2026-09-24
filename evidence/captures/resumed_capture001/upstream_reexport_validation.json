@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "collection_exporter_sha256": "0c6c58a3a1b4674a0f0a57d788959b42623446c4951865da6589ceda64c87627",
+  "upstream_exporter_sha256": "a147184fe5c172eb06e26c18825db89b60f2316c7d1c2c133aeb44e027d8dd29",
+  "exporter_ast_identical": true,
+  "checks": [
+    {
+      "file": "rank-0_kernel_details_report.csv",
+      "sha256": "1590d8f420e3e943cecf4ce65f70157c86647935fcdc8c301ddaa540e7ed1d0d",
+      "byte_identical": true
+    },
+    {
+      "file": "rank-0_kernel_summary.csv",
+      "sha256": "b805ec8c830e829de7c01c0279e974263af2a9262979989417421154158a9942",
+      "byte_identical": true
+    },
+    {
+      "file": "rank-0_operator_list.csv",
+      "sha256": "db09e6fa78ec7db9946157c981d73661683d6eccc1f87e60c38a9b8e6e44f3a6",
+      "byte_identical": true
+    }
+  ],
+  "note": "The collection exporter had formatting-only differences introduced during migration. Exact upstream file restored, all three CSV files re-export byte-identically from saved events and trace."
+}

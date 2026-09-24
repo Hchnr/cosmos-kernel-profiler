@@ -7,71 +7,30 @@ from collections import defaultdict, deque
 from pathlib import Path
 
 DETAIL_FIELDS = [
-    "custom_operator",
-    "execution_operator",
-    "kernel_name",
-    "variant_index",
-    "mapping_status",
-    "input_shapes",
-    "input_dtypes",
-    "candidate_operators",
-    "kernel_event_count",
-    "kernel_time_us",
+    "custom_operator", "execution_operator", "kernel_name", "variant_index", "mapping_status",
+    "input_shapes", "input_dtypes", "candidate_operators",
+    "kernel_event_count", "kernel_time_us",
 ]
 SUMMARY_FIELDS = [
-    "custom_operator",
-    "execution_operator",
-    "kernel_name",
-    "kernel_call_count",
-    "kernel_time_us",
-    "percent",
+    "custom_operator", "execution_operator", "kernel_name", "kernel_call_count",
+    "kernel_time_us", "percent",
 ]
 OPERATOR_FIELDS = [
-    "operator_id",
-    "custom_operator",
-    "execution_operator",
-    "operator_kind",
-    "kernel_name",
+    "operator_id", "custom_operator", "execution_operator", "operator_kind", "kernel_name",
 ]
 
 # These are backend/library identities, not generic tensor operation names. Keep
 # them centralized so support for another communication backend is a data-only change.
 COMMUNICATION_OPERATOR_MARKERS = (
-    "record_param_comms",
-    "torch.distributed",
-    "distributed::",
-    "_c10d",
-    "c10d::",
-    "symm_mem::",
-    "custom_ar::",
-    "processgroup",
-    "allreduce",
-    "all_reduce",
-    "allgather",
-    "all_gather",
-    "reducescatter",
-    "reduce_scatter",
-    "alltoall",
-    "all_to_all",
-    "sendrecv",
-    "sequenceparallelregion",
+    "record_param_comms", "torch.distributed", "distributed::", "_c10d", "c10d::",
+    "symm_mem::", "custom_ar::", "processgroup", "allreduce", "all_reduce",
+    "allgather", "all_gather", "reducescatter", "reduce_scatter", "alltoall",
+    "all_to_all", "sendrecv", "sequenceparallelregion",
 )
 COMMUNICATION_KERNEL_MARKERS = (
-    "nccl",
-    "rccl",
-    "hccl",
-    "oneccl",
-    "custom_all_reduce",
-    "cross_device_reduce",
-    "allreduce",
-    "all_reduce",
-    "allgather",
-    "all_gather",
-    "reducescatter",
-    "reduce_scatter",
-    "alltoall",
-    "all_to_all",
-    "sendrecv",
+    "nccl", "rccl", "hccl", "oneccl", "custom_all_reduce", "cross_device_reduce",
+    "allreduce", "all_reduce", "allgather", "all_gather", "reducescatter",
+    "reduce_scatter", "alltoall", "all_to_all", "sendrecv",
 )
 NON_COMPUTE_KERNEL_MARKERS = ("memcpy", "memset")
 NON_COMPUTE_EVENT_NAMES = {
@@ -80,141 +39,60 @@ NON_COMPUTE_EVENT_NAMES = {
 }
 TORCH_COMPILE_PREFIXES = ("triton_", "CompiledFunction")
 EXECUTION_BACKENDS = {
-    "cuBLASLt",
-    "cuBLAS",
-    "CUTLASS",
-    "TransformerEngine",
-    "Triton",
-    "FlashAttention",
-    "cuDNN",
-    "CUDA",
+    "cuBLASLt", "cuBLAS", "CUTLASS", "TransformerEngine", "Triton",
+    "FlashAttention", "cuDNN", "CUDA",
 }
 FRAMEWORK_OPERATOR_PREFIXES = (
-    "aten::",
-    "autograd::",
-    "torch::",
-    "prims::",
-    "ProfilerStep#",
-    "TorchDynamo ",
-    "Torch-Compiled Region",
-    "CompiledFunction",
-    "triton_",
+    "aten::", "autograd::", "torch::", "prims::", "ProfilerStep#",
+    "TorchDynamo ", "Torch-Compiled Region", "CompiledFunction", "triton_",
 )
 
 # Profiler-visible autograd classes scanned from TE-FL 21b4b4b1. Keep the full
 # inventory auditable, then exclude infrastructure and metadata-only helpers.
-TE_AUTOGRAD_FUNCTIONS = frozenset(
-    {
-        "AttnFuncFL",
-        "FP8EmulationFunc",
-        "_PrepareQKVForFA",
-        "FusedAttnFunc",
-        "AttnFuncWithCPAndKVP2P",
-        "AttnFuncWithCPAndKVAllGather",
-        "AttnFuncWithCPAndQKVOA2A",
-        "FusedAttentionWithScoreModFunc",
-        "ScaledUpperTriangMaskedSoftmax",
-        "ScaledAlignedCausalMaskedSoftmax",
-        "ScaledMaskedSoftmax",
-        "ScaledSoftmax",
-        "PackTensors",
-        "UnpackTensor",
-        "ConvertTHDtoBSHD",
-        "ConvertBSHDtoTHD",
-        "FusedRoPEFunc",
-        "FusedQKVRoPEFunc",
-        "CrossEntropyFunction",
-        "_Fp8Padding",
-        "_Fp8Unpadding",
-        "_GroupedLinear",
-        "_LayerNormLinear",
-        "_LayerNormMLP",
-        "_Linear",
-        "_OperationFuserAutogradFunction",
-        "FusedTopkScoreFunction",
-        "FusedComputeScoresForMoEAuxLoss",
-        "FusedAuxLoss",
-        "_QuantizeFunc",
-        "_FromFloat8Func",
-        "_FromMXFP8Func",
-        "_FromNVFP4Func",
-        "mHCProjectionOp",
-        "mHCScaleFusedOp",
-        "mHCSinkhornOp",
-        "mHCAggregateOp",
-        "mHCExpandCombineOp",
-        "SplitAlongDim",
-        "AllGatherFunc",
-        "GroupCommitFunction",
-        "_CheckpointFunction",
-        "_EpDispatch",
-        "_EpCombine",
-        "Graphed",
-        "_NoopCatFunc",
-        "_IdentityFunc",
-        "_ViewFunc",
-        "_ReshapeFunc",
-        "_GroupedIdentityFunc",
-    }
+TE_AUTOGRAD_FUNCTIONS = frozenset({
+    "AttnFuncFL", "FP8EmulationFunc", "_PrepareQKVForFA", "FusedAttnFunc",
+    "AttnFuncWithCPAndKVP2P", "AttnFuncWithCPAndKVAllGather",
+    "AttnFuncWithCPAndQKVOA2A", "FusedAttentionWithScoreModFunc",
+    "ScaledUpperTriangMaskedSoftmax", "ScaledAlignedCausalMaskedSoftmax",
+    "ScaledMaskedSoftmax", "ScaledSoftmax", "PackTensors", "UnpackTensor",
+    "ConvertTHDtoBSHD", "ConvertBSHDtoTHD", "FusedRoPEFunc", "FusedQKVRoPEFunc",
+    "CrossEntropyFunction", "_Fp8Padding", "_Fp8Unpadding", "_GroupedLinear",
+    "_LayerNormLinear", "_LayerNormMLP", "_Linear",
+    "_OperationFuserAutogradFunction", "FusedTopkScoreFunction",
+    "FusedComputeScoresForMoEAuxLoss", "FusedAuxLoss", "_QuantizeFunc",
+    "_FromFloat8Func", "_FromMXFP8Func", "_FromNVFP4Func", "mHCProjectionOp",
+    "mHCScaleFusedOp", "mHCSinkhornOp", "mHCAggregateOp",
+    "mHCExpandCombineOp", "SplitAlongDim", "AllGatherFunc",
+    "GroupCommitFunction", "_CheckpointFunction", "_EpDispatch", "_EpCombine",
+    "Graphed", "_NoopCatFunc", "_IdentityFunc", "_ViewFunc", "_ReshapeFunc",
+    "_GroupedIdentityFunc",
+})
+TE_NON_COMPUTE_AUTOGRAD_FUNCTIONS = frozenset({
+    "AllGatherFunc", "GroupCommitFunction", "_CheckpointFunction", "_EpDispatch",
+    "_EpCombine", "Graphed", "_NoopCatFunc", "_IdentityFunc", "_ViewFunc",
+    "_ReshapeFunc", "_GroupedIdentityFunc",
+})
+TE_CUSTOM_AUTOGRAD_FUNCTIONS = (
+    TE_AUTOGRAD_FUNCTIONS - TE_NON_COMPUTE_AUTOGRAD_FUNCTIONS
 )
-TE_NON_COMPUTE_AUTOGRAD_FUNCTIONS = frozenset(
-    {
-        "AllGatherFunc",
-        "GroupCommitFunction",
-        "_CheckpointFunction",
-        "_EpDispatch",
-        "_EpCombine",
-        "Graphed",
-        "_NoopCatFunc",
-        "_IdentityFunc",
-        "_ViewFunc",
-        "_ReshapeFunc",
-        "_GroupedIdentityFunc",
-    }
-)
-TE_CUSTOM_AUTOGRAD_FUNCTIONS = TE_AUTOGRAD_FUNCTIONS - TE_NON_COMPUTE_AUTOGRAD_FUNCTIONS
 
 # Profiler-visible compute boundaries from the Megatron main revision used by FlagScale.
-MEGATRON_CUSTOM_AUTOGRAD_FUNCTIONS = frozenset(
-    {
-        "BiasGeGLUFunction",
-        "GeGLUFunction",
-        "WeightedQuickGeGLUFunction",
-        "WeightedBiasQuickGeGLUFunction",
-        "GeLUFunction",
-        "BiasSwiGLUFunction",
-        "SwiGLUFunction",
-        "WeightedSwiGLUFunction",
-        "_VocabParallelCrossEntropy",
-        "_VocabParallelCrossEntropyChunked",
-        "IndicesToMultihot",
-        "TritonFusedSinkhorn",
-        "CutileSinkhornKnopp",
-        "CutileHAggregate",
-        "CutileProjRms",
-        "CutileProjRmsComputeH",
-        "FusedHAggregate",
-        "FusedHPostBDA",
-        "_FusedMLARoPEInplace",
-        "_FusedMLARoPEKVSplit",
-        "WeightedSquaredReLUFunction",
-        "LinearWithFrozenWeight",
-        "LinearWithGradAccumulationAndAsyncCommunication",
-        "LinearWithGradAccumulationAndAsyncCommunicationKunlunxin",
-        "BatchInvariantTEGemmFn",
-        "BatchInvariantRMSNormFn",
-        "FusedDSAIndexerLoss",
-        "SparseAttnFunc",
-        "FusedIndexerSparseAttnFunc",
-        "_DSASparseAttnFunc",
-        "SinkhornKnopp",
-        "BroadcastTensorFused",
-        "RandomSTE",
-        "RandomSTEShared",
-        "RouterGatingLinearFunction",
-        "RotaryPositionalEmbeddingWithFreqFunction",
-    }
-)
+MEGATRON_CUSTOM_AUTOGRAD_FUNCTIONS = frozenset({
+    "BiasGeGLUFunction", "GeGLUFunction", "WeightedQuickGeGLUFunction",
+    "WeightedBiasQuickGeGLUFunction", "GeLUFunction", "BiasSwiGLUFunction",
+    "SwiGLUFunction", "WeightedSwiGLUFunction", "_VocabParallelCrossEntropy",
+    "_VocabParallelCrossEntropyChunked", "IndicesToMultihot", "TritonFusedSinkhorn",
+    "CutileSinkhornKnopp", "CutileHAggregate", "CutileProjRms",
+    "CutileProjRmsComputeH", "FusedHAggregate", "FusedHPostBDA",
+    "_FusedMLARoPEInplace", "_FusedMLARoPEKVSplit",
+    "WeightedSquaredReLUFunction", "LinearWithFrozenWeight",
+    "LinearWithGradAccumulationAndAsyncCommunication",
+    "LinearWithGradAccumulationAndAsyncCommunicationKunlunxin",
+    "BatchInvariantTEGemmFn", "BatchInvariantRMSNormFn", "FusedDSAIndexerLoss",
+    "SparseAttnFunc", "FusedIndexerSparseAttnFunc", "_DSASparseAttnFunc",
+    "SinkhornKnopp", "BroadcastTensorFused", "RandomSTE", "RandomSTEShared",
+    "RouterGatingLinearFunction", "RotaryPositionalEmbeddingWithFreqFunction",
+})
 
 CUSTOM_AUTOGRAD_FUNCTIONS = (
     TE_CUSTOM_AUTOGRAD_FUNCTIONS | MEGATRON_CUSTOM_AUTOGRAD_FUNCTIONS
@@ -368,9 +246,7 @@ def build_kernel_report_rows(events, trace_path=None):
     """Build detailed and summary rows from ``torch.profiler`` events."""
     variants = defaultdict(lambda: [0, 0.0])
     summaries = defaultdict(lambda: [0, 0.0])
-    cpu_operator_names, trace_dtypes, trace_custom_parents = _load_trace_metadata(
-        trace_path
-    )
+    cpu_operator_names, trace_dtypes, trace_custom_parents = _load_trace_metadata(trace_path)
 
     for event in events:
         if getattr(event, "is_user_annotation", False):
@@ -383,9 +259,7 @@ def build_kernel_report_rows(events, trace_path=None):
         dtype_queue = trace_dtypes.get((operator, shapes))
         trace_event_dtypes = dtype_queue.popleft() if dtype_queue else None
         custom_parent_queue = trace_custom_parents.get((operator, shapes))
-        custom_operator = (
-            custom_parent_queue.popleft() if custom_parent_queue else "null"
-        )
+        custom_operator = custom_parent_queue.popleft() if custom_parent_queue else "null"
         event_dtypes = getattr(event, "input_dtypes", None)
         if not event_dtypes and trace_event_dtypes:
             event_dtypes = trace_event_dtypes
@@ -402,56 +276,45 @@ def build_kernel_report_rows(events, trace_path=None):
                 continue
             duration = _duration_us(kernel)
             execution_operator = _execution_operator(custom_operator, operator, name)
-            variants[(custom_operator, execution_operator, name, shapes, dtypes)][
-                0
-            ] += 1
-            variants[(custom_operator, execution_operator, name, shapes, dtypes)][
-                1
-            ] += duration
+            variants[(custom_operator, execution_operator, name, shapes, dtypes)][0] += 1
+            variants[(custom_operator, execution_operator, name, shapes, dtypes)][1] += duration
             summaries[(custom_operator, execution_operator, name)][0] += 1
             summaries[(custom_operator, execution_operator, name)][1] += duration
 
     grouped = defaultdict(list)
-    for (custom, execution, kernel, shapes, dtypes), (
-        count,
-        duration,
-    ) in variants.items():
+    for (custom, execution, kernel, shapes, dtypes), (count, duration) in variants.items():
         grouped[(custom, execution, kernel)].append((shapes, dtypes, count, duration))
 
     details = []
     for (custom, execution, kernel), items in sorted(grouped.items()):
         items.sort(key=lambda item: (-item[3], item[0], item[1]))
         for index, (shapes, dtypes, count, duration) in enumerate(items, 1):
-            details.append(
-                {
-                    "custom_operator": custom,
-                    "execution_operator": execution,
-                    "kernel_name": kernel,
-                    "variant_index": index,
-                    "mapping_status": "operator_shape_matched",
-                    "input_shapes": shapes,
-                    "input_dtypes": dtypes,
-                    "candidate_operators": "null",
-                    "kernel_event_count": count,
-                    "kernel_time_us": _time(duration),
-                }
-            )
+            details.append({
+                "custom_operator": custom,
+                "execution_operator": execution,
+                "kernel_name": kernel,
+                "variant_index": index,
+                "mapping_status": "operator_shape_matched",
+                "input_shapes": shapes,
+                "input_dtypes": dtypes,
+                "candidate_operators": "null",
+                "kernel_event_count": count,
+                "kernel_time_us": _time(duration),
+            })
 
     total = sum(item[1] for item in summaries.values())
     summary = []
     for (custom, execution, kernel), (count, duration) in sorted(
         summaries.items(), key=lambda item: (-item[1][1], item[0])
     ):
-        summary.append(
-            {
-                "custom_operator": custom,
-                "execution_operator": execution,
-                "kernel_name": kernel,
-                "kernel_call_count": count,
-                "kernel_time_us": _time(duration),
-                "percent": _percent(duration / total * 100.0 if total else 0.0),
-            }
-        )
+        summary.append({
+            "custom_operator": custom,
+            "execution_operator": execution,
+            "kernel_name": kernel,
+            "kernel_call_count": count,
+            "kernel_time_us": _time(duration),
+            "percent": _percent(duration / total * 100.0 if total else 0.0),
+        })
     return details, summary
 
 
@@ -462,36 +325,25 @@ def build_operator_rows(summary_rows):
         for row in summary_rows
     }
     kind_order = {
-        "aten": 0,
-        "backend": 1,
-        "custom": 2,
-        "runtime_operator": 3,
-        "torch_compile": 4,
-        "unattributed": 5,
+        "aten": 0, "backend": 1, "custom": 2, "runtime_operator": 3,
+        "torch_compile": 4, "unattributed": 5,
     }
     pairs = sorted(
         pairs,
-        key=lambda pair: (
-            kind_order[_operator_kind(pair[1])],
-            pair[0],
-            pair[1],
-            pair[2],
-        ),
+        key=lambda pair: (kind_order[_operator_kind(pair[1])], pair[0], pair[1], pair[2]),
     )
     operator_ids = {}
     rows = []
     for custom, operator, kernel in pairs:
         operator_key = (custom, operator)
         operator_ids.setdefault(operator_key, len(operator_ids) + 1)
-        rows.append(
-            {
-                "operator_id": operator_ids[operator_key],
-                "custom_operator": custom,
-                "execution_operator": operator,
-                "operator_kind": _operator_kind(operator),
-                "kernel_name": kernel,
-            }
-        )
+        rows.append({
+            "operator_id": operator_ids[operator_key],
+            "custom_operator": custom,
+            "execution_operator": operator,
+            "operator_kind": _operator_kind(operator),
+            "kernel_name": kernel,
+        })
     return rows
 
 

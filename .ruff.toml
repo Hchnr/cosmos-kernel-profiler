@@ -1,0 +1,3 @@
+# Keep the vendored FlagScale exporter byte-for-byte identical to its pinned source.
+extend-exclude = ["profiler_reports.py"]
+force-exclude = true

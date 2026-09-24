@@ -62,3 +62,7 @@ python validate_run.py evidence/captures/resumed_capture001
 ```
 
 [report_quality.json](report_quality.json) 是采集时的校验记录，其中文件路径保留原runs目录以供审计。归档文件的相对路径及校验和以manifest为准。`rank-0_report_events.json.gz`另存上游导出器所用事件属性，方便后续离线重导出；该快照和其他验证材料不属于算子组的四份核心交付。
+
+## 上游导出器复核
+
+迁移时的自动格式化曾改变vendored导出器的排版，采集版本与上游原版的AST完全一致。现已恢复固定版本原文件，并利用保存的events和trace重导出三个CSV，结果逐字节一致。详见 [upstream_reexport_validation.json](upstream_reexport_validation.json)。正式四文件的内容和校验和未变。

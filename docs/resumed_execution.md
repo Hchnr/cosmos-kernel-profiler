@@ -48,5 +48,11 @@
 - 原始trace与CSV计算kernel调用均为35496，按kernel名核验无次数差异/超额；1534个变体、182条映射、87个operator分组、175个不同kernel名称。阶段6/6/3，active窗口没有编译事件。
 - 8rank各50microbatch（active各6），active全部loss有限。rank0 loss为0.1815/0.1772/0.0873；33个样本覆盖T2V15/I2V13/V2V5，均为offline。批级dataset标签与sample-ID前缀分开统计，修复原“样本数”字段名的歧义。
 - 12个变体/2065次调用缺少dtype，占计算kernel累计时间0.3083%；保留原空值。TensorList的shape/type展开存在上游可观测性边界，交付说明明确标注。
-- 独立通过External id抽查GEMM、FA3前后向、Triton融合计算、AdamW的CPU/GPU归属，五项均通过。未改动上游profiler_reports.py。
+- 独立通过External id抽查GEMM、FA3前后向、Triton融合计算、AdamW的CPU/GPU归属，五项均通过。未改动上游导出语义；最终来源校验发现迁移时的格式化改变了文件字节，处理见下文。
 - 正式报告、原始事件快照、配置、日志、全rank batch记录和验收结果归档到evidence/captures/resumed_capture001，四文件附SHA256。原项目代码、TOML和旧plans未修改。
+
+## 上游源码字节校验修正
+
+- 最终校验发现新仓库初次迁移时Ruff对显式传入的文件执行了格式化，原`--exclude`未强制生效。采集版本SHA256为0c6c58a3a1b4674a0f0a57d788959b42623446c4951865da6589ceda64c87627，与上游a147...的AST完全一致，差异仅排版。
+- 已恢复固定版本上游原字节，新增.ruff.toml的force-exclude防止再次格式化vendored文件。
+- 用保存的events快照和原始trace调用未经修改的上游导出器，三个CSV逐字节一致。验证记录evidence/captures/resumed_capture001/upstream_reexport_validation.json；四份正式交付及其SHA256均未改变。
