@@ -1,0 +1,157 @@
+{
+  "table_validation": "passed",
+  "rank": 0,
+  "detail_variants": 16,
+  "operator_kernel_mappings": 12,
+  "operator_groups": 9,
+  "unique_report_kernels": 12,
+  "trace_cpu_ops": 100,
+  "trace_kernel_events": 24,
+  "trace_compute_kernel_events": 24,
+  "trace_compute_kernel_time_us": 114.303,
+  "trace_communication_kernel_events": 0,
+  "trace_communication_kernel_time_us": 0.0,
+  "trace_memory_events": 2,
+  "report_kernel_calls": 24,
+  "report_kernel_time_us": 114.303,
+  "missing_metadata": {
+    "input_shapes": {
+      "variant_rows": 0,
+      "kernel_calls": 0,
+      "kernel_time_us": 0
+    },
+    "input_dtypes": {
+      "variant_rows": 2,
+      "kernel_calls": 4,
+      "kernel_time_us": 64.734
+    }
+  },
+  "kernel_name_count_mismatches": [],
+  "excess_report_kernel_names": [],
+  "phase_annotations": {
+    "kernel_list.forward": 2,
+    "kernel_list.backward": 2,
+    "kernel_list.optimizer": 2
+  },
+  "top_kernel_mappings": [
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::_fused_adamw_",
+      "kernel_name": "void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::FusedOptimizerTensorListMetadata<4>, at::native::(anonymous namespace)::FusedAdamMathFunctor<c10::BFloat16, 4, (at::native::ADAM_MODE)1, false>, float const*, double, double, double, double, double, bool, float const*, float const*>(at::native::(anonymous namespace)::FusedOptimizerTensorListMetadata<4>, at::native::(anonymous namespace)::FusedAdamMathFunctor<c10::BFloat16, 4, (at::native::ADAM_MODE)1, false>, float const*, double, double, double, double, double, bool, float const*, float const*)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "61.983",
+      "percent": "54.227%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mean",
+      "kernel_name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "17.631",
+      "percent": "15.425%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_64x32_64x16_2x4_h_bz_NTT",
+      "kernel_call_count": "2",
+      "kernel_time_us": "5.632",
+      "percent": "4.927%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_64x24_64x16_2x4_h_bz_NNT",
+      "kernel_call_count": "2",
+      "kernel_time_us": "5.536",
+      "percent": "4.843%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::copy_",
+      "kernel_name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "5.248",
+      "percent": "4.591%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::div",
+      "kernel_name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "kernel_call_count": "2",
+      "kernel_time_us": "3.2",
+      "percent": "2.800%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::_foreach_add_",
+      "kernel_name": "void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::TensorListMetadata<1>, at::native::(anonymous namespace)::BinaryOpScalarFunctor<float, 1, 1, 0>, std::plus<float>, float>(at::native::(anonymous namespace)::TensorListMetadata<1>, at::native::(anonymous namespace)::BinaryOpScalarFunctor<float, 1, 1, 0>, std::plus<float>, float)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "2.751",
+      "percent": "2.407%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mul",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 3ul> >(int, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 3ul>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "2.689",
+      "percent": "2.353%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mul",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::AUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::AUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "2.656",
+      "percent": "2.324%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::copy_",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<8, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "2.464",
+      "percent": "2.156%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::pow",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase&, float)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase&, float)::{lambda(float)#1}, std::array<char*, 2ul>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "2.433",
+      "percent": "2.129%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::fill_",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",
+      "kernel_call_count": "2",
+      "kernel_time_us": "2.08",
+      "percent": "1.820%"
+    }
+  ],
+  "files": [
+    {
+      "name": "rank-0.json.gz",
+      "bytes": 7555,
+      "sha256": "b1e7cb07a277a86728fa857c1c67b2e786be37d1fd5b12c9470a962c17a6f810"
+    },
+    {
+      "name": "rank-0_kernel_details_report.csv",
+      "bytes": 7800,
+      "sha256": "be1031514638c0c2b3293f0b37880bc8d9b007ca43976bfa42ce34a0eb73eaf7"
+    },
+    {
+      "name": "rank-0_kernel_summary.csv",
+      "bytes": 4549,
+      "sha256": "65209da6c87d9054073528f877be9b8fc01ac5459add691d332b59f0028d4af1"
+    },
+    {
+      "name": "rank-0_operator_list.csv",
+      "bytes": 4437,
+      "sha256": "810dbc309330658fc9b95fccb315b0942bec02fd38724bc44093b19564535a12"
+    }
+  ],
+  "coverage_note": "GPU classification by kernel name; CPU communication-parent filtering can also exclude kernels. Count agreement is a coverage check, not independent proof of exact event attribution."
+}

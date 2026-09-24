@@ -1,0 +1,730 @@
+2026-09-24 15:52:29.593 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.06ms
+2026-09-24 15:52:29.892 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.09ms
+2026-09-24 15:52:29.916 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+2026-09-24 15:52:29.925 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+2026-09-24 15:52:29.948 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.09ms
+2026-09-24 15:52:29.953 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.08ms
+2026-09-24 15:52:29.966 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.06ms
+2026-09-24 15:52:29.999 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.07ms
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+2026-09-24 15:52:39.749 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 10155.88ms
+2026-09-24 15:52:40.207 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 457.49ms
+2026-09-24 15:52:40.207 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 10678.18ms
+[09-24 15:52:40|INFO] Heimdall telemetry is disabled, if using Heimdall,consider setting ENABLE_TELEMETRY=true to enable it
+[09-24 15:52:41|INFO] [RANK 0] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:41|CRITICAL] [RANK 0] Initialized distributed training with local rank 0 using nccl with timeout 1800
+[09-24 15:52:41|INFO] Training with 8 GPUs.
+[09-24 15:52:41|INFO] Time spent on init_distributed: 0.46 s
+NCCL version 2.29.7+cuda13.2
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+2026-09-24 15:52:42.792 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12875.53ms
+2026-09-24 15:52:42.826 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12933.84ms
+2026-09-24 15:52:42.893 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12967.51ms
+2026-09-24 15:52:42.899 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12950.07ms
+2026-09-24 15:52:42.902 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12902.60ms
+2026-09-24 15:52:42.908 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12954.21ms
+2026-09-24 15:52:42.926 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12959.73ms
+2026-09-24 15:52:43.244 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 451.93ms
+2026-09-24 15:52:43.245 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13390.96ms
+2026-09-24 15:52:43.276 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 449.42ms
+2026-09-24 15:52:43.276 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13448.40ms
+2026-09-24 15:52:43.374 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 480.91ms
+2026-09-24 15:52:43.374 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13514.64ms
+2026-09-24 15:52:43.384 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 485.56ms
+2026-09-24 15:52:43.385 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13500.72ms
+2026-09-24 15:52:43.390 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 482.01ms
+2026-09-24 15:52:43.390 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13501.63ms
+2026-09-24 15:52:43.394 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 491.17ms
+2026-09-24 15:52:43.394 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13458.82ms
+2026-09-24 15:52:43.413 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 487.12ms
+2026-09-24 15:52:43.413 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 13509.65ms
+[09-24 15:52:45|INFO] [RANK 4] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|CRITICAL] [RANK 4] Initialized distributed training with local rank 4 using nccl with timeout 1800
+[09-24 15:52:45|INFO] [RANK 6] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|CRITICAL] [RANK 6] Initialized distributed training with local rank 6 using nccl with timeout 1800
+[09-24 15:52:45|INFO] [RANK 3] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|CRITICAL] [RANK 3] Initialized distributed training with local rank 3 using nccl with timeout 1800
+[09-24 15:52:45|INFO] [RANK 2] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|INFO] [RANK 5] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|INFO] [RANK 7] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|INFO] [RANK 1] Set default NCCL subgroup timeout to 1800 seconds
+[09-24 15:52:45|CRITICAL] [RANK 5] Initialized distributed training with local rank 5 using nccl with timeout 1800
+[09-24 15:52:45|CRITICAL] [RANK 7] Initialized distributed training with local rank 7 using nccl with timeout 1800
+[09-24 15:52:45|CRITICAL] [RANK 2] Initialized distributed training with local rank 2 using nccl with timeout 1800
+[09-24 15:52:45|CRITICAL] [RANK 1] Initialized distributed training with local rank 1 using nccl with timeout 1800
+[09-24 15:52:48|INFO] [RANK 0] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank0
+[09-24 15:52:48|INFO] Time spent on init_distributed: 0.00 s
+[09-24 15:52:48|INFO] [RANK 4] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank4
+[09-24 15:52:48|INFO] [RANK 6] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank6
+[09-24 15:52:48|INFO] [RANK 7] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank7
+[09-24 15:52:48|INFO] [RANK 2] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank2
+[09-24 15:52:48|INFO] [RANK 5] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank5
+[09-24 15:52:48|INFO] [RANK 1] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank1
+[09-24 15:52:48|INFO] [RANK 3] PyTorch compile cache directory: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/inductor/rank3
+Config is saved using pickle at /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job/kernel-list/v0.2.3c/profile/config.pkl.
+Config is saved using omegaconf at /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job/kernel-list/v0.2.3c/profile/config.yaml.
+/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[09-24 15:52:48|INFO] Environment variable HF_HOME: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/cache/huggingface
+[09-24 15:52:48|INFO] Environment variable IMAGINAIRE_OUTPUT_ROOT: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job
+[09-24 15:52:48|INFO] Using random seed 42.
+[09-24 15:52:48|CRITICAL] Instantiating callback iter_speed: {'hit_thres': 50, 'save_s3': False, 'save_s3_every_log_n': 500, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.iter_speed.IterSpeed'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback manual_gc: {'warm_up': 1, 'gc_level': 1, 'every_n': 5, '_target_': <class 'cosmos_framework.callbacks.manual_gc.ManualGarbageCollection'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback wandb: {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.WandBCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback wandb_2x: {'logging_iter_multipler': 2, 'save_logging_iter_multipler': 1, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log.WandbCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback param_count: {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.param_count.ParamCount'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback wandb_val: {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log_eval.WandbCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback moe_stability: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_stability_callback.MoEStabilityCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback moe_specialization: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoESpecializationCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback moe_router_geometry: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoERouterGeometryCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback parameter_geometry: {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.parameter_geometry_callback.ParameterGeometryCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback expert_heatmap: {'every_n': 1000, '_target_': <class 'cosmos_framework.callbacks.expert_heatmap.ExpertHeatmap'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback load_pretrained: {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.callbacks.load_pretrained.LoadPretrained'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback norm_monitor: {'every_n': 100, 'step_size': 1, 'layer_norm_only': False, 'model_key': None, 'log_stat_wandb': True, 'save_s3': False, 'track_activations': True, '_target_': <class 'cosmos_framework.callbacks.norm_monitor.NormMonitor'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback sigma_loss_analysis: {'every_n': 500, 'every_n_viz': 500, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.sigma_loss_analysis.SigmaLossAnalysis'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback sequence_packing_padding: {'every_n': 50, '_target_': <class 'cosmos_framework.callbacks.sequence_packing_padding.SequencePackingPadding'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback sampled_media: {'enabled': False, 'output_uri': '/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job/kernel-list/v0.2.3c/profile/sampled_media.lance', 'creds_path': None, 'flush_every_n_batches': 100, 'record_caption': False, '_target_': <class 'cosmos_framework.callbacks.sampled_media_recorder.SampledMediaRecorder'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback load_balance_trace: {'enabled': False, 'output_dir': '/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job/kernel-list/v0.2.3c/profile/load_balance_trace', 'flush_every_n_batches': 100, 'record_cuda_timing': True, 'max_samples_per_record': 64, '_target_': <class 'cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback mfu: {'backwardpass_ratio': 2.0, 'hit_thres': 5, 'include_vae_encoder': True, 'include_padding': True, 'grad_accum_iter': 2, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.mfu.MFUCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback ofu: {'hit_thres': 5, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.ofu.OFUCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback skip_nan_step: {'max_consecutive_nan': 100, '_target_': <class 'cosmos_framework.callbacks.skip_nan_step.SkipNaNStep'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback grad_clip: {'clip_norm': 0.1, 'force_finite': True, 'track_per_modality': True, 'error_if_nonfinite': False, '_target_': <class 'cosmos_framework.callbacks.grad_clip.GradClip'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback low_precision: {'update_iter': 1, 'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.LowPrecisionCallback'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback heart_beat: {'step_size': 1, 'update_interval_in_minute': 20, 'save_s3': False, 'every_n': 200, '_target_': <class 'cosmos_framework.callbacks.heart_beat.HeartBeat'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback device_monitor: {'every_n': 200, 'step_size': 1, 'save_s3': False, 'upload_every_n_mul': 5, 'log_memory_detail': True, '_target_': <class 'cosmos_framework.callbacks.device_monitor.DeviceMonitor'>}
+[09-24 15:52:48|CRITICAL] Instantiating callback termination_signal_checkpoint: {'min_save_fraction': 0.3333333333333333, '_target_': <class 'cosmos_framework.callbacks.termination_signal_checkpoint.TerminationSignalCheckpoint'>}
+[09-24 15:52:48|CRITICAL] Callback dataloader_speed is missing the '_target_' field. 
+ SKip {'every_n': 100, 'save_s3': False, 'step_size': 1}
+[09-24 15:52:48|CRITICAL] Callback training_stats is missing the '_target_' field. 
+ SKip {'log_freq': 100}
+[09-24 15:52:48|CRITICAL] Instantiating callback kernel_phases: {'_target_': 'phase_audit.PhaseAudit'}
+[09-24 15:52:48|CRITICAL] Instantiating callback kernel_batches: {'_target_': 'cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace', 'enabled': True, 'output_dir': '/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/batches', 'record_cuda_timing': False, 'flush_every_n_batches': 1}
+[09-24 15:52:48|CRITICAL] Instantiating callback dataloader_state: {'outer_loader': None, '_target_': <class 'cosmos_framework.callbacks.cosmos_dataloader_state.JointCosmosDataLoaderStateCallback'>}
+[09-24 15:52:48|WARNING] S3 credentials not found. Skipping easy_io S3 setup.
+[09-24 15:52:48|WARNING] Job path: kernel-list/v0.2.3c/profile
+[09-24 15:52:48|CRITICAL] Job local path: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job/kernel-list/v0.2.3c/profile
+[09-24 15:52:48|INFO] OmniMoTModel: config {'tokenizer': {'bucket_name': '', 'object_store_credential_path_pretrained': '', 'vae_path': 'pretrained/tokenizers/video/wan2pt2/Wan2.2_VAE.pth', 'chunk_duration': 93, 'keep_decoder_cache': False, 'use_streaming_encode': False, 'encode_chunk_frames': {'256': 68, '480': 24, '720': 8, '768': 8}, 'encode_exact_durations': None, 'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'temporal_window': None, 'encode_bucket_multiple': None, 'causal': True, '_target_': <class 'cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface'>}, 'load_vision_tokenizer': False, 'vision_vae_mode': 'offline', 'net': None, 'ema': {'enabled': False, 'rate': 0.1, 'iteration_shift': 0}, 'parallelism': {'data_parallel_shard_degree': 8, 'data_parallel_replicate_degree': 1, 'context_parallel_shard_degree': 1, 'cfg_parallel_shard_degree': 1, 'enable_inference_mode': False, 'fsdp_master_dtype': 'float32', 'fsdp_reduce_dtype': None}, 'attention_io_layout': 'sequence_sharded', 'compile': {'enabled': True, 'compiled_region': 'language', 'compile_dynamic': False, 'use_cuda_graphs': False, 'ar_post_saturation_mode': 'default', 'max_autotune_pointwise': False, 'coordinate_descent_tuning': False, 'mix_order_reduction_split_size': 32}, 'fixed_sequence_length': {'enabled': True, 'understanding_tokens': 0, 'und_tokens': 3072, 'gen_tokens': 98304, 'action_tokens': 0}, 'quantization': {'method': None, 'fp8_granularity': 'per_row', 'include_regex': [], 'exclude_regex': [], 'modelopt_fp8_checkpoint_path': None, 'modelopt_fp8_target_fqns': []}, 'activation_checkpointing': {'mode': 'full', 'save_ops_regex': ['fmha'], 'preserve_rng_state': True, 'determinism_check': 'default'}, 'precision': 'bfloat16', 'lora_enabled': False, 'lora_rank': 16, 'lora_alpha': 32, 'lora_target_modules': 'q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen', 'rectified_flow_training_config': {'shift': {'256': 3, '480': 5, '720': 10}, 'shift_image': None, 'use_dynamic_shift': False, 'train_time_image_distribution': 'logitnormal', 'train_time_video_distribution': 'waver', 'train_time_action_distribution': 'logitnormal', 'train_time_sound_distribution': 'logitnormal', 'train_time_weight': 'uniform', 'loss_scale': 1.0, 'image_loss_scale': 1.0, 'sound_loss_scale': None, 'use_discrete_rf': False, 'action_loss_weight': 10.0, 'independent_action_schedule': False, 'shift_action': None, 'independent_sound_schedule': False, 'shift_sound': None, 'normalize_loss_by_active': False, 'sample_level_loss_averaging': False}, 'rectified_flow_inference_config': {'scheduler_type': 'unipc', 'num_train_timesteps': 1000, 'shift': 1, 'use_dynamic_shifting': False}, 'fixed_step_sampler_config': None, 'vlm_config': {'model_name': 'Qwen/Qwen3-VL-8B-Instruct', 'safetensors_path': '', 'pretrained_weights': {'enabled': False, 'backbone_path': 's3://bucket0/cosmos3/pretrained/huggingface/Qwen/Qwen3-VL-8B-Instruct/', 'credentials_path': '', 'enable_gcs_patch_in_boto3': True, 'checkpoint_format': None}, 'model_instance': {'config': {'base_config': {'json_file': 'cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json', '_target_': <bound method _MoTConfigBase.from_json_file of <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig'>>}, 'freeze_und': False, 'layer_module': 'MoTDecoderLayer', 'qk_norm_for_text': True, 'tie_word_embeddings': True, '_target_': <function create_vlm_config at 0x7fb543f89120>}, '_target_': <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM'>}, 'tokenizer': {'config_variant': 'hf', 'pretrained_model_name': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', '_target_': <function create_qwen2_tokenizer_with_download at 0x7fb29edb9580>}, 'layer_module': 'Qwen2MoTDecoderLayer', 'qk_norm': False, 'tie_word_embeddings': False, 'use_system_prompt': False}, 'diffusion_expert_config': {'timestep_range': 1.0, 'load_weights_from_pretrained': True, 'enable_vision_modality_embeddings': False, 'enable_media_modality_embedding': False, 'patch_spatial': 2, 'max_vae_latent_side_after_patchify': 20, 'enable_fps_modulation': True, 'base_fps': 24, 'sound_base_temporal_compression_factor': None, 'vision_temporal_position_mode': 'latent_index', 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000}, 'input_video_key': 'video', 'input_video_latent_key': 'video_latent', 'input_image_key': 'images', 'input_caption_key': 'ai_caption', 'gen_loss_scale': 1.0, 'und_loss_scale': 1.0, 'load_vlm_visual': False, 'train_vlm_visual': False, 'state_ch': 48, 'state_t': 300, 'latent_downsample_factor': 16, 'resolution': '480', 'max_num_tokens_after_packing': 101376, 'tower_structure': 'two_tower', 'action_tower_preset': 'full', 'action_tower_init': 'checkpoint', 'action_tower_execution': 'native', 'action_tower_attention_backend': 'auto', 'action_tower_und_short_tokens': 0, 'action_tower_projection_mode': 'routed', 'joint_attn_implementation': 'two_way', 'flex_attention': {'enabled': False, 'backend': 'auto', 'mask': {'noisy_attention_scope': 'all_views'}}, 'natten_parameter_list': None, 'video_temporal_causal': False, 'causal_training_strategy': 'none', 'lbl': {'method': 'local', 'coeff_und': None, 'coeff_gen': None}, 'vision_gen': True, 'predict_text_tokens': False, 'text_loss_weight': 1.0, 'action_gen': False, 'max_action_dim': 64, 'num_embodiment_domains': 32, 'sound_gen': False, 'sound_tokenizer': None, 'sound_dim': None, 'sound_latent_fps': 25, 'enable_input_bias': True, 'log_enc_time_every_n': 100, 'exclude_reasoner_weights_from_checkpoint': False}
+[09-24 15:52:48|WARNING] OmniMoTModel: precision torch.bfloat16
+[09-24 15:52:49|INFO] Vision tokenizer initialization skipped
+[09-24 15:52:49|INFO] Time spent on OmniMoTModel: set_up_tokenizers: 0.22 s
+[09-24 15:52:49|INFO] dp_replicate is set to -1, will be automatically determined based on world_size 8 // dp_shard 8.
+[09-24 15:52:49|INFO] dp_replicate is set to 1.
+[09-24 15:52:49|INFO] Building 2-D device mesh with ['dp_replicate', 'dp_shard'], [1, 8]
+[rank3]:W0924 15:52:50.257000 280030 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank7]:W0924 15:52:50.258000 280034 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank1]:W0924 15:52:50.258000 280028 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank2]:W0924 15:52:50.259000 280029 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank4]:W0924 15:52:50.259000 280031 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank5]:W0924 15:52:50.259000 280032 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[rank6]:W0924 15:52:50.260000 280033 torch/distributed/tensor/_random.py:214] DTensor is synchronizing RNG states of every rank with the state from rank 0. This behavior is deprecated. Please call `torch.manual_seed()` on every rank that participates in SPMD DTensor Operations with the same seed. If using Pipeline Parallelism, each pipeling state would use a different seed, but all ranks belonging to one pipeline stage would use the same seed.
+[09-24 15:52:50|INFO] Time spent on meta to cuda and broadcast model states: 0.65 s
+[09-24 15:52:50|INFO] Time spent on Creating PyTorch model and ema if enabled: 1.32 s
+[09-24 15:52:50|INFO] Time spent on OmniMoTModel: set_up_model: 1.32 s
+[09-24 15:52:50|INFO] Time spent on init_model: 1.54 s
+[09-24 15:52:51|INFO] Successfully loaded processor from local cache
+[09-24 15:52:52|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:52|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:53|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:54|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:54|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:55|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:56|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:57|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:57|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:58|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:52:59|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:01|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:02|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:02|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:03|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:04|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:04|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:06|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:06|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:07|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:08|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:09|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:09|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:10|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:10|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:11|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:11|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:12|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:13|INFO] CosmosDataLoader: using global rank for DP sharding. For FSDP+TP/PP pass parallel_dims= for the correct DP rank.
+[09-24 15:53:13|INFO] JointCosmosDataLoader: 29 streams
+  agibot-world:0: ratio=4.835e+05 (11.4%)
+  agibot-world_lw2030:1: ratio=6.14e+04 (1.4%)
+  ego-exo4d:2: ratio=2.146e+04 (0.5%)
+  egocentric-10k:3: ratio=2.458e+05 (5.8%)
+  egocentric-10k_lw2030:4: ratio=1.362e+04 (0.3%)
+  egodex:5: ratio=6.934e+04 (1.6%)
+  egodex_lw2030:6: ratio=1.556e+04 (0.4%)
+  egolive:7: ratio=3.427e+05 (8.1%)
+  egolive_lw2030:8: ratio=7.156e+04 (1.7%)
+  egopro:9: ratio=6.607e+04 (1.6%)
+  egopro_lw2030:10: ratio=4.671e+04 (1.1%)
+  egostandard:11: ratio=6.303e+05 (14.8%)
+  egostandard_lw2030:12: ratio=3.471e+05 (8.2%)
+  epic-kitchens-55:13: ratio=4326 (0.1%)
+  galbot:14: ratio=1.37e+05 (3.2%)
+  galbot_lw2030:15: ratio=1.809e+04 (0.4%)
+  holoassist:16: ratio=1.697e+04 (0.4%)
+  lightwheel:17: ratio=8.396e+05 (19.8%)
+  lightwheel_lw2030:18: ratio=2.196e+05 (5.2%)
+  openaoe-2000h:19: ratio=1.592e+05 (3.7%)
+  openaoe-2000h_lw2030:20: ratio=3.942e+04 (0.9%)
+  robocoin:21: ratio=1.07e+05 (2.5%)
+  robocoin_lw2030:22: ratio=2.95e+04 (0.7%)
+  robomind1:23: ratio=2.272e+04 (0.5%)
+  robomind1_lw2030:24: ratio=572 (0.0%)
+  robomind2:25: ratio=1.861e+05 (4.4%)
+  robomind2_lw2030:26: ratio=2840 (0.1%)
+  stereo-550:27: ratio=3.483e+04 (0.8%)
+  stereo-550_lw2030:28: ratio=1.353e+04 (0.3%)
+[09-24 15:53:13|INFO] Time spent on init_data_loader: 22.95 s
+[09-24 15:53:13|INFO] Total tensors: 804, trainable tensors: 804, selected tensors: 405
+[09-24 15:53:13|INFO] Building optimizer for mesh 'dp_shard'
+[09-24 15:53:13|INFO] Param group (lr=0.0001, WD=True): 405 tensors, 6,965,486,784 elements
+[09-24 15:53:13|INFO] Created 1 optimizers
+[09-24 15:53:13|INFO] Created 1 schedulers
+[09-24 15:53:13|CRITICAL] Resuming ckpt /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP (warm-start, local) with keys: ['dataloader', 'model', 'optim', 'scheduler', 'trainer']
+[09-24 15:53:13|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader
+[09-24 15:53:13|INFO] [RANK 0] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 4] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 1] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 7] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 2] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 5] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 3] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|INFO] [RANK 6] Checkpoint /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/dataloader does not exist, skip loading dataloader.
+[09-24 15:53:13|CRITICAL] Start loading checkpoint from /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP/model
+[09-24 15:53:13|INFO] Skipping loading of keys that match the following patterns: ['net_ema.']
+[09-24 15:53:13|INFO] - Loading the model...
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py:483: UserWarning: torch.distributed is disabled, unavailable or uninitialized, assuming the intent is to load in a single process.
+  return func(*args, **kwargs)
+[09-24 15:53:14|INFO] Time spent on checkpoint loading: 0.08 s
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank0]:     main()
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank0]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank0]:   File "<frozen runpy>", line 229, in run_module
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank0]:     launch(config, args)
+[rank0]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank0]:     return function(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank0]:     return func(config, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank0]:     _run_training(config, args)
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank0]:     trainer.train(
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank0]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank0]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank0]:     dcp.load(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank0]:     result = func(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank0]:     _load_state_dict(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank0]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank0]:     raise result
+[rank0]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank0]: Traceback (most recent call last): (RANK 0)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank0]:     local_data = map_fun()
+[rank0]:                  ^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank0]:     result = func(*args, **kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank0]:     raise AssertionError("metadata is None")
+[rank0]: AssertionError: metadata is None
+
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank6]:     main()
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank6]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank6]:   File "<frozen runpy>", line 229, in run_module
+[rank6]:   File "<frozen runpy>", line 88, in _run_code
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank6]:     launch(config, args)
+[rank6]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank6]:     return function(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank6]:     return func(config, *args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank6]:     _run_training(config, args)
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank6]:     trainer.train(
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank6]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank6]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank6]:     return func(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank6]:     dcp.load(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank6]:     result = func(*args, **kwargs)
+[rank6]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank6]:     return func(*args, **kwargs)
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank6]:     _load_state_dict(
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank6]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank6]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank6]:     raise result
+[rank6]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank6]: Traceback (most recent call last): (RANK 0)
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank6]:     local_data = map_fun()
+[rank6]:                  ^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank6]:     result = func(*args, **kwargs)
+[rank6]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank6]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank6]:     raise AssertionError("metadata is None")
+[rank6]: AssertionError: metadata is None
+
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank7]:     main()
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank7]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank7]:   File "<frozen runpy>", line 229, in run_module
+[rank7]:   File "<frozen runpy>", line 88, in _run_code
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank7]:     launch(config, args)
+[rank7]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank7]:     return function(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank7]:     return func(config, *args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank7]:     _run_training(config, args)
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank7]:     trainer.train(
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank7]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank7]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank7]:     return func(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank7]:     dcp.load(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank7]:     result = func(*args, **kwargs)
+[rank7]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank7]:     return func(*args, **kwargs)
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank7]:     _load_state_dict(
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank7]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank7]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank7]:     raise result
+[rank7]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank7]: Traceback (most recent call last): (RANK 0)
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank7]:     local_data = map_fun()
+[rank7]:                  ^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank7]:     result = func(*args, **kwargs)
+[rank7]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank7]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank7]:     raise AssertionError("metadata is None")
+[rank7]: AssertionError: metadata is None
+
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank4]:     main()
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank4]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank4]:   File "<frozen runpy>", line 229, in run_module
+[rank4]:   File "<frozen runpy>", line 88, in _run_code
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank4]:     launch(config, args)
+[rank4]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank4]:     return function(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank4]:     return func(config, *args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank4]:     _run_training(config, args)
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank4]:     trainer.train(
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank4]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank4]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank4]:     return func(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank4]:     dcp.load(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank4]:     result = func(*args, **kwargs)
+[rank4]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank4]:     return func(*args, **kwargs)
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank4]:     _load_state_dict(
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank4]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank4]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank4]:     raise result
+[rank4]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank4]: Traceback (most recent call last): (RANK 0)
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank4]:     local_data = map_fun()
+[rank4]:                  ^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank4]:     result = func(*args, **kwargs)
+[rank4]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank4]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank4]:     raise AssertionError("metadata is None")
+[rank4]: AssertionError: metadata is None
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank2]:     main()
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank2]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank2]:   File "<frozen runpy>", line 229, in run_module
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank2]:     launch(config, args)
+[rank2]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank2]:     return function(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank2]:     return func(config, *args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank2]:     _run_training(config, args)
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank2]:     trainer.train(
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank2]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank2]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank2]:     dcp.load(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank2]:     result = func(*args, **kwargs)
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank2]:     return func(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank2]:     _load_state_dict(
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank2]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank2]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank2]:     raise result
+[rank2]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank2]: Traceback (most recent call last): (RANK 0)
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank2]:     local_data = map_fun()
+[rank2]:                  ^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank2]:     result = func(*args, **kwargs)
+[rank2]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank2]:     raise AssertionError("metadata is None")
+[rank2]: AssertionError: metadata is None
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank1]:     main()
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank1]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank1]:   File "<frozen runpy>", line 229, in run_module
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank1]:     launch(config, args)
+[rank1]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank1]:     return function(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank1]:     return func(config, *args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank1]:     _run_training(config, args)
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank1]:     trainer.train(
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank1]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank1]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank1]:     dcp.load(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank1]:     result = func(*args, **kwargs)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank1]:     return func(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank1]:     _load_state_dict(
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank1]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank1]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank1]:     raise result
+[rank1]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank1]: Traceback (most recent call last): (RANK 0)
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank1]:     local_data = map_fun()
+[rank1]:                  ^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank1]:     result = func(*args, **kwargs)
+[rank1]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank1]:     raise AssertionError("metadata is None")
+[rank1]: AssertionError: metadata is None
+
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank5]:     main()
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank5]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank5]:   File "<frozen runpy>", line 229, in run_module
+[rank5]:   File "<frozen runpy>", line 88, in _run_code
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank5]:     launch(config, args)
+[rank5]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank5]:     return function(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank5]:     return func(config, *args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank5]:     _run_training(config, args)
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank5]:     trainer.train(
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank5]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank5]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank5]:     return func(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank5]:     dcp.load(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank5]:     result = func(*args, **kwargs)
+[rank5]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank5]:     return func(*args, **kwargs)
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank5]:     _load_state_dict(
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank5]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank5]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank5]:     raise result
+[rank5]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank5]: Traceback (most recent call last): (RANK 0)
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank5]:     local_data = map_fun()
+[rank5]:                  ^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank5]:     result = func(*args, **kwargs)
+[rank5]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank5]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank5]:     raise AssertionError("metadata is None")
+[rank5]: AssertionError: metadata is None
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+[rank3]:     main()
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+[rank3]:     runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+[rank3]:   File "<frozen runpy>", line 229, in run_module
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 320, in <module>
+[rank3]:     launch(config, args)
+[rank3]:   File "/opt/venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+[rank3]:     return function(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/training_telemetry/telemetry.py", line 65, in wrapper
+[rank3]:     return func(config, *args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 197, in launch
+[rank3]:     _run_training(config, args)
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 242, in _run_training
+[rank3]:     trainer.train(
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/trainer/__init__.py", line 272, in train
+[rank3]:     iteration = self.checkpointer.load(model, optimizer, scheduler, grad_scaler)
+[rank3]:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/checkpoint/dcp.py", line 879, in load
+[rank3]:     dcp.load(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank3]:     result = func(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 483, in inner_func
+[rank3]:     return func(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 183, in load
+[rank3]:     _load_state_dict(
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 281, in _load_state_dict
+[rank3]:     central_plan = distW.reduce_scatter("plan", local_step, global_step)
+[rank3]:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 221, in reduce_scatter
+[rank3]:     raise result
+[rank3]: torch.distributed.checkpoint.api.CheckpointException: CheckpointException ranks:dict_keys([0])
+[rank3]: Traceback (most recent call last): (RANK 0)
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/utils.py", line 193, in reduce_scatter
+[rank3]:     local_data = map_fun()
+[rank3]:                  ^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/logger.py", line 90, in wrapper
+[rank3]:     result = func(*args, **kwargs)
+[rank3]:              ^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/checkpoint/state_dict_loader.py", line 251, in local_step
+[rank3]:     raise AssertionError("metadata is None")
+[rank3]: AssertionError: metadata is None
+
+W0924 15:53:15.943000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280028 closing signal SIGTERM
+W0924 15:53:15.944000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280029 closing signal SIGTERM
+W0924 15:53:15.944000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280030 closing signal SIGTERM
+W0924 15:53:15.945000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280031 closing signal SIGTERM
+W0924 15:53:15.946000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280032 closing signal SIGTERM
+W0924 15:53:15.947000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280033 closing signal SIGTERM
+W0924 15:53:15.947000 279905 torch/distributed/elastic/multiprocessing/api.py:1014] Sending process 280034 closing signal SIGTERM
+E0924 15:53:17.357000 279905 torch/distributed/elastic/multiprocessing/api.py:988] failed (exitcode: 1) local_rank: 0 (pid: 280027) of binary: /opt/venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1020, in <module>
+    main()
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 367, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1016, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 1007, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 184, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 332, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 280028)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280028
+[2]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 280029)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280029
+[3]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 280030)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280030
+[4]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 4 (local_rank: 4)
+  exitcode  : -15 (pid: 280031)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280031
+[5]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 5 (local_rank: 5)
+  exitcode  : -15 (pid: 280032)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280032
+[6]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 6 (local_rank: 6)
+  exitcode  : -15 (pid: 280033)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280033
+[7]:
+  time      : 2026-09-24_15:53:17
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 7 (local_rank: 7)
+  exitcode  : -15 (pid: 280034)  (SIGTERM)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 280034
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-24_15:53:15
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 280027) 
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

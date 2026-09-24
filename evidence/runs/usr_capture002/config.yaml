@@ -1,0 +1,597 @@
+checkpoint:
+  broadcast_via_filesystem: false
+  dcp_async_mode_enabled: false
+  dcp_load_dedup: true
+  enable_gcs_patch_in_boto3: true
+  hf_export:
+    enabled: false
+    export_every_n: 1
+    hf_repo_id: null
+    upload_to_object_store:
+      bucket: ''
+      credentials: ''
+      enabled: false
+  jit:
+    device: cuda
+    dtype: bfloat16
+    enabled: false
+    input_shape: null
+    strict: true
+  keys_not_to_resume: []
+  keys_to_skip_loading:
+  - net_ema.
+  load_ema_to_reg: false
+  load_from_object_store:
+    bucket: ''
+    credentials: ''
+    enabled: false
+  load_path: /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP
+  load_training_state: true
+  only_load_scheduler_state: false
+  save_iter: 1000000
+  save_to_object_store:
+    bucket: ''
+    credentials: ''
+    enabled: false
+  strict_resume: true
+  type:
+    _target_: cosmos_framework.checkpoint.dcp.DistributedCheckpointer
+    callbacks: null
+    disable_async: false
+  verbose: true
+data_setting:
+  qwen_max_video_token_length: 8192
+dataloader_train:
+  _target_: cosmos_framework.data.generator.catalog_processors.build_catalog_training_dataloader
+  cfg_drop_ratio: 0.1
+  conditioning_config:
+    0: 0.5
+    1: 0.4
+    2: 0.1
+  dataset_specs:
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/agibot-world
+    ratio: 483535
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/agibot-world_lw2030
+    ratio: 61404
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/ego-exo4d
+    ratio: 21458
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egocentric-10k
+    ratio: 245848
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egocentric-10k_lw2030
+    ratio: 13622
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egodex
+    ratio: 69344
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egodex_lw2030
+    ratio: 15560
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egolive
+    ratio: 342681
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egolive_lw2030
+    ratio: 71562
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egopro
+    ratio: 66073
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egopro_lw2030
+    ratio: 46712
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egostandard
+    ratio: 630278
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egostandard_lw2030
+    ratio: 347062
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/epic-kitchens-55
+    ratio: 4326
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/galbot
+    ratio: 137026
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/galbot_lw2030
+    ratio: 18088
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/holoassist
+    ratio: 16970
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/lightwheel
+    ratio: 839553
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/lightwheel_lw2030
+    ratio: 219626
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/openaoe-2000h
+    ratio: 159175
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/openaoe-2000h_lw2030
+    ratio: 39418
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robocoin
+    ratio: 107040
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robocoin_lw2030
+    ratio: 29504
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind1
+    ratio: 22725
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind1_lw2030
+    ratio: 572
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind2
+    ratio: 186107
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind2_lw2030
+    ratio: 2840
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/stereo-550
+    ratio: 34826
+  - path: /share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/stereo-550_lw2030
+    ratio: 13528
+  enable_map_style_resume: true
+  expected_latent_channels: 48
+  expected_vae_name: wan2pt2_tokenizer
+  expected_vae_weights_sha256: 20eb789667fa5e60e7516bf509512f6cb61f01b0aa0695eadaea930c13892b36
+  fixed_gen_tokens: 98304
+  fixed_sequence_length_enabled: true
+  fixed_und_tokens: 3072
+  fixed_understanding_tokens: 0
+  map_style_resume_mode: exact
+  max_caption_tokens: 2048
+  max_samples_per_batch: null
+  max_sequence_length: 101376
+  media_config:
+    decode_timeout_sec: 120.0
+    max_decode_frames_per_seek: 2048
+    max_frame_pixels: 33554432
+    max_latent_tensor_bytes: 1073741824
+    max_sampled_frames: 256
+    max_window_bytes: 1073741824
+    parquet_handle_cache_size: 8
+    safetensors_handle_cache_size: 8
+    video_handle_cache_size: 8
+  num_workers: 10
+  packing_pool_size: 16
+  parallel_dims: null
+  pin_memory: false
+  prefetch_factor: 4
+  processor:
+    _target_: cosmos_framework.data.generator.processors.build_processor_lazy
+    config_variant: hf
+    repository: null
+    revision: null
+    subdir: ''
+    tokenizer_type: /share/project/eai_pwm/models/Qwen3-VL-8B-Instruct
+  resolution: '480'
+  seed: 42
+  static_packing_config:
+    action_dim: 64
+    base_fps: 24.0
+    enable_fps_modulation: true
+    latent_patch_size: 2
+    spatial_compression_factor: 16
+    temporal_compression_factor: 4
+    unified_3d_mrope_reset_spatial_ids: true
+    unified_3d_mrope_temporal_modality_margin: 15000
+    video_temporal_causal: false
+    vision_temporal_position_mode: latent_index
+  vae_mode: offline
+dataloader_val: null
+defaults:
+- _self_
+- model: mot_fsdp
+- data_train: null
+- data_val: null
+- optimizer: adamw
+- scheduler: warmup_cosine_lr
+- checkpoint: s3
+- callbacks:
+  - basic
+  - optimization
+  - job_monitor
+  - generation
+- ema: power
+- tokenizer: wan2pt2_tokenizer
+- sound_tokenizer: null
+- vlm_config: null
+- ckpt_type: dcp
+- experiment: null
+job:
+  cluster: null
+  group: v0.2.3c
+  name: profile
+  project: kernel-list
+  wandb_mode: disabled
+model:
+  _recursive_: false
+  _target_: cosmos_framework.model.generator.omni_mot_model.OmniMoTModel
+  config:
+    action_gen: false
+    action_tower_attention_backend: auto
+    action_tower_execution: native
+    action_tower_init: checkpoint
+    action_tower_preset: full
+    action_tower_projection_mode: routed
+    action_tower_und_short_tokens: 0
+    activation_checkpointing:
+      determinism_check: default
+      mode: full
+      preserve_rng_state: true
+      save_ops_regex:
+      - fmha
+    attention_io_layout: sequence_sharded
+    causal_training_strategy: none
+    compile:
+      ar_post_saturation_mode: default
+      compile_dynamic: false
+      compiled_region: language
+      coordinate_descent_tuning: false
+      enabled: true
+      max_autotune_pointwise: false
+      mix_order_reduction_split_size: 32
+      use_cuda_graphs: false
+    diffusion_expert_config:
+      base_fps: 24
+      enable_fps_modulation: true
+      enable_media_modality_embedding: false
+      enable_vision_modality_embeddings: false
+      load_weights_from_pretrained: true
+      max_vae_latent_side_after_patchify: 20
+      patch_spatial: 2
+      sound_base_temporal_compression_factor: null
+      timestep_range: 1.0
+      unified_3d_mrope_reset_spatial_ids: true
+      unified_3d_mrope_temporal_modality_margin: 15000
+      vision_temporal_position_mode: latent_index
+    ema:
+      enabled: false
+      iteration_shift: 0
+      rate: 0.1
+    enable_input_bias: true
+    exclude_reasoner_weights_from_checkpoint: false
+    fixed_sequence_length:
+      action_tokens: 0
+      enabled: true
+      gen_tokens: 98304
+      und_tokens: 3072
+      understanding_tokens: 0
+    fixed_step_sampler_config: null
+    flex_attention:
+      backend: auto
+      enabled: false
+      mask:
+        noisy_attention_scope: all_views
+    gen_loss_scale: 1.0
+    input_caption_key: ai_caption
+    input_image_key: images
+    input_video_key: video
+    input_video_latent_key: video_latent
+    joint_attn_implementation: two_way
+    latent_downsample_factor: 16
+    lbl:
+      coeff_gen: null
+      coeff_und: null
+      method: local
+    load_vision_tokenizer: false
+    load_vlm_visual: false
+    log_enc_time_every_n: 100
+    lora_alpha: 32
+    lora_enabled: false
+    lora_rank: 16
+    lora_target_modules: q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen
+    max_action_dim: 64
+    max_num_tokens_after_packing: 101376
+    natten_parameter_list: null
+    net: null
+    num_embodiment_domains: 32
+    parallelism:
+      cfg_parallel_shard_degree: 1
+      context_parallel_shard_degree: 1
+      data_parallel_replicate_degree: 1
+      data_parallel_shard_degree: 8
+      enable_inference_mode: false
+      fsdp_master_dtype: float32
+      fsdp_reduce_dtype: null
+    precision: bfloat16
+    predict_text_tokens: false
+    quantization:
+      exclude_regex: []
+      fp8_granularity: per_row
+      include_regex: []
+      method: null
+      modelopt_fp8_checkpoint_path: null
+      modelopt_fp8_target_fqns: []
+    rectified_flow_inference_config:
+      num_train_timesteps: 1000
+      scheduler_type: unipc
+      shift: 1
+      use_dynamic_shifting: false
+    rectified_flow_training_config:
+      action_loss_weight: 10.0
+      image_loss_scale: 1.0
+      independent_action_schedule: false
+      independent_sound_schedule: false
+      loss_scale: 1.0
+      normalize_loss_by_active: false
+      sample_level_loss_averaging: false
+      shift:
+        '256': 3
+        '480': 5
+        '720': 10
+      shift_action: null
+      shift_image: null
+      shift_sound: null
+      sound_loss_scale: null
+      train_time_action_distribution: logitnormal
+      train_time_image_distribution: logitnormal
+      train_time_sound_distribution: logitnormal
+      train_time_video_distribution: waver
+      train_time_weight: uniform
+      use_discrete_rf: false
+      use_dynamic_shift: false
+    resolution: '480'
+    sound_dim: null
+    sound_gen: false
+    sound_latent_fps: 25
+    sound_tokenizer: null
+    state_ch: 48
+    state_t: 300
+    text_loss_weight: 1.0
+    tokenizer:
+      _target_: cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface
+      bucket_name: ''
+      causal: true
+      chunk_duration: 93
+      encode_bucket_multiple: null
+      encode_chunk_frames:
+        '256': 68
+        '480': 24
+        '720': 8
+        '768': 8
+      encode_exact_durations: null
+      keep_decoder_cache: false
+      object_store_credential_path_pretrained: ''
+      spatial_compression_factor: 16
+      temporal_compression_factor: 4
+      temporal_window: null
+      use_streaming_encode: false
+      vae_path: pretrained/tokenizers/video/wan2pt2/Wan2.2_VAE.pth
+    tower_structure: two_tower
+    train_vlm_visual: false
+    und_loss_scale: 1.0
+    video_temporal_causal: false
+    vision_gen: true
+    vision_vae_mode: offline
+    vlm_config:
+      layer_module: Qwen2MoTDecoderLayer
+      model_instance:
+        _target_: cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM
+        config:
+          _target_: cosmos_framework.configs.base.defaults.reasoner.create_vlm_config
+          base_config:
+            _target_: cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig.from_json_file
+            json_file: cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json
+          freeze_und: false
+          layer_module: MoTDecoderLayer
+          qk_norm_for_text: true
+          tie_word_embeddings: true
+      model_name: Qwen/Qwen3-VL-8B-Instruct
+      pretrained_weights:
+        backbone_path: s3://bucket0/cosmos3/pretrained/huggingface/Qwen/Qwen3-VL-8B-Instruct/
+        checkpoint_format: null
+        credentials_path: ''
+        enable_gcs_patch_in_boto3: true
+        enabled: false
+      qk_norm: false
+      safetensors_path: ''
+      tie_word_embeddings: false
+      tokenizer:
+        _target_: cosmos_framework.configs.base.defaults.reasoner.create_qwen2_tokenizer_with_download
+        config_variant: hf
+        pretrained_model_name: /share/project/eai_pwm/models/Qwen3-VL-8B-Instruct
+      use_system_prompt: false
+model_parallel: null
+optimizer:
+  _target_: cosmos_framework.utils.generator.optimizer.build_optimizer
+  betas:
+  - 0.9
+  - 0.95
+  disable_weight_decay_for_1d_params: false
+  eps: 1.0e-06
+  fused: true
+  keys_to_select:
+  - moe_gen
+  - time_embedder
+  - vae2llm
+  - llm2vae
+  lr: 0.0001
+  lr_multipliers: {}
+  model: null
+  optimizer_type: AdamW
+  weight_decay: 0
+scheduler:
+  _target_: cosmos_framework.utils.generator.optimizer.build_lr_scheduler
+  cycle_lengths:
+  - 100000
+  f_max:
+  - 1.0
+  f_min:
+  - 1.0
+  f_start:
+  - 0.0
+  lr_scheduler_type: LambdaCosine
+  optimizer: null
+  verbosity_interval: 0
+  warm_up_steps:
+  - 50
+trainer:
+  callbacks:
+    dataloader_speed:
+      every_n: 100
+      save_s3: false
+      step_size: 1
+    dataloader_state:
+      _target_: cosmos_framework.callbacks.cosmos_dataloader_state.JointCosmosDataLoaderStateCallback
+      outer_loader: null
+    device_monitor:
+      _target_: cosmos_framework.callbacks.device_monitor.DeviceMonitor
+      every_n: 200
+      log_memory_detail: true
+      save_s3: false
+      step_size: 1
+      upload_every_n_mul: 5
+    expert_heatmap:
+      _target_: cosmos_framework.callbacks.expert_heatmap.ExpertHeatmap
+      every_n: 1000
+    grad_clip:
+      _target_: cosmos_framework.callbacks.grad_clip.GradClip
+      clip_norm: 0.1
+      error_if_nonfinite: false
+      force_finite: true
+      track_per_modality: true
+    heart_beat:
+      _target_: cosmos_framework.callbacks.heart_beat.HeartBeat
+      every_n: 200
+      save_s3: false
+      step_size: 1
+      update_interval_in_minute: 20
+    iter_speed:
+      _target_: cosmos_framework.callbacks.iter_speed.IterSpeed
+      every_n: 1
+      hit_thres: 50
+      save_s3: false
+      save_s3_every_log_n: 500
+    kernel_batches:
+      _target_: cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace
+      enabled: true
+      flush_every_n_batches: 1
+      output_dir: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches
+      record_cuda_timing: false
+    kernel_phases:
+      _target_: phase_audit.PhaseAudit
+    load_balance_trace:
+      _target_: cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace
+      enabled: false
+      flush_every_n_batches: 100
+      max_samples_per_record: 64
+      output_dir: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/job/kernel-list/v0.2.3c/profile/load_balance_trace
+      record_cuda_timing: true
+    load_pretrained:
+      _target_: cosmos_framework.callbacks.load_pretrained.LoadPretrained
+      config: null
+      trainer: null
+    low_precision:
+      _target_: cosmos_framework.utils.callback.LowPrecisionCallback
+      config: null
+      trainer: null
+      update_iter: 1
+    manual_gc:
+      _target_: cosmos_framework.callbacks.manual_gc.ManualGarbageCollection
+      every_n: 5
+      gc_level: 1
+      warm_up: 1
+    mfu:
+      _target_: cosmos_framework.callbacks.mfu.MFUCallback
+      backwardpass_ratio: 2.0
+      every_n: 1
+      grad_accum_iter: 2
+      hit_thres: 5
+      include_padding: true
+      include_vae_encoder: true
+    moe_router_geometry:
+      _target_: cosmos_framework.callbacks.moe_specialization_callback.MoERouterGeometryCallback
+      every_n: 250
+    moe_specialization:
+      _target_: cosmos_framework.callbacks.moe_specialization_callback.MoESpecializationCallback
+      every_n: 250
+    moe_stability:
+      _target_: cosmos_framework.callbacks.moe_stability_callback.MoEStabilityCallback
+      every_n: 250
+    norm_monitor:
+      _target_: cosmos_framework.callbacks.norm_monitor.NormMonitor
+      every_n: 100
+      layer_norm_only: false
+      log_stat_wandb: true
+      model_key: null
+      save_s3: false
+      step_size: 1
+      track_activations: true
+    ofu:
+      _target_: cosmos_framework.callbacks.ofu.OFUCallback
+      every_n: 1
+      hit_thres: 5
+    param_count:
+      _target_: cosmos_framework.callbacks.param_count.ParamCount
+      save_s3: false
+    parameter_geometry:
+      _target_: cosmos_framework.callbacks.parameter_geometry_callback.ParameterGeometryCallback
+      every_n: 250
+    sampled_media:
+      _target_: cosmos_framework.callbacks.sampled_media_recorder.SampledMediaRecorder
+      creds_path: null
+      enabled: false
+      flush_every_n_batches: 100
+      output_uri: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/job/kernel-list/v0.2.3c/profile/sampled_media.lance
+      record_caption: false
+    sequence_packing_padding:
+      _target_: cosmos_framework.callbacks.sequence_packing_padding.SequencePackingPadding
+      every_n: 50
+    sigma_loss_analysis:
+      _target_: cosmos_framework.callbacks.sigma_loss_analysis.SigmaLossAnalysis
+      every_n: 500
+      every_n_viz: 500
+      save_s3: false
+    skip_nan_step:
+      _target_: cosmos_framework.callbacks.skip_nan_step.SkipNaNStep
+      max_consecutive_nan: 100
+    termination_signal_checkpoint:
+      _target_: cosmos_framework.callbacks.termination_signal_checkpoint.TerminationSignalCheckpoint
+      min_save_fraction: 0.3333333333333333
+    training_stats:
+      log_freq: 100
+    wandb:
+      _target_: cosmos_framework.utils.callback.WandBCallback
+      config: null
+      trainer: null
+    wandb_2x:
+      _target_: cosmos_framework.callbacks.wandb_log.WandbCallback
+      logging_iter_multipler: 2
+      save_logging_iter_multipler: 1
+      save_s3: false
+    wandb_val:
+      _target_: cosmos_framework.callbacks.wandb_log_eval.WandbCallback
+      save_s3: false
+  compile_cache:
+    enabled: true
+    path: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/cache/inductor/rank0
+  compile_config:
+    recompile_limit: 8
+    use_duck_shape: false
+  cp_input_direct_broadcast_min_bytes: 9223372036854775807
+  cudnn:
+    benchmark: true
+    deterministic: false
+  ddp:
+    broadcast_buffers: true
+    find_unused_parameters: false
+    static_graph: true
+  distributed_parallelism: fsdp
+  grad_accum_iter: 2
+  grad_scaler_args:
+    enabled: false
+  logging_iter: 1
+  max_iter: 12625
+  max_val_iter: null
+  memory_format: torch.preserve_format
+  profiling:
+    enable_memory_snapshot: false
+    enable_nsys: false
+    enable_profiling: true
+    profile_active: 3
+    profile_freq: 25
+    profile_memory: false
+    profile_warmup: 2
+    record_shape: true
+    save_s3: false
+    target_ranks:
+    - 0
+    with_modules: false
+    with_stack: false
+  run_validation: false
+  run_validation_on_start: false
+  save_zero_checkpoint: false
+  seed: 42
+  straggler_detection:
+    analyze_backward: true
+    analyze_dataloading: true
+    analyze_forward: true
+    analyze_optimizer: true
+    enabled: false
+    max_diff: 2.0
+    profile_freq: 1
+    raise_error: true
+    report_freq: 100
+    save_s3: false
+  timeout_period: 999999999
+  type: cosmos_framework.trainer.ImaginaireTrainer
+  validation_iter: 100
+upload_reproducible_setup: false

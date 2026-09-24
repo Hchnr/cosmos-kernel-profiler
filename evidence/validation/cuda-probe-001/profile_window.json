@@ -1,0 +1,17 @@
+{
+  "rank": 0,
+  "global_start_step": 12600,
+  "schedule": {
+    "wait": 2,
+    "warmup": 1,
+    "active": 2,
+    "repeat": 1
+  },
+  "active_completed_steps": [
+    12604,
+    12605
+  ],
+  "torch_version": "2.12.0a0+0291f960b6.nv26.04.48445190",
+  "cuda_version": "13.2",
+  "grad_accum_iter": 1
+}

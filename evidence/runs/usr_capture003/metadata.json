@@ -1,0 +1,7 @@
+{
+  "run_id": "usr_capture003",
+  "status": "resources_busy",
+  "launched": false,
+  "checked_utc": "2026-09-24T08:01:45Z",
+  "gpu_processes": "pid, gpu_uuid, used_gpu_memory [MiB]\n2355478, GPU-61793000-d7cb-29e2-98a0-8863271d6474, 38548 MiB\n2355479, GPU-94c5c10d-b58a-828a-4b46-f4662393a3c2, 38496 MiB\n2355480, GPU-67d748eb-7030-8556-d7ea-b21031a4d85f, 38556 MiB\n2355481, GPU-60a4625d-e5f4-5ce2-3146-d4b623c555c6, 38548 MiB\n2355482, GPU-6a9db7ba-88e2-8a7b-6f25-c36ef798c159, 38556 MiB\n2355483, GPU-cd441b7c-f137-b397-1835-deeac1031735, 38550 MiB\n2355484, GPU-ff3d5e2e-d860-e138-ac6b-0082c21a2794, 38556 MiB\n2355485, GPU-68bea3f3-40df-2f43-3b24-3867487ce512, 38556 MiB\n"
+}

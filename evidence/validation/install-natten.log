@@ -1,0 +1,9 @@
+Using CPython 3.12.3 interpreter at: /opt/venv/bin/python
+WARN Range requests not supported for natten-0.21.7+torch2120cu132-cp312-cp312-linux_x86_64.whl; streaming wheel
+Resolved 1 package in 27.44s
+Downloading natten (194.2MiB)
+ Downloaded natten
+Prepared 1 package in 14.21s
+Installed 1 package in 2.84s
+Bytecode compiled 4132 files in 1.40s
+ + natten==0.21.7+torch2120cu132 (from https://github.com/SHI-Labs/NATTEN/releases/download/v0.21.7/natten-0.21.7%2Btorch2120cu132-cp312-cp312-linux_x86_64.whl)

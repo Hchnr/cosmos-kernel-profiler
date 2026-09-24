@@ -1,0 +1,1 @@
+{"cp_group_id":7,"cp_group_ranks":[7],"cp_rank":0,"cp_size":1,"dp_replicate":1,"dp_shard":8,"hostname":"job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0","iteration":12600,"local_rank":7,"node_rank":0,"pid":286640,"rank":7,"record_type":"trace_start","run_id":"ac483e04-76be-484a-9a45-74efe86927ba","schema_version":1,"started_at_unix_ns":1790236601445580858,"world_size":8}

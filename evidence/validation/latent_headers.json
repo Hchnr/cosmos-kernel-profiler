@@ -1,0 +1,321 @@
+[
+  {
+    "dataset": "agibot-world",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/agibot-world_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "agibot-world/task_327__684413#0-10667@w0",
+    "shape": [
+      48,
+      64,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "agibot-world_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/agibot-world_lw2030_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "agibot-world_lw2030/task_351__812431#24400-49567@w0",
+    "shape": [
+      48,
+      151,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "ego-exo4d",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/ego-exo4d_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "ego-exo4d/fair_bike_02_4/cam04#69653-72775@w0",
+    "shape": [
+      48,
+      19,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "egocentric-10k",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_2to20/latents/egocentric-10k_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egocentric-10k/factory001_worker008_00004#1152000-1166000@w0",
+    "shape": [
+      48,
+      84,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "egocentric-10k_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/egocentric-10k_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egocentric-10k_lw2030/factory007_worker018_00005#678000-699000@w0",
+    "shape": [
+      48,
+      126,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "egodex",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_2to20/latents/egodex_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egodex/episode_000309#0-14900@w0",
+    "shape": [
+      48,
+      90,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "egodex_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/egodex_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egodex_lw2030/episode_007193#0-28500@w0",
+    "shape": [
+      48,
+      171,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "egolive",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/egolive_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egolive/JD000001sc00120210101V1003488#0-10500@w0",
+    "shape": [
+      48,
+      63,
+      40,
+      40
+    ]
+  },
+  {
+    "dataset": "egolive_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/egolive_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egolive_lw2030/JD000001sc00120210101V1003525#0-25451@w0",
+    "shape": [
+      48,
+      153,
+      40,
+      40
+    ]
+  },
+  {
+    "dataset": "egopro",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/egopro_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egopro/0000805e-039e-4bcd-b295-18375b1e4242#0-9800@w0",
+    "shape": [
+      48,
+      59,
+      34,
+      46
+    ]
+  },
+  {
+    "dataset": "egopro_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/egopro_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egopro_lw2030/0000805e-039e-4bcd-b295-18375b1e4242#25000-49000@w0",
+    "shape": [
+      48,
+      144,
+      34,
+      46
+    ]
+  },
+  {
+    "dataset": "egostandard",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_2to20/latents/egostandard_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egostandard/0013ecca-a4de-4b8a-98e2-af4f1006f7d4#0-12000@w0",
+    "shape": [
+      48,
+      72,
+      34,
+      46
+    ]
+  },
+  {
+    "dataset": "egostandard_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/egostandard_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "egostandard_lw2030/001848f0-8d32-4ddd-8528-50add363acdf#0-25000@w0",
+    "shape": [
+      48,
+      150,
+      34,
+      46
+    ]
+  },
+  {
+    "dataset": "epic-kitchens-55",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/epic-kitchens-55_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "epic-kitchens-55/P01_01#29220-31320@w0",
+    "shape": [
+      48,
+      13,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "galbot",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_2to20/latents/galbot_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "galbot/j-DISK1_new-04edd8c4-000054#0-13500@w0",
+    "shape": [
+      48,
+      81,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "galbot_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/galbot_lw2030_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "galbot_lw2030/j-DISK1_new-04edd8c4-000054#31000-54300@w0",
+    "shape": [
+      48,
+      140,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "holoassist",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_v04/latents/holoassist_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "holoassist/R0027-12-GoPro#12224-16100@w0",
+    "shape": [
+      48,
+      24,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "lightwheel",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/lightwheel_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "lightwheel/__05a14826-21b7-4392-9250-c7e2f67a1a04#20000-30000@w0",
+    "shape": [
+      48,
+      61,
+      34,
+      46
+    ]
+  },
+  {
+    "dataset": "lightwheel_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/lightwheel_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "lightwheel_lw2030/__05a14826-21b7-4392-9250-c7e2f67a1a04#0-20000@w0",
+    "shape": [
+      48,
+      121,
+      34,
+      46
+    ]
+  },
+  {
+    "dataset": "openaoe-2000h",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/openaoe-2000h_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "openaoe-2000h/raw_162094_seg_5#0-3500@w0",
+    "shape": [
+      48,
+      21,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "openaoe-2000h_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/openaoe-2000h_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "openaoe-2000h_lw2030/raw_162094_seg_5#81000-105000@w0",
+    "shape": [
+      48,
+      145,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "robocoin",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/robocoin_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "robocoin/AIRBOT_MMK2_diamond_storage_20251210__000003#4167-7000@w0",
+    "shape": [
+      48,
+      17,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "robocoin_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/robocoin_lw2030_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "robocoin_lw2030/AI2_Alphabot_2_arrange_teaset__000054#0-29233@w0",
+    "shape": [
+      48,
+      175,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "robomind1",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/robomind1_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "robomind1/benchmark1_0__h5_agilex_3rgb__10_packplate_2__train__2024_09_28-16_19_57-172863293593858848.00#0-3000@w0",
+    "shape": [
+      48,
+      19,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "robomind1_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/robomind1_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "robomind1_lw2030/benchmark1_0__h5_tienkung_gello_1rgb__clean_table_3_241211__train__1211_105801#13000-35000@w0",
+    "shape": [
+      48,
+      133,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "robomind2",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/robomind2_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "robomind2/Agilex-mobile__arrange_bowl_spoon_chopsticks_cup_on_plate__0709_101056#66000-69000@w0",
+    "shape": [
+      48,
+      19,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "robomind2_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/supplement_lw2030c2/latents/robomind2_lw2030_wan2pt2_tokenizer-tnative640x480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "robomind2_lw2030/Agilex-mobile__arrange_plates_and_distribute_corn_equally__0711_191750#40000-60000@w0",
+    "shape": [
+      48,
+      121,
+      30,
+      40
+    ]
+  },
+  {
+    "dataset": "stereo-550",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/stereo-550_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "stereo-550/stera001_19lccazb1lvw_left#28500-30500@w0",
+    "shape": [
+      48,
+      13,
+      30,
+      52
+    ]
+  },
+  {
+    "dataset": "stereo-550_lw2030",
+    "path": "/share/project/eai_pwm/pipeline_store/latents/stereo-550_lw2030_wan2pt2_tokenizer-t480-20eb789667fa_v1/out/chunk_00001.safetensors",
+    "tensor_key": "stereo-550_lw2030/stera001_19lccazb1lvw_left#0-28500@w0",
+    "shape": [
+      48,
+      172,
+      30,
+      52
+    ]
+  }
+]

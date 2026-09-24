@@ -1,0 +1,118 @@
+{
+  "model": {
+    "resolution": "480",
+    "fixed_sequence_length": {
+      "enabled": true,
+      "understanding_tokens": 0,
+      "und_tokens": 3072,
+      "gen_tokens": 98304,
+      "action_tokens": 0,
+      "_target_": "cosmos_framework.configs.base.defaults.fixed_sequence_length.FixedSequenceLengthConfig"
+    },
+    "parallelism": {
+      "data_parallel_shard_degree": 8,
+      "data_parallel_replicate_degree": 1,
+      "context_parallel_shard_degree": 1,
+      "cfg_parallel_shard_degree": 1,
+      "enable_inference_mode": false,
+      "fsdp_master_dtype": "float32",
+      "fsdp_reduce_dtype": null,
+      "_target_": "cosmos_framework.configs.base.defaults.parallelism.ParallelismConfig"
+    },
+    "compile": {
+      "enabled": true,
+      "compiled_region": "language",
+      "compile_dynamic": false,
+      "use_cuda_graphs": false,
+      "ar_post_saturation_mode": "default",
+      "max_autotune_pointwise": false,
+      "coordinate_descent_tuning": false,
+      "mix_order_reduction_split_size": 32,
+      "_target_": "cosmos_framework.configs.base.defaults.compile.CompileConfig"
+    },
+    "ema": {
+      "enabled": false,
+      "rate": 0.1,
+      "iteration_shift": 0,
+      "_target_": "cosmos_framework.configs.base.defaults.ema.EMAConfig"
+    },
+    "tokenizer": {
+      "bucket_name": "",
+      "object_store_credential_path_pretrained": "",
+      "vae_path": "pretrained/tokenizers/video/wan2pt2/Wan2.2_VAE.pth",
+      "chunk_duration": 93,
+      "keep_decoder_cache": false,
+      "use_streaming_encode": false,
+      "encode_chunk_frames": {
+        "256": 68,
+        "480": 24,
+        "720": 8,
+        "768": 8
+      },
+      "encode_exact_durations": null,
+      "spatial_compression_factor": 16,
+      "temporal_compression_factor": 4,
+      "temporal_window": null,
+      "encode_bucket_multiple": null,
+      "causal": true,
+      "_target_": "cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface"
+    }
+  },
+  "trainer": {
+    "max_iter": 12625,
+    "grad_accum_iter": 2,
+    "seed": 42,
+    "compile_cache": {
+      "_target_": "cosmos_framework.utils.config.CompileCacheConfig",
+      "enabled": true,
+      "path": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight003/cache/inductor/rank0"
+    },
+    "profiling": {
+      "_target_": "cosmos_framework.utils.config.Profiling",
+      "enable_profiling": true,
+      "enable_nsys": false,
+      "enable_memory_snapshot": false,
+      "save_s3": false,
+      "profile_freq": 25,
+      "profile_warmup": 2,
+      "profile_active": 3,
+      "target_ranks": [
+        0
+      ],
+      "record_shape": true,
+      "profile_memory": false,
+      "with_stack": false,
+      "with_modules": false
+    }
+  },
+  "dataloader": {
+    "resolution": "480",
+    "vae_mode": "offline",
+    "max_sequence_length": 101376,
+    "num_workers": 10,
+    "conditioning_config": {
+      "0": 0.5,
+      "1": 0.4,
+      "2": 0.1
+    },
+    "cfg_drop_ratio": 0.1
+  },
+  "checkpoint": {
+    "load_path": "/share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP",
+    "load_training_state": true,
+    "save_iter": 1000000,
+    "load_from_object_store": {
+      "_target_": "cosmos_framework.utils.config.ObjectStoreConfig",
+      "enabled": false,
+      "credentials": "",
+      "bucket": ""
+    },
+    "save_to_object_store": {
+      "_target_": "cosmos_framework.utils.config.ObjectStoreConfig",
+      "enabled": false,
+      "credentials": "",
+      "bucket": ""
+    }
+  },
+  "dataset_count": 29
+}

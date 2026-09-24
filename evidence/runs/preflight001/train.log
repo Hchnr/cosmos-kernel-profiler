@@ -1,0 +1,47 @@
+2026-09-24 15:49:07.494 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.06ms
+Traceback (most recent call last):
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+    main()
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+    runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+  File "<frozen runpy>", line 229, in run_module
+  File "<frozen runpy>", line 88, in _run_code
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 303, in <module>
+    config = load_experiment_from_toml(args.sft_toml, extra_overrides=args.opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/configs/toml_config/sft_config.py", line 1101, in load_experiment_from_toml
+    config = load_config(base_config_path, overrides)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/config.py", line 570, in load_config
+    config = _load_py_config(config_path, opts, validate=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/utils/config.py", line 599, in _load_py_config
+    config = importlib.import_module(config_module).make_config()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/configs/base/config.py", line 72, in make_config
+    from cosmos_framework.configs.base.defaults.callbacks import register_callbacks
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/configs/base/defaults/callbacks.py", line 8, in <module>
+    from cosmos_framework.callbacks.compile_tokenizer import CompileTokenizer
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/callbacks/compile_tokenizer.py", line 30, in <module>
+    from cosmos_framework.model.generator.omni_mot_model import OmniMoTModel
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/model/generator/omni_mot_model.py", line 25, in <module>
+    from cosmos_framework.configs.base.defaults.model_config import OmniMoTModelConfig
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/configs/base/defaults/model_config.py", line 15, in <module>
+    from cosmos_framework.configs.base.defaults.reasoner import VLMConfig
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/configs/base/defaults/reasoner.py", line 14, in <module>
+    from cosmos_framework.data.generator.processors import LLMTokenizerProcessor, build_processor_lazy
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/data/generator/processors/__init__.py", line 10, in <module>
+    from transformers import PreTrainedTokenizerFast
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/transformers/dependency_versions_check.py", line 57, in <module>
+    require_version_core(deps[pkg])
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/transformers/utils/versions.py", line 117, in require_version_core
+    return require_version(requirement, hint)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/transformers/utils/versions.py", line 111, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/transformers/utils/versions.py", line 44, in _compare_versions
+    raise ImportError(
+ImportError: huggingface-hub>=0.34.0,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.9.2.
+Try: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main

@@ -1,0 +1,5 @@
+/usr/local/lib/python3.12/dist-packages/torch/profiler/profiler.py:229: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+KERNEL_LIST_EXPORT_BEGIN local_step=5 rank=0
+KERNEL_LIST_EXPORT_DONE plans/v0.2.3c_kernel_list/validation/cuda-probe-001/reports calls=24
+CUDA_PROBE_PASSED

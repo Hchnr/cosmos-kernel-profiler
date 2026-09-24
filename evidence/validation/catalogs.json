@@ -1,0 +1,408 @@
+[
+  {
+    "dataset": "agibot-world",
+    "weight": 483535,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/agibot-world/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 6558,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "agibot-world_lw2030",
+    "weight": 61404,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/agibot-world_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 223,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "ego-exo4d",
+    "weight": 21458,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/ego-exo4d/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 184,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egocentric-10k",
+    "weight": 245848,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egocentric-10k/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 3819,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egocentric-10k_lw2030",
+    "weight": 13622,
+    "shards": 96,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egocentric-10k_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 147,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egodex",
+    "weight": 69344,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egodex/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 783,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egodex_lw2030",
+    "weight": 15560,
+    "shards": 484,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egodex_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 38,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egolive",
+    "weight": 342681,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egolive/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 4286,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egolive_lw2030",
+    "weight": 71562,
+    "shards": 488,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egolive_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 163,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egopro",
+    "weight": 66073,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egopro/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 744,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egopro_lw2030",
+    "weight": 46712,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egopro_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 81,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egostandard",
+    "weight": 630278,
+    "shards": 1024,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egostandard/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 2913,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "egostandard_lw2030",
+    "weight": 347062,
+    "shards": 1024,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/egostandard_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 468,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "epic-kitchens-55",
+    "weight": 4326,
+    "shards": 8,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/epic-kitchens-55/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 8192,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "galbot",
+    "weight": 137026,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/galbot/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 1763,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "galbot_lw2030",
+    "weight": 18088,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/galbot_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 66,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "holoassist",
+    "weight": 16970,
+    "shards": 24,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/holoassist/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 8192,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "lightwheel",
+    "weight": 839553,
+    "shards": 1024,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/lightwheel/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 8192,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "lightwheel_lw2030",
+    "weight": 219626,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/lightwheel_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 474,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "openaoe-2000h",
+    "weight": 159175,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/openaoe-2000h/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 2277,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "openaoe-2000h_lw2030",
+    "weight": 39418,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/openaoe-2000h_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 93,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "robocoin",
+    "weight": 107040,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robocoin/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 2030,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "robocoin_lw2030",
+    "weight": 29504,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robocoin_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 111,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "robomind1",
+    "weight": 22725,
+    "shards": 256,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind1/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 915,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "robomind1_lw2030",
+    "weight": 572,
+    "shards": 252,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind1_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 2,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "robomind2",
+    "weight": 186107,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind2/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 8192,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "robomind2_lw2030",
+    "weight": 2840,
+    "shards": 256,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/robomind2_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 39,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "stereo-550",
+    "weight": 34826,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/stereo-550/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 135,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  },
+  {
+    "dataset": "stereo-550_lw2030",
+    "weight": 13528,
+    "shards": 512,
+    "first_shard": "/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0/stereo-550_lw2030/part-e000-00000-shard-0000-0000.parquet",
+    "rows_in_first_shard": 20,
+    "columns": [
+      "id",
+      "type",
+      "dataset",
+      "data",
+      "provenance"
+    ]
+  }
+]

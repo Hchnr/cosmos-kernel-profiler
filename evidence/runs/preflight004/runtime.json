@@ -1,0 +1,15 @@
+{
+  "python": "3.12.3",
+  "packages": {
+    "torch": "2.12.0a0+0291f960b6.nv26.4.48445190",
+    "triton": "3.6.0+git5d72932fc5.nv26.4",
+    "natten": "0.21.7+torch2120cu132",
+    "flash-attn": "2.7.4.post1+git5231d95fe1.45164347",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.2"
+  },
+  "cuda": "13.2",
+  "cudnn": 92100,
+  "flash3_supported": false,
+  "natten_supported": true
+}

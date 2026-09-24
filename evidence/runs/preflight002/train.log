@@ -1,0 +1,28 @@
+2026-09-24 15:49:56.964 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.06ms
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+2026-09-24 15:50:09.098 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 12133.65ms
+2026-09-24 15:50:09.573 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 474.69ms
+2026-09-24 15:50:09.573 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 12671.67ms
+Traceback (most recent call last):
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 41, in <module>
+    main()
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py", line 35, in main
+    runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
+  File "<frozen runpy>", line 229, in run_module
+  File "<frozen runpy>", line 88, in _run_code
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/scripts/train.py", line 303, in <module>
+    config = load_experiment_from_toml(args.sft_toml, extra_overrides=args.opts)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/configs/toml_config/sft_config.py", line 1131, in load_experiment_from_toml
+    from cosmos_framework.data.generator.catalog_processors import build_catalog_training_dataloader
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/data/generator/catalog_processors.py", line 18, in <module>
+    from cosmos_framework.data.generator.action.datasets.action_sft_dataset import (
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/data/generator/action/datasets/__init__.py", line 16, in <module>
+    from cosmos_framework.data.generator.action.datasets.droid_merged_lerobot_dataset import DROIDMergedLeRobotDataset
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/data/generator/action/datasets/droid_merged_lerobot_dataset.py", line 17, in <module>
+    from cosmos_framework.data.generator.action.datasets.droid_lerobot_dataset import DROIDLeRobotDataset
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/data/generator/action/datasets/droid_lerobot_dataset.py", line 16, in <module>
+    from cosmos_framework.data.generator.action.datasets.cosmos3_action_lerobot import (
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/cosmos_framework/data/generator/action/datasets/cosmos3_action_lerobot.py", line 32, in <module>
+    from lerobot.datasets.lerobot_dataset import LeRobotDataset, LeRobotDatasetMetadata
+ModuleNotFoundError: No module named 'lerobot'

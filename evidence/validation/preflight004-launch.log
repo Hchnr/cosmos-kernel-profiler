@@ -1,0 +1,3 @@
+RUN_DIRECTORY=/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004
+TORCHRUN_PID=358710
+RETURN_CODE=0

@@ -1,0 +1,114 @@
+2026-09-24 16:11:50.537 | DEBUG    | cosmos_framework.utils.config:_load_py_config:596 - get_config_module: took 0.06ms
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+2026-09-24 16:11:58.721 | DEBUG    | cosmos_framework.utils.config:_load_py_config:601 - importlib.import_module: took 8184.08ms
+2026-09-24 16:11:59.168 | DEBUG    | cosmos_framework.utils.config:_load_py_config:606 - override: took 446.55ms
+2026-09-24 16:11:59.168 | DEBUG    | cosmos_framework.utils.config:load_config:585 - total time to load config: 8692.22ms
+2026-09-24 16:11:59.623 | INFO     | __main__:<module>:310 - Config:
+* model: {'config': {'tokenizer': {'bucket_name': '', 'object_store_credential_path_pretrained': '', 'vae_path': 'pretrained/tokenizers/video/wan2pt2/Wan2.2_VAE.pth', 'chunk_duration': 93, 'keep_decoder_cache': False, 'use_streaming_encode': False, 'encode_chunk_frames': {'256': 68, '480': 24, '720': 8, '768': 8}, 'encode_exact_durations': None, 'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'temporal_window': None, 'encode_bucket_multiple': None, 'causal': True, '_target_': <class 'cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface'>}, 'load_vision_tokenizer': False, 'vision_vae_mode': 'offline', 'net': None, 'ema': {'enabled': False, 'rate': 0.1, 'iteration_shift': 0}, 'parallelism': {'data_parallel_shard_degree': 8, 'data_parallel_replicate_degree': 1, 'context_parallel_shard_degree': 1, 'cfg_parallel_shard_degree': 1, 'enable_inference_mode': False, 'fsdp_master_dtype': 'float32', 'fsdp_reduce_dtype': None}, 'attention_io_layout': 'sequence_sharded', 'compile': {'enabled': True, 'compiled_region': 'language', 'compile_dynamic': False, 'use_cuda_graphs': False, 'ar_post_saturation_mode': 'default', 'max_autotune_pointwise': False, 'coordinate_descent_tuning': False, 'mix_order_reduction_split_size': 32}, 'fixed_sequence_length': {'enabled': True, 'understanding_tokens': 0, 'und_tokens': 3072, 'gen_tokens': 98304, 'action_tokens': 0}, 'quantization': {'method': None, 'fp8_granularity': 'per_row', 'include_regex': [], 'exclude_regex': [], 'modelopt_fp8_checkpoint_path': None, 'modelopt_fp8_target_fqns': []}, 'activation_checkpointing': {'mode': 'full', 'save_ops_regex': ['fmha'], 'preserve_rng_state': True, 'determinism_check': 'default'}, 'precision': 'bfloat16', 'lora_enabled': False, 'lora_rank': 16, 'lora_alpha': 32, 'lora_target_modules': 'q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen', 'rectified_flow_training_config': {'shift': {'256': 3, '480': 5, '720': 10}, 'shift_image': None, 'use_dynamic_shift': False, 'train_time_image_distribution': 'logitnormal', 'train_time_video_distribution': 'waver', 'train_time_action_distribution': 'logitnormal', 'train_time_sound_distribution': 'logitnormal', 'train_time_weight': 'uniform', 'loss_scale': 1.0, 'image_loss_scale': 1.0, 'sound_loss_scale': None, 'use_discrete_rf': False, 'action_loss_weight': 10.0, 'independent_action_schedule': False, 'shift_action': None, 'independent_sound_schedule': False, 'shift_sound': None, 'normalize_loss_by_active': False, 'sample_level_loss_averaging': False}, 'rectified_flow_inference_config': {'scheduler_type': 'unipc', 'num_train_timesteps': 1000, 'shift': 1, 'use_dynamic_shifting': False}, 'fixed_step_sampler_config': None, 'vlm_config': {'model_name': 'Qwen/Qwen3-VL-8B-Instruct', 'safetensors_path': '', 'pretrained_weights': {'enabled': False, 'backbone_path': 's3://bucket0/cosmos3/pretrained/huggingface/Qwen/Qwen3-VL-8B-Instruct/', 'credentials_path': '', 'enable_gcs_patch_in_boto3': True, 'checkpoint_format': None}, 'model_instance': {'config': {'base_config': {'json_file': 'cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json', '_target_': <bound method _MoTConfigBase.from_json_file of <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig'>>}, 'freeze_und': False, 'layer_module': 'MoTDecoderLayer', 'qk_norm_for_text': True, 'tie_word_embeddings': True, '_target_': <function create_vlm_config at 0x7fbc93006700>}, '_target_': <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM'>}, 'tokenizer': {'config_variant': 'hf', 'pretrained_model_name': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', '_target_': <function create_qwen2_tokenizer_with_download at 0x7fbc85b7db20>}, 'layer_module': 'Qwen2MoTDecoderLayer', 'qk_norm': False, 'tie_word_embeddings': False, 'use_system_prompt': False}, 'diffusion_expert_config': {'timestep_range': 1.0, 'load_weights_from_pretrained': True, 'enable_vision_modality_embeddings': False, 'enable_media_modality_embedding': False, 'patch_spatial': 2, 'max_vae_latent_side_after_patchify': 20, 'enable_fps_modulation': True, 'base_fps': 24, 'sound_base_temporal_compression_factor': None, 'vision_temporal_position_mode': 'latent_index', 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000}, 'input_video_key': 'video', 'input_video_latent_key': 'video_latent', 'input_image_key': 'images', 'input_caption_key': 'ai_caption', 'gen_loss_scale': 1.0, 'und_loss_scale': 1.0, 'load_vlm_visual': False, 'train_vlm_visual': False, 'state_ch': 48, 'state_t': 300, 'latent_downsample_factor': 16, 'resolution': '480', 'max_num_tokens_after_packing': 101376, 'tower_structure': 'two_tower', 'action_tower_preset': 'full', 'action_tower_init': 'checkpoint', 'action_tower_execution': 'native', 'action_tower_attention_backend': 'auto', 'action_tower_und_short_tokens': 0, 'action_tower_projection_mode': 'routed', 'joint_attn_implementation': 'two_way', 'flex_attention': {'enabled': False, 'backend': 'auto', 'mask': {'noisy_attention_scope': 'all_views'}}, 'natten_parameter_list': None, 'video_temporal_causal': False, 'causal_training_strategy': 'none', 'lbl': {'method': 'local', 'coeff_und': None, 'coeff_gen': None}, 'vision_gen': True, 'predict_text_tokens': False, 'text_loss_weight': 1.0, 'action_gen': False, 'max_action_dim': 64, 'num_embodiment_domains': 32, 'sound_gen': False, 'sound_tokenizer': None, 'sound_dim': None, 'sound_latent_fps': 25, 'enable_input_bias': True, 'log_enc_time_every_n': 100, 'exclude_reasoner_weights_from_checkpoint': False}, '_recursive_': False, '_target_': <class 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel'>}
+* optimizer: {'model': None, 'optimizer_type': 'AdamW', 'lr': 0.0001, 'weight_decay': 0, 'betas': [0.9, 0.95], 'eps': 1e-06, 'fused': True, 'keys_to_select': ['moe_gen', 'time_embedder', 'vae2llm', 'llm2vae'], 'lr_multipliers': {}, 'disable_weight_decay_for_1d_params': False, '_target_': <function build_optimizer at 0x7fbc84872020>}
+* scheduler: {'optimizer': None, 'lr_scheduler_type': 'LambdaCosine', 'warm_up_steps': [50], 'cycle_lengths': [100000], 'f_start': [0.0], 'f_max': [1.0], 'f_min': [1.0], 'verbosity_interval': 0, '_target_': <function build_lr_scheduler at 0x7fbc848725c0>}
+* dataloader_train: {'conditioning_config': {0: 0.5, 1: 0.4, 2: 0.1}, 'cfg_drop_ratio': 0.1, 'vae_mode': 'offline', 'expected_latent_channels': 48, 'expected_vae_name': 'wan2pt2_tokenizer', 'expected_vae_weights_sha256': '${oc.env:WAN_VAE_WEIGHTS_SHA256,20eb789667fa5e60e7516bf509512f6cb61f01b0aa0695eadaea930c13892b36}', 'seed': 42, 'max_sequence_length': 101376, 'max_samples_per_batch': None, 'packing_pool_size': 16, 'max_caption_tokens': 2048, 'resolution': '480', 'num_workers': 10, 'prefetch_factor': 4, 'pin_memory': False, 'parallel_dims': None, 'media_config': {'decode_timeout_sec': 120.0, 'max_sampled_frames': 256, 'max_frame_pixels': 33554432, 'max_window_bytes': 1073741824, 'max_decode_frames_per_seek': 2048, 'parquet_handle_cache_size': 8, 'video_handle_cache_size': 8, 'safetensors_handle_cache_size': 8, 'max_latent_tensor_bytes': 1073741824}, 'static_packing_config': {'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'latent_patch_size': 2, 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000, 'enable_fps_modulation': True, 'base_fps': 24.0, 'vision_temporal_position_mode': 'latent_index', 'video_temporal_causal': False, 'action_dim': 64}, 'fixed_sequence_length_enabled': True, 'fixed_understanding_tokens': 0, 'fixed_und_tokens': 3072, 'fixed_gen_tokens': 98304, 'enable_map_style_resume': True, 'map_style_resume_mode': 'exact', 'dataset_specs': [{'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/agibot-world', 'ratio': 483535}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/agibot-world_lw2030', 'ratio': 61404}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/ego-exo4d', 'ratio': 21458}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egocentric-10k', 'ratio': 245848}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egocentric-10k_lw2030', 'ratio': 13622}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egodex', 'ratio': 69344}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egodex_lw2030', 'ratio': 15560}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egolive', 'ratio': 342681}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egolive_lw2030', 'ratio': 71562}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egopro', 'ratio': 66073}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egopro_lw2030', 'ratio': 46712}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egostandard', 'ratio': 630278}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/egostandard_lw2030', 'ratio': 347062}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/epic-kitchens-55', 'ratio': 4326}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/galbot', 'ratio': 137026}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/galbot_lw2030', 'ratio': 18088}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/holoassist', 'ratio': 16970}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/lightwheel', 'ratio': 839553}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/lightwheel_lw2030', 'ratio': 219626}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/openaoe-2000h', 'ratio': 159175}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/openaoe-2000h_lw2030', 'ratio': 39418}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/robocoin', 'ratio': 107040}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/robocoin_lw2030', 'ratio': 29504}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/robomind1', 'ratio': 22725}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/robomind1_lw2030', 'ratio': 572}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/robomind2', 'ratio': 186107}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/robomind2_lw2030', 'ratio': 2840}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/stereo-550', 'ratio': 34826}, {'path': '${oc.env:USR_DATASET_ROOT,/share/project/liyue/data/parquet-data/train-usr-v2-20260922/full-r3-80-r6b-5-r6-15-epochs4-seed0}/stereo-550_lw2030', 'ratio': 13528}], 'processor': {'repository': None, 'revision': None, 'subdir': '', 'tokenizer_type': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', 'config_variant': 'hf', '_target_': <function build_processor_lazy at 0x7fbc8689af20>}, '_target_': <function build_catalog_training_dataloader at 0x7fbc7d69eca0>}
+* dataloader_val: None
+* job:
+   * project: kernel-list
+   * group: v0.2.3c
+   * name: profile
+   * wandb_mode: disabled
+   * cluster: None
+* trainer:
+   * type: <class 'cosmos_framework.trainer.ImaginaireTrainer'>
+   * callbacks: {'iter_speed': {'hit_thres': 50, 'save_s3': False, 'save_s3_every_log_n': 500, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.iter_speed.IterSpeed'>}, 'manual_gc': {'warm_up': 1, 'gc_level': 1, 'every_n': 5, '_target_': <class 'cosmos_framework.callbacks.manual_gc.ManualGarbageCollection'>}, 'wandb': {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.WandBCallback'>}, 'wandb_2x': {'logging_iter_multipler': 2, 'save_logging_iter_multipler': 1, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log.WandbCallback'>}, 'param_count': {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.param_count.ParamCount'>}, 'wandb_val': {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log_eval.WandbCallback'>}, 'moe_stability': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_stability_callback.MoEStabilityCallback'>}, 'moe_specialization': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoESpecializationCallback'>}, 'moe_router_geometry': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoERouterGeometryCallback'>}, 'parameter_geometry': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.parameter_geometry_callback.ParameterGeometryCallback'>}, 'expert_heatmap': {'every_n': 1000, '_target_': <class 'cosmos_framework.callbacks.expert_heatmap.ExpertHeatmap'>}, 'load_pretrained': {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.callbacks.load_pretrained.LoadPretrained'>}, 'norm_monitor': {'every_n': 100, 'step_size': 1, 'layer_norm_only': False, 'model_key': None, 'log_stat_wandb': True, 'save_s3': False, 'track_activations': True, '_target_': <class 'cosmos_framework.callbacks.norm_monitor.NormMonitor'>}, 'sigma_loss_analysis': {'every_n': 500, 'every_n_viz': 500, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.sigma_loss_analysis.SigmaLossAnalysis'>}, 'sequence_packing_padding': {'every_n': 50, '_target_': <class 'cosmos_framework.callbacks.sequence_packing_padding.SequencePackingPadding'>}, 'sampled_media': {'enabled': False, 'output_uri': '/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/job/kernel-list/v0.2.3c/profile/sampled_media.lance', 'creds_path': None, 'flush_every_n_batches': 100, 'record_caption': False, '_target_': <class 'cosmos_framework.callbacks.sampled_media_recorder.SampledMediaRecorder'>}, 'load_balance_trace': {'enabled': False, 'output_dir': '/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/job/kernel-list/v0.2.3c/profile/load_balance_trace', 'flush_every_n_batches': 100, 'record_cuda_timing': True, 'max_samples_per_record': 64, '_target_': <class 'cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace'>}, 'mfu': {'backwardpass_ratio': 2.0, 'hit_thres': 5, 'include_vae_encoder': True, 'include_padding': True, 'grad_accum_iter': 2, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.mfu.MFUCallback'>}, 'ofu': {'hit_thres': 5, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.ofu.OFUCallback'>}, 'skip_nan_step': {'max_consecutive_nan': 100, '_target_': <class 'cosmos_framework.callbacks.skip_nan_step.SkipNaNStep'>}, 'grad_clip': {'clip_norm': 0.1, 'force_finite': True, 'track_per_modality': True, 'error_if_nonfinite': False, '_target_': <class 'cosmos_framework.callbacks.grad_clip.GradClip'>}, 'low_precision': {'update_iter': 1, 'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.LowPrecisionCallback'>}, 'heart_beat': {'step_size': 1, 'update_interval_in_minute': 20, 'save_s3': False, 'every_n': 200, '_target_': <class 'cosmos_framework.callbacks.heart_beat.HeartBeat'>}, 'device_monitor': {'every_n': 200, 'step_size': 1, 'save_s3': False, 'upload_every_n_mul': 5, 'log_memory_detail': True, '_target_': <class 'cosmos_framework.callbacks.device_monitor.DeviceMonitor'>}, 'termination_signal_checkpoint': {'min_save_fraction': 0.3333333333333333, '_target_': <class 'cosmos_framework.callbacks.termination_signal_checkpoint.TerminationSignalCheckpoint'>}, 'dataloader_speed': {'every_n': 100, 'save_s3': False, 'step_size': 1}, 'training_stats': {'log_freq': 100}, 'kernel_phases': {'_target_': 'phase_audit.PhaseAudit'}, 'kernel_batches': {'_target_': 'cosmos_framework.callbacks.load_balance_trace.LoadBalanceTrace', 'enabled': True, 'output_dir': '/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/batches', 'record_cuda_timing': False, 'flush_every_n_batches': 1}, 'dataloader_state': {'outer_loader': None, '_target_': <class 'cosmos_framework.callbacks.cosmos_dataloader_state.JointCosmosDataLoaderStateCallback'>}}
+   * distributed_parallelism: fsdp
+   * cp_input_direct_broadcast_min_bytes: 9223372036854775807
+   * ddp:
+      * find_unused_parameters: False
+      * static_graph: True
+      * broadcast_buffers: True
+   * cudnn:
+      * deterministic: False
+      * benchmark: True
+   * seed: 42
+   * grad_scaler_args: {'enabled': False}
+   * max_iter: 12625
+   * max_val_iter: None
+   * logging_iter: 1
+   * run_validation: False
+   * validation_iter: 100
+   * run_validation_on_start: False
+   * timeout_period: 999999999
+   * memory_format: torch.preserve_format
+   * grad_accum_iter: 2
+   * straggler_detection:
+      * enabled: False
+      * report_freq: 100
+      * profile_freq: 1
+      * max_diff: 2.0
+      * raise_error: True
+      * analyze_forward: True
+      * analyze_backward: True
+      * analyze_optimizer: True
+      * analyze_dataloading: True
+      * save_s3: False
+   * profiling:
+      * enable_profiling: True
+      * enable_nsys: False
+      * enable_memory_snapshot: False
+      * save_s3: False
+      * profile_freq: 25
+      * profile_warmup: 2
+      * profile_active: 3
+      * target_ranks: [0]
+      * record_shape: True
+      * profile_memory: False
+      * with_stack: False
+      * with_modules: False
+   * compile_config:
+      * recompile_limit: 8
+      * use_duck_shape: False
+   * compile_cache:
+      * enabled: True
+      * path: /share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/cache/inductor/rank0
+   * save_zero_checkpoint: False
+* model_parallel: None
+* checkpoint:
+   * type: {'callbacks': None, 'disable_async': False, '_target_': <class 'cosmos_framework.checkpoint.dcp.DistributedCheckpointer'>}
+   * dcp_async_mode_enabled: False
+   * dcp_load_dedup: True
+   * save_to_object_store:
+      * enabled: False
+      * credentials: 
+      * bucket: 
+   * save_iter: 1000000
+   * strict_resume: True
+   * load_from_object_store:
+      * enabled: False
+      * credentials: 
+      * bucket: 
+   * load_path: /share/project/eai_pwm/models/Cosmos3-Nano-USR-v2-iter12600-R7-1056-Resume-DCP
+   * load_training_state: True
+   * only_load_scheduler_state: False
+   * keys_to_skip_loading: ['net_ema.']
+   * jit:
+      * enabled: False
+      * input_shape: None
+      * device: cuda
+      * dtype: bfloat16
+      * strict: True
+   * verbose: True
+   * keys_not_to_resume: []
+   * broadcast_via_filesystem: False
+   * load_ema_to_reg: False
+   * enable_gcs_patch_in_boto3: True
+   * hf_export:
+      * enabled: False
+      * hf_repo_id: None
+      * upload_to_object_store:
+         * enabled: False
+         * credentials: 
+         * bucket: 
+      * export_every_n: 1
+* upload_reproducible_setup: False
+* data_setting:
+   * qwen_max_video_token_length: 8192
+* defaults: ['_self_', {'model': 'mot_fsdp'}, {'data_train': None}, {'data_val': None}, {'optimizer': 'adamw'}, {'scheduler': 'warmup_cosine_lr'}, {'checkpoint': 's3'}, {'callbacks': ['basic', 'optimization', 'job_monitor', 'generation']}, {'ema': 'power'}, {'tokenizer': 'wan2pt2_tokenizer'}, {'sound_tokenizer': None}, {'vlm_config': None}, {'ckpt_type': 'dcp'}, {'experiment': None}]
+/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/job/kernel-list/v0.2.3c/profile/config.yaml

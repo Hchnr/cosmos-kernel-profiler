@@ -1,0 +1,21 @@
+antlr4-python3-runtime==4.9.3
+bracex==2.6
+cattrs==26.1.0
+diffusers==0.39.0
+fvcore==0.1.5.post20221221
+huggingface_hub==0.36.2
+hydra-core==1.3.2
+iopath==0.1.10
+lerobot==0.4.4
+multi-storage-client==0.44.0
+obstore==0.8.2
+omegaconf==2.3.0
+portalocker==3.2.0
+termcolor==3.3.0
+tokenizers==0.22.2
+transformers==4.57.6
+wcmatch==10.1
+xattr==1.3.0
+yacs==0.1.8
+# Official NATTEN wheel matching the container's Torch 2.12 / CUDA 13.2 ABI.
+natten @ https://github.com/SHI-Labs/NATTEN/releases/download/v0.21.7/natten-0.21.7%2Btorch2120cu132-cp312-cp312-linux_x86_64.whl

@@ -1,0 +1,571 @@
+{
+  "source_repository": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance",
+  "source_git_sha": "872f6bf2888c8899c1599dda8c722e1c551684fa",
+  "note": "Hashes describe copied source before standalone path adaptations. No formal USR capture succeeded.",
+  "files": [
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/checkpoint_compat.py",
+      "destination": "checkpoint_compat.py",
+      "sha256": "c9e4651fce79e38327369ca814065dab75ab1e3d2e351214199b5fb55d881d21",
+      "bytes": 593
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/launch_profile.py",
+      "destination": "launch_profile.py",
+      "sha256": "32845747431969f19168baab59b368db169c03bbb7395d4447002850bbdc8730",
+      "bytes": 9981
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/phase_audit.py",
+      "destination": "phase_audit.py",
+      "sha256": "a694f43a7b3b3546ff4717838d23ab06e59ee2e0169df2932dabb4c5264ace11",
+      "bytes": 1263
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/probe_attention.py",
+      "destination": "probe_attention.py",
+      "sha256": "c493c69bda19ddd78cc7395229349b6a8dec16bd92dc590dd1b0e9838f377d99",
+      "bytes": 5019
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/probe_profiler.py",
+      "destination": "probe_profiler.py",
+      "sha256": "2cc8f76eef376f8229fee3f05ee0426c4957cd1b4b7570bea04b7613a8e3dda7",
+      "bytes": 1729
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/profile_hook.py",
+      "destination": "profile_hook.py",
+      "sha256": "94bf57c824a11c1aaaf4153ce207558abde98fae5038436a295d6fbe65bfa5e9",
+      "bytes": 5024
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/profiler_reports.py",
+      "destination": "profiler_reports.py",
+      "sha256": "a147184fe5c172eb06e26c18825db89b60f2316c7d1c2c133aeb44e027d8dd29",
+      "bytes": 15368
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/run_profile.py",
+      "destination": "run_profile.py",
+      "sha256": "1895723ffbbb6a4b64b59b5f3cbe9c64ab281f534e55d62723d26ce174eaa837",
+      "bytes": 2703
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/test_hook.py",
+      "destination": "test_hook.py",
+      "sha256": "ffcba300f14598465bf73b85478aa34b247036823e250462368f362b418f11a0",
+      "bytes": 2241
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/test_reports.py",
+      "destination": "test_reports.py",
+      "sha256": "f76eec77acdb441a1e84140aed4c1b587782c0014306c0624a2071b8e08e84e4",
+      "bytes": 3495
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validate_reports.py",
+      "destination": "validate_reports.py",
+      "sha256": "81d763a11a6c9ec2f271100fb5160b3ec3fe0c54e1abc2204f997626fcf36124",
+      "bytes": 8157
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validate_run.py",
+      "destination": "validate_run.py",
+      "sha256": "c79e872825bf090657915973d8c74cb8b5195875e4e0306d96a7d2bb0ea26a23",
+      "bytes": 4516
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/wait_and_launch.py",
+      "destination": "wait_and_launch.py",
+      "sha256": "cfb94acd68b681ad4271b63e158b93a9e24ef51d8bdac632e4dc0acf5ef28cf5",
+      "bytes": 2494
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/requirements-overlay.txt",
+      "destination": "requirements-overlay.txt",
+      "sha256": "afd0dc6142d0819b591f85d10df413144b64bc1961cd6a344042a0fa164bb625",
+      "bytes": 557
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/references/FlagScale_LICENSE",
+      "destination": "references/FlagScale_LICENSE",
+      "sha256": "11788dea1f9f27fc418d4f656a08dde134e2ad7f86944b90366d27939d203665",
+      "bytes": 10692
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/references/README.md",
+      "destination": "references/README.md",
+      "sha256": "b0f828e413fe9f9c7aff3ca17931e12fb7e9c18c65602a99df8143b219cd7b4c",
+      "bytes": 703
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list.md",
+      "destination": "docs/original_plan.md",
+      "sha256": "47da39efcf1c1bbdd0a74198e4467c2e4364b96ae8f1193eecb783d64cb08fef",
+      "bytes": 19665
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/record.md",
+      "destination": "docs/history.md",
+      "sha256": "2cb2145f0a542276b0db7af238c856a9fa3a1d230eb321d099540c02c9cd48aa",
+      "bytes": 17039
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/README.md",
+      "destination": "docs/original_instructions.md",
+      "sha256": "ca354baaae8010ba882fe94cfa6b4511e06d9474f8cd576c797224e3ba654c3d",
+      "bytes": 4545
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/resolved_settings.json",
+      "destination": "evidence/resolved_settings.json",
+      "sha256": "557eb428030607b8110266f72556f6e6fb0e5f5c6538fa6ecfcc854771d51ff4",
+      "bytes": 3583
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation_summary.json",
+      "destination": "evidence/validation_summary.json",
+      "sha256": "843c4f819207d8d3bd2f8be050f1613bc760b11a8f29177aa63257b9b0d78cdb",
+      "bytes": 769
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/preflight004-launch.log",
+      "destination": "evidence/validation/preflight004-launch.log",
+      "sha256": "5c08b3372df88907fdff78f987ed31c4606fa9d17760371a373f942888c0db48",
+      "bytes": 168
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/attention-001.log",
+      "destination": "evidence/validation/attention-001.log",
+      "sha256": "90f1bcf11cacc959e2c211de87cca308d88112f1cb72cfa3ee2abeeb87b87e56",
+      "bytes": 810
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/usr_capture006-attention.log",
+      "destination": "evidence/validation/usr_capture006-attention.log",
+      "sha256": "e99a2c0050b858c4bb2e12aea7a6f5a19ecd37c95dd4e05173ca0cf7b6d3936a",
+      "bytes": 1112
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/git_untrack.json",
+      "destination": "evidence/validation/git_untrack.json",
+      "sha256": "fe5e7c4a0bb455dc5a11fea831c5df50ff25ef99ab9e1c26212c4e8bd866563d",
+      "bytes": 3570
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001.log",
+      "destination": "evidence/validation/cuda-probe-001.log",
+      "sha256": "88fb5fe0da9eeb459b5c49f3d8a9fdd0759756966354df044716cee3e87bfe81",
+      "bytes": 415
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/catalogs.json",
+      "destination": "evidence/validation/catalogs.json",
+      "sha256": "6d2a51dce3d53c2b52bf03c1eda9ab8b55dc7a76ddf1a15d17e717601e651571",
+      "bytes": 11188
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/latent_headers.json",
+      "destination": "evidence/validation/latent_headers.json",
+      "sha256": "63762e0727a5dba3d98ba560fde020c7950016a985e8453b509ac66473527d21",
+      "bytes": 9735
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/resource_wait.jsonl",
+      "destination": "evidence/validation/resource_wait.jsonl",
+      "sha256": "617a8af13b665922cd392fdbbd438e46affae67e2c429937722787422bfb181d",
+      "bytes": 13897
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/install-natten.log",
+      "destination": "evidence/validation/install-natten.log",
+      "sha256": "1dbd042a3cecd27b24a6ff6e1445abba6666beff4619423bf980618750d85940",
+      "bytes": 506
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/usr_capture005-attention.log",
+      "destination": "evidence/validation/usr_capture005-attention.log",
+      "sha256": "351cae4961a13c28ab7d6ec0c424d0d6977230af4d246a92afb99939d8897fea",
+      "bytes": 812
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/rank-0_report_events.json.gz",
+      "destination": "evidence/validation/cuda-probe-001/rank-0_report_events.json.gz",
+      "sha256": "27cefc507dbf777ec71b1ea821e86df39791c641af7371931effc711ea2d3001",
+      "bytes": 1899
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/profile_window.json",
+      "destination": "evidence/validation/cuda-probe-001/profile_window.json",
+      "sha256": "4689c75bb99723cc52452c567abea7cac88713b06004ce1539b7530dc1a957d3",
+      "bytes": 297
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/report_quality.json",
+      "destination": "evidence/validation/cuda-probe-001/report_quality.json",
+      "sha256": "73f33a60f74769250384162f84434257ce6e57d44b91777b5a63aa52d8b4734c",
+      "bytes": 8291
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/attention-001/result.json",
+      "destination": "evidence/validation/attention-001/result.json",
+      "sha256": "713526250675f5ed3d1c5a7fc86b52ea99594591822c383d26ff0cb978131945",
+      "bytes": 775
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/usr_capture005-attention/result.json",
+      "destination": "evidence/validation/usr_capture005-attention/result.json",
+      "sha256": "19f3459a7c7526a2b9ef109b6c7113303244b09196d951c69d0303ce2ef310e9",
+      "bytes": 777
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/reports/rank-0.json.gz",
+      "destination": "evidence/validation/cuda-probe-001/reports/rank-0.json.gz",
+      "sha256": "b1e7cb07a277a86728fa857c1c67b2e786be37d1fd5b12c9470a962c17a6f810",
+      "bytes": 7555
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/reports/rank-0_kernel_details_report.csv",
+      "destination": "evidence/validation/cuda-probe-001/reports/rank-0_kernel_details_report.csv",
+      "sha256": "be1031514638c0c2b3293f0b37880bc8d9b007ca43976bfa42ce34a0eb73eaf7",
+      "bytes": 7800
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/reports/rank-0_kernel_summary.csv",
+      "destination": "evidence/validation/cuda-probe-001/reports/rank-0_kernel_summary.csv",
+      "sha256": "65209da6c87d9054073528f877be9b8fc01ac5459add691d332b59f0028d4af1",
+      "bytes": 4549
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/validation/cuda-probe-001/reports/rank-0_operator_list.csv",
+      "destination": "evidence/validation/cuda-probe-001/reports/rank-0_operator_list.csv",
+      "sha256": "810dbc309330658fc9b95fccb315b0942bec02fd38724bc44093b19564535a12",
+      "bytes": 4437
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight002/metadata.json",
+      "destination": "evidence/runs/preflight002/metadata.json",
+      "sha256": "c1e877759ed5827d25666c3356a84c4942d161e0c581a4ab777d68bfcff6bc42",
+      "bytes": 8678
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight002/train.log",
+      "destination": "evidence/runs/preflight002/train.log",
+      "sha256": "8c5caf45c0103c238fe0c9a95909ea0310c3735004c0d25201bb8122f4637f92",
+      "bytes": 3093
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/metadata.json",
+      "destination": "evidence/runs/usr_capture001/metadata.json",
+      "sha256": "fae5f901bc112d5e4cdc03c922f427de46af5962f6e35f5c03e4b3f63a371e19",
+      "bytes": 8790
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/train.log",
+      "destination": "evidence/runs/usr_capture001/train.log",
+      "sha256": "9f78b2932d70783c154fdd437def2bc8b98f98959deb8bb055eb833970f23dd2",
+      "bytes": 73052
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture001/job/kernel-list/v0.2.3c/profile/config.yaml",
+      "destination": "evidence/runs/usr_capture001/config.yaml",
+      "sha256": "40a7864260abf62f1a21968c6022bbe8c89e2ad0e9b803aa2600277d432813f1",
+      "bytes": 20423
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture003/metadata.json",
+      "destination": "evidence/runs/usr_capture003/metadata.json",
+      "sha256": "117dfdabf2764baabc8f7a719197eb2c6be28c2ae0c12e3c03e338c1f6ce8e79",
+      "bytes": 682
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/metadata.json",
+      "destination": "evidence/runs/preflight004/metadata.json",
+      "sha256": "b79b42212337b5a154f5fa096e83dfff449654a254d66ade80ab68a5b4e9e305",
+      "bytes": 8540
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/runtime.json",
+      "destination": "evidence/runs/preflight004/runtime.json",
+      "sha256": "3d23edfcd5c2e7556de7c1cf30342a6dd3ca26d447989c9d68ba3fbdb933d3dc",
+      "bytes": 392
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/train.log",
+      "destination": "evidence/runs/preflight004/train.log",
+      "sha256": "b1fec4b25a58ea70cef75818ed1596019047e6ed00147a9a49a69f34594e4031",
+      "bytes": 22059
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight004/job/kernel-list/v0.2.3c/profile/config.yaml",
+      "destination": "evidence/runs/preflight004/config.yaml",
+      "sha256": "a11bb2982bd519b384a259498b2629fda30214ca3ec72242579adcb37452a689",
+      "bytes": 22360
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/metadata.json",
+      "destination": "evidence/runs/usr_capture005/metadata.json",
+      "sha256": "807cb56b8c6429e7dac8cded5026dd019e0900f22ae4fdb0f55a7856f6f0a717",
+      "bytes": 8614
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/runtime.json",
+      "destination": "evidence/runs/usr_capture005/runtime.json",
+      "sha256": "3d23edfcd5c2e7556de7c1cf30342a6dd3ca26d447989c9d68ba3fbdb933d3dc",
+      "bytes": 392
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/profile_window.json",
+      "destination": "evidence/runs/usr_capture005/profile_window.json",
+      "sha256": "3213b4a672dbab107a16345ee1833e0857e84a8152dba2716e539a251ee34483",
+      "bytes": 309
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/stop_record.json",
+      "destination": "evidence/runs/usr_capture005/stop_record.json",
+      "sha256": "fe0755668a5fe041eadf8936c3a2f23bfd5bef480edb0eb7cc73d24fa5b20ecd",
+      "bytes": 9000
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/train.log",
+      "destination": "evidence/runs/usr_capture005/train.log",
+      "sha256": "e2b31d5101189dadbe1f802bf8a100f7b62fbe7b457b7d88d8c8b7d87f823edb",
+      "bytes": 452263
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/job/kernel-list/v0.2.3c/profile/config.yaml",
+      "destination": "evidence/runs/usr_capture005/config.yaml",
+      "sha256": "dc74ad54137ed4235bf49db05340729a47f91a55b6317dfb13607b26ef421acd",
+      "bytes": 20423
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00007.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00007.jsonl",
+      "sha256": "67ff45941a292f28d4ee9efddc1f95a3e0b4132c95c71711758174503d892a82",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00005.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00005.jsonl",
+      "sha256": "1d08a6a4d764954a3ebd79c16ae3b660ff6e928548ba29005ef4d1d82b1280e9",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00004.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00004.jsonl",
+      "sha256": "085b9c084937e46753c4f277b8c0cdabb4f590bf312b082b46d31e6b19a36f7b",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00000.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00000.jsonl",
+      "sha256": "781683720c1d67d57148d0ae4de69d86acc8e27485fd1ff933d0c5245f937f54",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00002.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00002.jsonl",
+      "sha256": "88edf7e0b61d3a5b4bf58fe17972d309517e7fb52ade4089850d1b4a6e18f644",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00006.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00006.jsonl",
+      "sha256": "43fc649237b9c2bf87ba0633fec1927bb836945924a0c0041341b63fc2387497",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00001.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00001.jsonl",
+      "sha256": "40a2aa75c108e8d5362ca441272d4c2760899bb97f072a06e789d3edece61359",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture005/batches/rank_00003.jsonl",
+      "destination": "evidence/runs/usr_capture005/batches/rank_00003.jsonl",
+      "sha256": "3d6788a74b685dbfd9c8cb35271ba94da595970a898863005f15686b920df78b",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight001/metadata.json",
+      "destination": "evidence/runs/preflight001/metadata.json",
+      "sha256": "f3965b9e2dd03ee9f3b65aa46326ec94d39e8fc0dd3ef0cec0b9ab6054652857",
+      "bytes": 8678
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight001/train.log",
+      "destination": "evidence/runs/preflight001/train.log",
+      "sha256": "febaf8afcf77ec30537548eaac81fc672c07f4193b47f13d5885188cd441f940",
+      "bytes": 4794
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight003/metadata.json",
+      "destination": "evidence/runs/preflight003/metadata.json",
+      "sha256": "2671f4b66bacb40231b3f71de0d79b3c82debb16eaaf1c42f184a1348a156740",
+      "bytes": 8678
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight003/train.log",
+      "destination": "evidence/runs/preflight003/train.log",
+      "sha256": "04bb026899a39623803b445fb59620bfc49f8e59e11f0f8c5cf6b292d33d8fc2",
+      "bytes": 22061
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/preflight003/job/kernel-list/v0.2.3c/profile/config.yaml",
+      "destination": "evidence/runs/preflight003/config.yaml",
+      "sha256": "514635ac18f40935a0bb13d37e4b34edbaeb256349f09b40d9d644480ecda86d",
+      "bytes": 22360
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/metadata.json",
+      "destination": "evidence/runs/usr_capture002/metadata.json",
+      "sha256": "76f7787581856a615a84ed9216d4272efd2d11d46e247f06623f0c1776a3bc35",
+      "bytes": 8944
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/profile_window.json",
+      "destination": "evidence/runs/usr_capture002/profile_window.json",
+      "sha256": "3213b4a672dbab107a16345ee1833e0857e84a8152dba2716e539a251ee34483",
+      "bytes": 309
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/stop_record.json",
+      "destination": "evidence/runs/usr_capture002/stop_record.json",
+      "sha256": "857c86eae6c6393636e0d800897ae5381f695f6da56682fcb54123387c897ceb",
+      "bytes": 6348
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/train.log",
+      "destination": "evidence/runs/usr_capture002/train.log",
+      "sha256": "bc52863a359f7eabf794f39bbc3791f7d8e10259e4b72aaa48bb69c7f5d48e06",
+      "bytes": 594967
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/job/kernel-list/v0.2.3c/profile/config.yaml",
+      "destination": "evidence/runs/usr_capture002/config.yaml",
+      "sha256": "ca962c426ff6479fc107447bbf9a7619eba1bf53609a44dd73d3c882d71f4c29",
+      "bytes": 20423
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00004.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00004.jsonl",
+      "sha256": "b9873d2eb943d6bf5e5a9ee6f62d3e2ce6fee4e191b960561b8478169db94e33",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00006.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00006.jsonl",
+      "sha256": "75bc8a655e80792b80fd669a3722d8be534f066759b18169364224726503b7c8",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00005.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00005.jsonl",
+      "sha256": "c3e84385ea983fe13ea33d8c1e72291838132749f004f11f1d120c83fc8f3be5",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00001.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00001.jsonl",
+      "sha256": "259a45166789a3d68b855fcb3216001c7ea2273bce306e24564e09e91091cca6",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00002.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00002.jsonl",
+      "sha256": "5fc00cd75c4d5b103d9e8927dc2cb6c613d3906b3109f03d0bd780e4b155c57a",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00007.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00007.jsonl",
+      "sha256": "e26f58e0ae86afd26b3c7fdd57f327b93b5c02bd86fae7dabccc690c52a867af",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00003.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00003.jsonl",
+      "sha256": "e73ccc11010aa1f8b62e656e20d51bbe7a1a48c16ddaa2101d827943aaa26dd9",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture002/batches/rank_00000.jsonl",
+      "destination": "evidence/runs/usr_capture002/batches/rank_00000.jsonl",
+      "sha256": "f45edecc1129657d75ab2b5b37faa96d37ac1719b971f70f7f997479b2b8c6b7",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/metadata.json",
+      "destination": "evidence/runs/usr_capture004/metadata.json",
+      "sha256": "02d713815c19654babae8bfd6cc484275ef246554d5b1ac8bb4a9c678a9f38ec",
+      "bytes": 8614
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/profile_window.json",
+      "destination": "evidence/runs/usr_capture004/profile_window.json",
+      "sha256": "3213b4a672dbab107a16345ee1833e0857e84a8152dba2716e539a251ee34483",
+      "bytes": 309
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/train.log",
+      "destination": "evidence/runs/usr_capture004/train.log",
+      "sha256": "6c1ef07575cee7d64c10d29ed09489a5016fbb98df408ab05ea6aaac52f440f6",
+      "bytes": 267372
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/job/kernel-list/v0.2.3c/profile/config.yaml",
+      "destination": "evidence/runs/usr_capture004/config.yaml",
+      "sha256": "a76e507e7860fddcc369119508b4e4dea8097744236c356571331af8975938de",
+      "bytes": 20423
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00007.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00007.jsonl",
+      "sha256": "9404a84efc89a8becfce7a4dd4cb4afad0783e7e1f874c54ea3c6dec6a365918",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00002.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00002.jsonl",
+      "sha256": "35866ec6489a2ba2e602e58debee70d3be9b1303b7c86aefdcfcf287c6963b45",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00000.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00000.jsonl",
+      "sha256": "2c616dda9929207d209c0ac44221aa7786a4b5d90c51b206d0f51cbc3ac4c892",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00001.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00001.jsonl",
+      "sha256": "0d3d93d43a0f2d2fe4ca2c8982bd03487ac8cb246c0768bd64077cfedf07681a",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00004.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00004.jsonl",
+      "sha256": "28bae4e5bedb48879ecb46cd83c339100a63acfa183ff68e34cb1fbbebb46ea2",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00003.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00003.jsonl",
+      "sha256": "8f0e53a2e46869b52042ee3c0424b3a3332b018001e5c0ba4c027de39429c616",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00005.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00005.jsonl",
+      "sha256": "af4bc98047e699c6fb7e3b39578fdd15ee0a90e6b8af6fe4cc7126231356cba6",
+      "bytes": 376
+    },
+    {
+      "source": "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/runs/usr_capture004/batches/rank_00006.jsonl",
+      "destination": "evidence/runs/usr_capture004/batches/rank_00006.jsonl",
+      "sha256": "3fd941d522db4408f34be077a31747aeb2518b9feb835410c454f49577847206",
+      "bytes": 376
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "shared_numerical_check": true,
+  "cuda_visible_devices": "7",
+  "torch": "2.12.0a0+0291f960b6.nv26.04.48445190",
+  "cuda": "13.2",
+  "cudnn": 92100,
+  "natten": "0.21.7",
+  "cases": [
+    {
+      "causal": true,
+      "q_offsets": [
+        0,
+        64,
+        96,
+        128
+      ],
+      "kv_offsets": [
+        0,
+        64,
+        96,
+        128
+      ],
+      "forward_max_abs_error": 0.008220672607421875,
+      "compiled_forward_backward_passed": true
+    },
+    {
+      "causal": false,
+      "q_offsets": [
+        0,
+        48,
+        80,
+        112
+      ],
+      "kv_offsets": [
+        0,
+        64,
+        96,
+        128
+      ],
+      "forward_max_abs_error": 0.004464387893676758,
+      "compiled_forward_backward_passed": true
+    }
+  ]
+}

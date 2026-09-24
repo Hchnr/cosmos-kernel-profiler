@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/probe_attention.py", line 116, in <module>
+    main()
+    ~~~~^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/probe_attention.py", line 34, in main
+    import natten
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/natten/__init__.py", line 24, in <module>
+    from natten._environment import HAS_LIBNATTEN
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/natten/_environment.py", line 24, in <module>
+    from natten._libnatten import HAS_LIBNATTEN  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-framework-pwm-load-balance/plans/v0.2.3c_kernel_list/env/natten/_libnatten/__init__.py", line 24, in <module>
+    import torch  # noqa: F401
+    ^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'torch'

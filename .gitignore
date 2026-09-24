@@ -1,0 +1,7 @@
+/env/
+/env-cache/
+/.venv/
+/runs/
+/validation/
+__pycache__/
+*.pyc

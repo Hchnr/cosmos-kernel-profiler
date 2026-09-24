@@ -1,0 +1,32 @@
+{
+  "cpu_tests_passed": 7,
+  "cuda_probe": {
+    "table_validation": "passed",
+    "detail_variants": 16,
+    "operator_groups": 9,
+    "report_kernel_calls": 24,
+    "trace_compute_kernel_events": 24,
+    "missing_metadata": {
+      "input_shapes": {
+        "variant_rows": 0,
+        "kernel_calls": 0,
+        "kernel_time_us": 0
+      },
+      "input_dtypes": {
+        "variant_rows": 2,
+        "kernel_calls": 4,
+        "kernel_time_us": 64.734
+      }
+    },
+    "phase_annotations": {
+      "kernel_list.forward": 2,
+      "kernel_list.backward": 2,
+      "kernel_list.optimizer": 2
+    }
+  },
+  "catalogs_checked": 29,
+  "sampling_weight_sum": 4246463,
+  "torch": "2.12.0a0+0291f960b6.nv26.4.48445190",
+  "transformers": "4.57.6",
+  "diffusers": "0.39.0"
+}
