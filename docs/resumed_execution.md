@@ -31,3 +31,8 @@
 - 实际配方使用callbacks/iter_speed.py的逐rank日志格式（`[RANK n] Iteration ...: Loss: ...`），并未启用旧IterationLogger格式；validator已兼容两者，对本次逐rank格式要求8个rank的active loss均完整、唯一且有限。
 - LoadBalanceTrace将样本元数据放在每条microbatch的data字段，原验收器按顶层读取会错误产生空统计；已按真实schema修正。另核验active记录的world8/shard8/replicate1/CP1以及physical UND3072/GEN98304。
 - 新增3项CPU验收用例通过：嵌套样本与逐rank loss、非rank0的NaN拒绝、缺失rank loss拒绝。仅修改离线验收代码，没有改变正在运行的训练。
+
+## 训练中段
+
+- 17:53:19 CST全部rank完成12610（新增10步），rank0 loss0.1884；显存约72GiB，无OOM、异常或重编译告警。
+- 日志的Warmup x/50来自原框架iter_speed回调（包含每步末尾CUDA同步），并非profiler调度。本次仍采局部20/2/3窗口；四文件用于算子清单，不将这些带原回调/采集开销的耗时表述为无侵入吞吐基准。
