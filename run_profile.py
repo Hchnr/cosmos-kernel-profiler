@@ -19,6 +19,15 @@ def main():
     sys.path.insert(0, str(repo))
     sys.path.insert(0, str(task))
     local_rank = os.environ.get("LOCAL_RANK", "0")
+    stack_stream = None
+    if os.environ.get("COSMOS_KERNEL_STACK_DIR"):
+        import faulthandler
+        import signal
+
+        stack_dir = Path(os.environ["COSMOS_KERNEL_STACK_DIR"])
+        stack_dir.mkdir(parents=True, exist_ok=True)
+        stack_stream = (stack_dir / f"rank-{local_rank}.log").open("a")
+        faulthandler.register(signal.SIGUSR2, file=stack_stream, all_threads=True)
     cache = Path(os.environ["COSMOS_KERNEL_CACHE_ROOT"]) / f"rank{local_rank}"
     for name, subdirectory in (
         ("TRITON_CACHE_DIR", "triton"),
@@ -82,6 +91,9 @@ def main():
             runpy.run_module("cosmos_framework.scripts.train", run_name="__main__")
     finally:
         trainer.maybe_enable_profiling = original
+        if stack_stream is not None:
+            faulthandler.unregister(signal.SIGUSR2)
+            stack_stream.close()
 
 
 if __name__ == "__main__":

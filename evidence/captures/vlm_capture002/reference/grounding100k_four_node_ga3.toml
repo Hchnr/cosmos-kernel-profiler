@@ -1,0 +1,102 @@
+# Generated from /home/baiyu/project/cosmos-framework-private/examples/toml/sft_config/qwen3vl_r7_all_capability_hq1ep_vst656_3drft964_smallfull215_r3to6_739_4node_ga2_stop2000_sched2000_fullres_seq36000_frozen_vit_fsdp32_lr1em5_to1em7_wd01_qwen3vl8b_init_20260914_r03.toml; callback executes exact save/stop nodes.
+[job]
+task = "vfm"
+experiment = "understanding_sft_nano"
+project = "cosmos3"
+group = "understanding_verification"
+name = "night8_qwen_grounding100k_full_four_node_ga3_20260923_r01"
+wandb_mode = "online"
+
+[model]
+und_loss_reduction = "sample_mean"
+und_loss_normalization = "accumulation_window"
+precision = "bfloat16"
+max_num_tokens_after_packing = 36000
+joint_attn_implementation = "two_way"
+load_vlm_visual = true
+train_vlm_visual = true
+load_vision_tokenizer = false
+vision_gen = false
+action_gen = false
+predict_text_tokens = true
+
+[model.ema]
+enabled = false
+rate = 0.1
+iteration_shift = 0
+
+[model.parallelism]
+data_parallel_shard_degree = 32
+data_parallel_replicate_degree = 1
+context_parallel_shard_degree = 1
+cfg_parallel_shard_degree = 1
+
+[model.compile]
+enabled = false
+compile_dynamic = true
+
+[model.activation_checkpointing]
+mode = "full"
+save_ops_regex = ["fmha"]
+preserve_rng_state = true
+determinism_check = "default"
+
+[optimizer]
+betas = [0.9, 0.95]
+eps = 1.0e-8
+fused = true
+keys_to_select = []
+lr_multipliers = { visual = 0.1 }
+lr = 1.0e-5
+weight_decay = 0.1
+
+[scheduler]
+cycle_lengths = [25]
+f_max = [1.0]
+f_min = [0.01]
+f_start = [0.01]
+verbosity_interval = 0
+warm_up_steps = [1]
+
+[trainer]
+distributed_parallelism = "fsdp"
+grad_accum_iter = 3
+logging_iter = 1
+max_iter = 25
+
+[trainer.callbacks.compile_tokenizer]
+compile_after_iterations = 3
+enabled = false
+
+[trainer.callbacks.grad_clip]
+clip_norm = 1.0
+force_finite = false
+
+[checkpoint]
+keys_to_skip_loading = ["net_ema."]
+load_path = ""
+save_iter = 25
+
+[dataloader_train]
+max_samples_per_batch = 48
+packing_pool_size = 48
+apply_long_sample_halving = false
+max_sequence_length = 36000
+enable_visual_pixel_fitting = false
+enable_map_style_resume = true
+map_style_resume_mode = "at_most_once"
+supervise_data_epochs = 1
+seed = 42
+
+[dataloader_train.media]
+decode_timeout_sec = 120.0
+max_sampled_frames = 256
+max_frame_pixels = 16777216
+max_window_bytes = 1073741824
+max_decode_frames_per_seek = 2048
+parquet_handle_cache_size = 8
+video_handle_cache_size = 8
+
+[[dataloader_train.datasets]]
+path = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/grounding100k_native_20260923_v1/grounding100k"
+ratio = 1

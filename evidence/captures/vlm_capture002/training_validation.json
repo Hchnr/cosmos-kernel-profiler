@@ -1,0 +1,313 @@
+{
+  "distributed_training": "passed",
+  "kernel_count_coverage": "incomplete",
+  "kernel_name_count_mismatches": [
+    {
+      "kernel_name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "trace_count": 6840,
+      "report_count": 6839,
+      "trace_time_us": 1081572.316999999,
+      "report_time_us": 1081523.421
+    },
+    {
+      "kernel_name": "cudnn_generated_fort_native_sdpa_sm90_flash_bprop_wgmma_f16_knob_26_64x64x128_1x4x1_cga1x1x1_kernel0_0",
+      "trace_count": 11664,
+      "report_count": 11663,
+      "trace_time_us": 567036.6580000008,
+      "report_time_us": 567006.61
+    },
+    {
+      "kernel_name": "void cudnn::fusion::convert_dq_to_16bits<true>(void const*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float const*, float const*, float const*, float*, void const*, void*, void*, bool, bool)",
+      "trace_count": 11664,
+      "report_count": 11662,
+      "trace_time_us": 36333.4030000017,
+      "report_time_us": 36326.748
+    }
+  ],
+  "workload": "pure_vlm_v2_reference",
+  "run_id": "vlm_capture002",
+  "profile_rank": 0,
+  "active_completed_steps": [
+    8,
+    9,
+    10
+  ],
+  "phase_annotations": {
+    "kernel_list.forward": 9,
+    "kernel_list.backward": 9,
+    "kernel_list.optimizer": 3
+  },
+  "ranks": [
+    {
+      "rank": 0,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 0,
+          "loss": 0.2552807331085205,
+          "loss_window": 0.37187260389328003,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 0,
+          "loss": 0.46286043524742126,
+          "loss_window": 0.4269354045391083,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 0,
+          "loss": 0.36195382475852966,
+          "loss_window": 0.31959375739097595,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 1,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 1,
+          "loss": 0.4163724482059479,
+          "loss_window": 0.4203798174858093,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 1,
+          "loss": 0.33391332626342773,
+          "loss_window": 0.32645633816719055,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 1,
+          "loss": 0.3664112985134125,
+          "loss_window": 0.29415377974510193,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 2,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 2,
+          "loss": 0.3902834951877594,
+          "loss_window": 0.3366621136665344,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 2,
+          "loss": 0.32057514786720276,
+          "loss_window": 0.31691238284111023,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 2,
+          "loss": 0.29959210753440857,
+          "loss_window": 0.2975570857524872,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 3,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 3,
+          "loss": 0.19348721206188202,
+          "loss_window": 0.35693609714508057,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 3,
+          "loss": 0.2857897877693176,
+          "loss_window": 0.40731748938560486,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 3,
+          "loss": 0.3786947429180145,
+          "loss_window": 0.4029923677444458,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 4,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 4,
+          "loss": 0.37586525082588196,
+          "loss_window": 0.43272432684898376,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 4,
+          "loss": 0.33208033442497253,
+          "loss_window": 0.3334304392337799,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 4,
+          "loss": 0.46644139289855957,
+          "loss_window": 0.4139114320278168,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 5,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 5,
+          "loss": 0.34515610337257385,
+          "loss_window": 0.35566410422325134,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 5,
+          "loss": 0.3238462209701538,
+          "loss_window": 0.329744815826416,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 5,
+          "loss": 0.35774555802345276,
+          "loss_window": 0.34105825424194336,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 6,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 6,
+          "loss": 0.3067331612110138,
+          "loss_window": 0.34065908193588257,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 6,
+          "loss": 0.36198440194129944,
+          "loss_window": 0.3952219784259796,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 6,
+          "loss": 0.22775202989578247,
+          "loss_window": 0.3146432340145111,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 7,
+      "microbatches": 30,
+      "active_microbatches": 9,
+      "active_losses": [
+        {
+          "record_type": "optimizer_step",
+          "iteration": 8,
+          "rank": 7,
+          "loss": 0.3598318099975586,
+          "loss_window": 0.4051593542098999,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 9,
+          "rank": 7,
+          "loss": 0.5996035933494568,
+          "loss_window": 0.4425700604915619,
+          "loss_window_weight": 1152.0
+        },
+        {
+          "record_type": "optimizer_step",
+          "iteration": 10,
+          "rank": 7,
+          "loss": 0.39310193061828613,
+          "loss_window": 0.3259435296058655,
+          "loss_window_weight": 1152.0
+        }
+      ],
+      "trainable_visual_parameter_tensors": 351
+    }
+  ],
+  "captured_sequence_lengths": [
+    10823,
+    11011,
+    12128,
+    11697,
+    10359,
+    10551,
+    10894,
+    10344,
+    11769
+  ],
+  "captured_sample_count": 432,
+  "report_kernel_calls": 203692,
+  "unique_report_kernels": 224,
+  "scope": "Observed rank-0 variants in a short training window; not full-dataset coverage or a throughput benchmark."
+}

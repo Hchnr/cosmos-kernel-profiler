@@ -1,0 +1,41 @@
+{
+  "argv": [
+    "/home/baiyu/project/cosmos-framework-private/.venv/bin/torchrun",
+    "--nnodes=4",
+    "--node-rank=0",
+    "--nproc-per-node=8",
+    "--max-restarts=0",
+    "--rdzv-backend=static",
+    "--rdzv-endpoint=172.26.97.176:47070",
+    "--rdzv-id=night8_qwen_grounding100k_full_four_node_ga3_20260923_r01_40094026",
+    "--master-addr=172.26.97.176",
+    "--master-port=47070",
+    "-m",
+    "cosmos_framework.scripts.train",
+    "--sft-toml=/home/baiyu/project/codex_artifacts/coordination/night8_validation_20260923_r01/configs/night8_qwen_grounding100k_full_four_node_ga3_20260923_r01.toml",
+    "--",
+    "+model.config.vlm_config.model_instance.config.include_visual=true",
+    "model.config.vlm_config.pretrained_weights.enabled=true",
+    "model.config.vlm_config.pretrained_weights.backbone_path=/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct",
+    "model.config.vlm_config.tokenizer.pretrained_model_name=/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct",
+    "checkpoint.load_training_state=false",
+    "checkpoint.only_load_scheduler_state=false",
+    "trainer.seed=42",
+    "trainer.callbacks.termination_signal_checkpoint.min_save_fraction=0.0",
+    "~trainer.callbacks.every_n_sample_reg=null",
+    "~trainer.callbacks.every_n_sample_ema=null",
+    "+trainer.callbacks.night8_audit._target_=night8_callback.Formal"
+  ],
+  "environment_overrides": {
+    "COSMOS_COVERAGE_MANIFEST_DIR": "/home/baiyu/project/codex_artifacts/coordination/night8_validation_20260923_r01/runs/qwen_grounding100k_full/four_node/formal/logs/coverage",
+    "CUDA_VISIBLE_DEVICES": "0,1,2,3,4,5,6,7",
+    "DISTILL12_RUN_PLAN": "/home/baiyu/project/codex_artifacts/coordination/night8_validation_20260923_r01/runs/qwen_grounding100k_full/four_node/formal/run_plan.json",
+    "HF_MODEL_PATH": "/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct",
+    "IMAGINAIRE_OUTPUT_ROOT": "/home/baiyu/project/cosmos-framework-private/outputs/train/night8_qwen_grounding100k_full_four_node_ga3_20260923_r01",
+    "LD_LIBRARY_PATH": "",
+    "PYTHONPATH": "/home/baiyu/project/codex_artifacts/coordination/night8_validation_20260923_r01:/home/baiyu/project/cosmos-framework-private/examples:/home/baiyu/project/cosmos-framework-private",
+    "WANDB_MODE": "online",
+    "WANDB_RESUME": "never",
+    "WANDB_RUN_ID": "b9645b2016c732d1"
+  }
+}

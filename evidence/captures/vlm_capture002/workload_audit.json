@@ -1,0 +1,206 @@
+{
+  "scope": "Active steps 8\u201310, rank 0 only unless otherwise stated",
+  "ranks": [
+    {
+      "rank": 0,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        10823,
+        11011,
+        12128,
+        11697,
+        10359,
+        10551,
+        10894,
+        10344,
+        11769
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 1,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        12409,
+        11986,
+        10377,
+        11618,
+        10966,
+        11101,
+        9887,
+        10246,
+        11607
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 2,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        10418,
+        10547,
+        9653,
+        12498,
+        10598,
+        11386,
+        11934,
+        11054,
+        9813
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 3,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        9850,
+        11254,
+        12025,
+        10931,
+        10210,
+        11598,
+        11222,
+        11176,
+        11898
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 4,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        11728,
+        10695,
+        11818,
+        11003,
+        10591,
+        11019,
+        11357,
+        11649,
+        10440
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 5,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        10733,
+        9626,
+        10516,
+        10572,
+        10506,
+        9755,
+        11923,
+        9727,
+        10826
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 6,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        11507,
+        10698,
+        10951,
+        10530,
+        12418,
+        10202,
+        10388,
+        9801,
+        10471
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    },
+    {
+      "rank": 7,
+      "active_microbatches": 9,
+      "batch_dataset_labels": {
+        "gqa_train_balanced_reference:0": 9
+      },
+      "sample_count": 432,
+      "unique_catalog_ids": 432,
+      "image_inputs": 432,
+      "video_inputs": 0,
+      "generation_payloads": 0,
+      "sequence_lengths": [
+        10866,
+        9987,
+        9435,
+        11079,
+        9520,
+        10806,
+        12328,
+        11792,
+        11361
+      ],
+      "trainable_parameter_tensors": 750,
+      "trainable_visual_parameter_tensors": 351
+    }
+  ],
+  "media_decode_timeout_occurrences": 0
+}

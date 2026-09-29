@@ -1,0 +1,18 @@
+{
+  "command": "python validate_vlm_run.py runs/vlm_capture002 --report-coverage-gaps",
+  "returncode": 0,
+  "validation_code": [
+    {
+      "name": "validate_vlm_run.py",
+      "bytes": 7591,
+      "sha256": "aef12a31a89ae88350fb9cc4349385e479a948c33c0d1791b063143ba53626ce"
+    },
+    {
+      "name": "validate_reports.py",
+      "bytes": 8575,
+      "sha256": "de25adfdaa7a85574dae003bba08e6f2d667bf5136a86a76fb2a2708d10b44e2"
+    }
+  ],
+  "tests": "17 CPU tests passed; Ruff check passed",
+  "capture_implementation": "implementation/ preserves launch-time bytes matching metadata.json; postprocess/ preserves subsequent validation changes, including explicit coverage-gap reporting."
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "path": "README.md",
+    "name": "README.md",
+    "bytes": 758,
+    "sha256": "a82ab27a99e5e831c45662281244847a546cd32e328006d06eb21ed78fb4b398"
+  },
+  {
+    "path": "batches/rank_00000.jsonl",
+    "name": "rank_00000.jsonl",
+    "bytes": 542834,
+    "sha256": "121197248532cebe95c4353ec9aaa0a640527dcb4b73da85dcd1ad01408cf70f"
+  },
+  {
+    "path": "batches/rank_00000_parameters.json",
+    "name": "rank_00000_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00001.jsonl",
+    "name": "rank_00001.jsonl",
+    "bytes": 608446,
+    "sha256": "aaa06206d7caad14965e4c5d5bc3ce7e52acd7cb9b5db3b05dc15fc35e790bc2"
+  },
+  {
+    "path": "batches/rank_00001_parameters.json",
+    "name": "rank_00001_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00002.jsonl",
+    "name": "rank_00002.jsonl",
+    "bytes": 602541,
+    "sha256": "ddd0595d2841358a84d8e13e1be3d4eb9affe8026e527700078e7684790c95ee"
+  },
+  {
+    "path": "batches/rank_00002_parameters.json",
+    "name": "rank_00002_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00003.jsonl",
+    "name": "rank_00003.jsonl",
+    "bytes": 554892,
+    "sha256": "006d7a3cad505cc52090665c71de6a92190f0888da9d8322dc181d3bfc1f4286"
+  },
+  {
+    "path": "batches/rank_00003_parameters.json",
+    "name": "rank_00003_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00004.jsonl",
+    "name": "rank_00004.jsonl",
+    "bytes": 604634,
+    "sha256": "026c0b6b1e8b4c75574e11b3e1df0f23e0373988dd5aac6287287c0a4a9c2aa7"
+  },
+  {
+    "path": "batches/rank_00004_parameters.json",
+    "name": "rank_00004_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00005.jsonl",
+    "name": "rank_00005.jsonl",
+    "bytes": 615795,
+    "sha256": "bbd4a4dee6d27707204298793d1176700140cd9ce8dd4f30cce05f3b0cc70245"
+  },
+  {
+    "path": "batches/rank_00005_parameters.json",
+    "name": "rank_00005_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00006.jsonl",
+    "name": "rank_00006.jsonl",
+    "bytes": 585509,
+    "sha256": "5fd627044e327724fedf22cc63170287ec3f498a757cb8687910b57e3ced5b40"
+  },
+  {
+    "path": "batches/rank_00006_parameters.json",
+    "name": "rank_00006_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "batches/rank_00007.jsonl",
+    "name": "rank_00007.jsonl",
+    "bytes": 584181,
+    "sha256": "f792f934bdcdec615c83c2bb120032bf3f6e144069f9d9f6f04f3df9c93c6a0e"
+  },
+  {
+    "path": "batches/rank_00007_parameters.json",
+    "name": "rank_00007_parameters.json",
+    "bytes": 127830,
+    "sha256": "3e533772451596fd5e077b8d9843a1371705b6ff45a1c79846fa24eec81354df"
+  },
+  {
+    "path": "config.yaml",
+    "name": "config.yaml",
+    "bytes": 20635,
+    "sha256": "8cb5d1a524ac25bbba8ccdc84e903f039c0f241c7517ce058823c1b5510b7948"
+  },
+  {
+    "path": "data_preflight.json",
+    "name": "data_preflight.json",
+    "bytes": 3836,
+    "sha256": "ece33f79dd6cfc50cfb9b2d3d024048cdb5d72560987fabd7db1f33b6fb0f5e6"
+  },
+  {
+    "path": "environment_packages.json",
+    "name": "environment_packages.json",
+    "bytes": 28655,
+    "sha256": "81a3b16ca5e8ddf240f8519fc77fb22289716a3ad64865f00ec6706848c2eb92"
+  },
+  {
+    "path": "implementation/launch_vlm_profile.py",
+    "name": "launch_vlm_profile.py",
+    "bytes": 10069,
+    "sha256": "11860a08ad6d8aa5974415185bb7804541211357cfcc9279c175bf0c67ef4b7d"
+  },
+  {
+    "path": "implementation/phase_audit.py",
+    "name": "phase_audit.py",
+    "bytes": 1277,
+    "sha256": "67ce677014c2113d6107921d33ac0af878c139a51b6b4da807b3350670dffb56"
+  },
+  {
+    "path": "implementation/profile_hook.py",
+    "name": "profile_hook.py",
+    "bytes": 5521,
+    "sha256": "40463874bf12d64a092ae452972911b7c40342abeaa8307b076a6bf5162388ae"
+  },
+  {
+    "path": "implementation/profiler_reports.py",
+    "name": "profiler_reports.py",
+    "bytes": 15368,
+    "sha256": "a147184fe5c172eb06e26c18825db89b60f2316c7d1c2c133aeb44e027d8dd29"
+  },
+  {
+    "path": "implementation/run_profile.py",
+    "name": "run_profile.py",
+    "bytes": 2941,
+    "sha256": "353bf54444913ddd5384d20a5e9fb196debc966508179edfb80b57a55e09f36d"
+  },
+  {
+    "path": "implementation/validate_reports.py",
+    "name": "validate_reports.py",
+    "bytes": 8575,
+    "sha256": "de25adfdaa7a85574dae003bba08e6f2d667bf5136a86a76fb2a2708d10b44e2"
+  },
+  {
+    "path": "implementation/validate_vlm_run.py",
+    "name": "validate_vlm_run.py",
+    "bytes": 7061,
+    "sha256": "40b9fa3626f4ad901da79b2b4e43bf4ec31d98a2f069d020fe901248ae7a8b49"
+  },
+  {
+    "path": "implementation/vlm_audit.py",
+    "name": "vlm_audit.py",
+    "bytes": 3278,
+    "sha256": "d1b1f277cf604fce454f92a66796e072f93d73acf6103576698c29d8f27975fc"
+  },
+  {
+    "path": "incomplete_run.json",
+    "name": "incomplete_run.json",
+    "bytes": 693,
+    "sha256": "27612d2ad8220ed0dbb38b18f5845c47459ba4d7e1a726c9ade1a55b91b38e8b"
+  },
+  {
+    "path": "launch.sh",
+    "name": "launch.sh",
+    "bytes": 3528,
+    "sha256": "f763132d74199258b2932e9a99377d799b797ce32797d2b52fe45b9acd61aafd"
+  },
+  {
+    "path": "metadata.json",
+    "name": "metadata.json",
+    "bytes": 9137,
+    "sha256": "dd6892a9b338ef96a0ea0a3183b09e564e8fdc03c481ddfa23daa3fd5e95afc2"
+  },
+  {
+    "path": "profile_window.json",
+    "name": "profile_window.json",
+    "bytes": 272,
+    "sha256": "e611518d4bdc643b58e25f6f61324f29876552f21c3b54c5812ca2cdd902c09a"
+  },
+  {
+    "path": "recipe.toml",
+    "name": "recipe.toml",
+    "bytes": 6453,
+    "sha256": "66fad4ae03d6aceab77a1fa05864c60be2d2980d41c99209d0809f8a8009250a"
+  },
+  {
+    "path": "reference/grounding100k_four_node_ga3.toml",
+    "name": "grounding100k_four_node_ga3.toml",
+    "bytes": 2513,
+    "sha256": "731ccb6831878b2fb8588cc173bf13146e6b920e4526ce2c9713c47a336ff7a7"
+  },
+  {
+    "path": "reference/grounding100k_node0_command.json",
+    "name": "grounding100k_node0_command.json",
+    "bytes": 2332,
+    "sha256": "d7870a594db4568dd05927e98404da8a85c3c877cb33582ece751dfb0eaa49fe"
+  },
+  {
+    "path": "reference/qwen3vl_v2_0a_understanding_nano8b.toml",
+    "name": "qwen3vl_v2_0a_understanding_nano8b.toml",
+    "bytes": 6425,
+    "sha256": "81b355611d1c4ddbdc5645f2bf886a9894a0167e9c8d53affd99a6433c4528f6"
+  },
+  {
+    "path": "reference/understanding_training_review.md",
+    "name": "understanding_training_review.md",
+    "bytes": 3031,
+    "sha256": "2d91d2694e212e9724b01f8118e35b3c5ec60bee428a2e8ad3ea85cee4eba24a"
+  },
+  {
+    "path": "runtime.json",
+    "name": "runtime.json",
+    "bytes": 398,
+    "sha256": "ba57ef2ca638719cf0e5591dbe03636b08205ad651d1fc9c26881826d34c5734"
+  },
+  {
+    "path": "train.log",
+    "name": "train.log",
+    "bytes": 240629,
+    "sha256": "06353719a2dd80bd199987c59bfa1a5cbfa60a67291a5009f3dedf17ada77622"
+  }
+]

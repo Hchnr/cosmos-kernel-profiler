@@ -1,5 +1,7 @@
 # 中间证据
 
+2026-09-28 的纯图像 VLM 交付位于 [captures/vlm_capture002](captures/vlm_capture002/README.md)，与此前 T2V/USR 目录并列。训练完整性通过，CSV 的 4 次调用计数缺口单独记录；未完成的混合数据尝试保存在 [runs/vlm_capture001](runs/vlm_capture001/README.md)。
+
 这些文件是迁移时的历史快照，内含原机器路径和已从原分支移除的提交号；它们用于解释当时的执行，不是新仓库的可执行启动命令。
 
 - `import_manifest.json`：94份复制文件的来源、大小及原始SHA256。源文件迁入后，部分脚本进行了独立仓库路径适配，docs增加历史标记；其余证据保留原字节。

@@ -1,0 +1,1384 @@
+{
+  "status": "confirmed_count_gap",
+  "method": "Subtract the exact exporter-filtered snapshot (kernel name, duration rounded to 0.001 us) multiset from the raw compute-kernel multiset. Equal-duration occurrences are indistinguishable; listed occurrences are candidates, not independently proven event identities.",
+  "missing_call_count": 4,
+  "missing_kernel_names": [],
+  "missing_time_us": 85.599,
+  "unmatched_snapshot_calls_after_filtering": 0,
+  "candidate_missing_trace_events": [
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::convert_dq_to_16bits<true>(void const*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float const*, float const*, float const*, float*, void const*, void*, void*, bool, bool)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625795247870.604,
+      "dur": 3.679,
+      "args": {
+        "External id": 1003456,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 6717382,
+        "registers per thread": 30,
+        "shared memory": 0,
+        "blocks per SM": 10.424242,
+        "warps per SM": 41.696968,
+        "grid": [
+          86,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 65
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625772838581.413,
+      "dur": 48.896,
+      "args": {
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4752137,
+        "registers per thread": 18,
+        "shared memory": 0,
+        "blocks per SM": 367.515137,
+        "warps per SM": 1470.060547,
+        "grid": [
+          48512,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 100
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "cudnn_generated_fort_native_sdpa_sm90_flash_bprop_wgmma_f16_knob_26_64x64x128_1x4x1_cga1x1x1_kernel0_0",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625767973887.67,
+      "dur": 30.048,
+      "args": {
+        "External id": 328834,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4490157,
+        "registers per thread": 168,
+        "shared memory": 216064,
+        "blocks per SM": 0.606061,
+        "warps per SM": 7.272727,
+        "grid": [
+          80,
+          1,
+          1
+        ],
+        "block": [
+          384,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 0
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::convert_dq_to_16bits<true>(void const*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float const*, float const*, float const*, float*, void const*, void*, void*, bool, bool)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625768075940.068,
+      "dur": 2.976,
+      "args": {
+        "External id": 338782,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4520870,
+        "registers per thread": 30,
+        "shared memory": 0,
+        "blocks per SM": 6.666667,
+        "warps per SM": 26.666666,
+        "grid": [
+          55,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 42
+      }
+    }
+  ],
+  "related_trace_events": [
+    {
+      "ph": "X",
+      "cat": "cpu_op",
+      "name": "aten::_cudnn_attention_backward",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971847.272,
+      "dur": 65.536,
+      "args": {
+        "External id": 328834,
+        "Record function id": 0,
+        "Concrete Inputs": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "640",
+          "640",
+          "0.",
+          "False",
+          "0.11785113019775792"
+        ],
+        "Input type": [
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "float",
+          "long int",
+          "long int",
+          "",
+          "",
+          "",
+          "Scalar",
+          "Scalar",
+          "Scalar",
+          "Scalar",
+          "Scalar"
+        ],
+        "Input Strides": [
+          [
+            45416448,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            3456,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            10240,
+            640,
+            1,
+            1
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "Input Dims": [
+          [
+            1,
+            16,
+            640,
+            72
+          ],
+          [
+            1,
+            16,
+            640,
+            72
+          ],
+          [
+            1,
+            16,
+            640,
+            72
+          ],
+          [
+            1,
+            16,
+            640,
+            72
+          ],
+          [
+            1,
+            16,
+            640,
+            72
+          ],
+          [
+            1,
+            16,
+            640,
+            1
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "Ev Idx": 812543
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cpu_op",
+      "name": "aten::_cudnn_attention_backward",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075838.688,
+      "dur": 76.462,
+      "args": {
+        "External id": 338782,
+        "Record function id": 0,
+        "Concrete Inputs": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "768",
+          "768",
+          "0.",
+          "False",
+          "0.11785113019775792"
+        ],
+        "Input type": [
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "float",
+          "long int",
+          "long int",
+          "",
+          "",
+          "",
+          "Scalar",
+          "Scalar",
+          "Scalar",
+          "Scalar",
+          "Scalar"
+        ],
+        "Input Strides": [
+          [
+            45416448,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            3456,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            12288,
+            768,
+            1,
+            1
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "Input Dims": [
+          [
+            1,
+            16,
+            768,
+            72
+          ],
+          [
+            1,
+            16,
+            768,
+            72
+          ],
+          [
+            1,
+            16,
+            768,
+            72
+          ],
+          [
+            1,
+            16,
+            768,
+            72
+          ],
+          [
+            1,
+            16,
+            768,
+            72
+          ],
+          [
+            1,
+            16,
+            768,
+            1
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "Ev Idx": 822491
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cpu_op",
+      "name": "aten::_cudnn_attention_backward",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247709.409,
+      "dur": 65.328,
+      "args": {
+        "External id": 1003456,
+        "Record function id": 0,
+        "Concrete Inputs": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "1200",
+          "1200",
+          "0.",
+          "False",
+          "0.11785113019775792"
+        ],
+        "Input type": [
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "c10::BFloat16",
+          "float",
+          "long int",
+          "long int",
+          "",
+          "",
+          "",
+          "Scalar",
+          "Scalar",
+          "Scalar",
+          "Scalar",
+          "Scalar"
+        ],
+        "Input Strides": [
+          [
+            43476480,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            1152,
+            72,
+            3456,
+            1
+          ],
+          [
+            1152,
+            72,
+            1152,
+            1
+          ],
+          [
+            19200,
+            1200,
+            1,
+            1
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "Input Dims": [
+          [
+            1,
+            16,
+            1200,
+            72
+          ],
+          [
+            1,
+            16,
+            1200,
+            72
+          ],
+          [
+            1,
+            16,
+            1200,
+            72
+          ],
+          [
+            1,
+            16,
+            1200,
+            72
+          ],
+          [
+            1,
+            16,
+            1200,
+            72
+          ],
+          [
+            1,
+            16,
+            1200,
+            1
+          ],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "Ev Idx": 1214781
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "gpu_memset",
+      "name": "Memset (Device)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625795247753.133,
+      "dur": 0.736,
+      "args": {
+        "External id": 1003456,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 6717366,
+        "bytes": 4,
+        "memory bandwidth (GB/s)": 0.005434782608695652
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaMemsetAsync",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247747.839,
+      "dur": 3.8,
+      "args": {
+        "External id": 1003456,
+        "cbid": 51,
+        "correlation": 6717366
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247751.911,
+      "dur": 0.085,
+      "args": {
+        "External id": 1003456,
+        "cbid": 12,
+        "correlation": 6717367
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetFuncBySymbol",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247752.946,
+      "dur": 0.603,
+      "args": {
+        "External id": 1003456,
+        "cbid": 336,
+        "correlation": 6717368
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247753.724,
+      "dur": 0.098,
+      "args": {
+        "External id": 1003456,
+        "cbid": 12,
+        "correlation": 6717369
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::compute_dot_do_o<true>(void const*, void const*, void*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, void const*, void const*, void const*, void const*, void const*, bool, void const*, void*, void const*, int, int, int, int, int, int, int, int, int)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625795247760.302,
+      "dur": 5.279,
+      "args": {
+        "External id": 1003456,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 6717370,
+        "registers per thread": 24,
+        "shared memory": 0,
+        "blocks per SM": 18.181818,
+        "warps per SM": 72.727272,
+        "grid": [
+          150,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 100
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247753.994,
+      "dur": 4.124,
+      "args": {
+        "External id": 1003456,
+        "cbid": 652,
+        "correlation": 6717370
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "cudnn_generated_fort_native_sdpa_sm90_flash_bprop_wgmma_f16_knob_26_64x64x128_1x4x1_cga1x1x1_kernel0_0",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625795247769.165,
+      "dur": 100.287,
+      "args": {
+        "External id": 1003456,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 6717377,
+        "registers per thread": 168,
+        "shared memory": 216064,
+        "blocks per SM": 1.0,
+        "warps per SM": 12.0,
+        "grid": [
+          132,
+          1,
+          1
+        ],
+        "block": [
+          384,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 0
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247760.422,
+      "dur": 5.413,
+      "args": {
+        "External id": 1003456,
+        "cbid": 652,
+        "correlation": 6717377
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247766.386,
+      "dur": 0.077,
+      "args": {
+        "External id": 1003456,
+        "cbid": 12,
+        "correlation": 6717379
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetFuncBySymbol",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247767.021,
+      "dur": 0.559,
+      "args": {
+        "External id": 1003456,
+        "cbid": 336,
+        "correlation": 6717380
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247767.86,
+      "dur": 0.067,
+      "args": {
+        "External id": 1003456,
+        "cbid": 12,
+        "correlation": 6717381
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::convert_dq_to_16bits<true>(void const*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float const*, float const*, float const*, float*, void const*, void*, void*, bool, bool)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625795247870.604,
+      "dur": 3.679,
+      "args": {
+        "External id": 1003456,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 6717382,
+        "registers per thread": 30,
+        "shared memory": 0,
+        "blocks per SM": 10.424242,
+        "warps per SM": 41.696968,
+        "grid": [
+          86,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 65
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625795247768.227,
+      "dur": 3.593,
+      "args": {
+        "External id": 1003456,
+        "cbid": 652,
+        "correlation": 6717382
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625772838581.413,
+      "dur": 48.896,
+      "args": {
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4752137,
+        "registers per thread": 18,
+        "shared memory": 0,
+        "blocks per SM": 367.515137,
+        "warps per SM": 1470.060547,
+        "grid": [
+          48512,
+          1,
+          1
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 100
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaLaunchKernel",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625772793174.906,
+      "dur": 1055.296,
+      "args": {
+        "cbid": 211,
+        "correlation": 4752137
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "gpu_memset",
+      "name": "Memset (Device)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625767973879.382,
+      "dur": 1.344,
+      "args": {
+        "External id": 328834,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4490146,
+        "bytes": 4,
+        "memory bandwidth (GB/s)": 0.002976190476190476
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaMemsetAsync",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971883.135,
+      "dur": 5.257,
+      "args": {
+        "External id": 328834,
+        "cbid": 51,
+        "correlation": 4490146
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971888.658,
+      "dur": 0.087,
+      "args": {
+        "External id": 328834,
+        "cbid": 12,
+        "correlation": 4490147
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetFuncBySymbol",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971889.694,
+      "dur": 0.62,
+      "args": {
+        "External id": 328834,
+        "cbid": 336,
+        "correlation": 4490148
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971890.468,
+      "dur": 0.079,
+      "args": {
+        "External id": 328834,
+        "cbid": 12,
+        "correlation": 4490149
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::compute_dot_do_o<true>(void const*, void const*, void*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, void const*, void const*, void const*, void const*, void const*, bool, void const*, void*, void const*, int, int, int, int, int, int, int, int, int)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625767973882.262,
+      "dur": 4.288,
+      "args": {
+        "External id": 328834,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4490150,
+        "registers per thread": 24,
+        "shared memory": 0,
+        "blocks per SM": 9.69697,
+        "warps per SM": 38.78788,
+        "grid": [
+          80,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 61
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971890.749,
+      "dur": 4.333,
+      "args": {
+        "External id": 328834,
+        "cbid": 652,
+        "correlation": 4490150
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "cudnn_generated_fort_native_sdpa_sm90_flash_bprop_wgmma_f16_knob_26_64x64x128_1x4x1_cga1x1x1_kernel0_0",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625767973887.67,
+      "dur": 30.048,
+      "args": {
+        "External id": 328834,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4490157,
+        "registers per thread": 168,
+        "shared memory": 216064,
+        "blocks per SM": 0.606061,
+        "warps per SM": 7.272727,
+        "grid": [
+          80,
+          1,
+          1
+        ],
+        "block": [
+          384,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 0
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971897.808,
+      "dur": 5.978,
+      "args": {
+        "External id": 328834,
+        "cbid": 652,
+        "correlation": 4490157
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971904.406,
+      "dur": 0.154,
+      "args": {
+        "External id": 328834,
+        "cbid": 12,
+        "correlation": 4490159
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetFuncBySymbol",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971905.101,
+      "dur": 0.593,
+      "args": {
+        "External id": 328834,
+        "cbid": 336,
+        "correlation": 4490160
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971905.856,
+      "dur": 0.187,
+      "args": {
+        "External id": 328834,
+        "cbid": 12,
+        "correlation": 4490161
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::convert_dq_to_16bits<true>(void const*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float const*, float const*, float const*, float*, void const*, void*, void*, bool, bool)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625767973918.934,
+      "dur": 2.751,
+      "args": {
+        "External id": 328834,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4490162,
+        "registers per thread": 30,
+        "shared memory": 0,
+        "blocks per SM": 5.575758,
+        "warps per SM": 22.30303,
+        "grid": [
+          46,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 35
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625767971906.214,
+      "dur": 3.699,
+      "args": {
+        "External id": 328834,
+        "cbid": 652,
+        "correlation": 4490162
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "gpu_memset",
+      "name": "Memset (Device)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625768075886.213,
+      "dur": 0.8,
+      "args": {
+        "External id": 338782,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4520854,
+        "bytes": 4,
+        "memory bandwidth (GB/s)": 0.005
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaMemsetAsync",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075880.133,
+      "dur": 4.295,
+      "args": {
+        "External id": 338782,
+        "cbid": 51,
+        "correlation": 4520854
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075884.709,
+      "dur": 0.072,
+      "args": {
+        "External id": 338782,
+        "cbid": 12,
+        "correlation": 4520855
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetFuncBySymbol",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075885.684,
+      "dur": 0.592,
+      "args": {
+        "External id": 338782,
+        "cbid": 336,
+        "correlation": 4520856
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075886.438,
+      "dur": 0.093,
+      "args": {
+        "External id": 338782,
+        "cbid": 12,
+        "correlation": 4520857
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::compute_dot_do_o<true>(void const*, void const*, void*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float, void const*, void const*, void const*, void const*, void const*, bool, void const*, void*, void const*, int, int, int, int, int, int, int, int, int)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625768075893.861,
+      "dur": 4.32,
+      "args": {
+        "External id": 338782,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4520858,
+        "registers per thread": 24,
+        "shared memory": 0,
+        "blocks per SM": 11.636364,
+        "warps per SM": 46.545456,
+        "grid": [
+          96,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 73
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075886.701,
+      "dur": 5.071,
+      "args": {
+        "External id": 338782,
+        "cbid": 652,
+        "correlation": 4520858
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "cudnn_generated_fort_native_sdpa_sm90_flash_bprop_wgmma_f16_knob_26_64x64x128_1x4x1_cga1x1x1_kernel0_0",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625768075903.205,
+      "dur": 35.583,
+      "args": {
+        "External id": 338782,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4520865,
+        "registers per thread": 168,
+        "shared memory": 216064,
+        "blocks per SM": 0.727273,
+        "warps per SM": 8.727273,
+        "grid": [
+          96,
+          1,
+          1
+        ],
+        "block": [
+          384,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 0
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075896.265,
+      "dur": 4.374,
+      "args": {
+        "External id": 338782,
+        "cbid": 652,
+        "correlation": 4520865
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075901.407,
+      "dur": 0.192,
+      "args": {
+        "External id": 338782,
+        "cbid": 12,
+        "correlation": 4520867
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetFuncBySymbol",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075902.133,
+      "dur": 0.637,
+      "args": {
+        "External id": 338782,
+        "cbid": 336,
+        "correlation": 4520868
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_runtime",
+      "name": "cudaGetErrorString",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075902.957,
+      "dur": 0.188,
+      "args": {
+        "External id": 338782,
+        "cbid": 12,
+        "correlation": 4520869
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "kernel",
+      "name": "void cudnn::fusion::convert_dq_to_16bits<true>(void const*, void*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, float const*, float const*, float const*, float*, void const*, void*, void*, bool, bool)",
+      "pid": 0,
+      "tid": 7,
+      "ts": 7625768075940.068,
+      "dur": 2.976,
+      "args": {
+        "External id": 338782,
+        "queued": 0,
+        "device": 0,
+        "context": 1,
+        "stream": 7,
+        "correlation": 4520870,
+        "registers per thread": 30,
+        "shared memory": 0,
+        "blocks per SM": 6.666667,
+        "warps per SM": 26.666666,
+        "grid": [
+          55,
+          1,
+          16
+        ],
+        "block": [
+          128,
+          1,
+          1
+        ],
+        "est. achieved occupancy %": 42
+      }
+    },
+    {
+      "ph": "X",
+      "cat": "cuda_driver",
+      "name": "cuLaunchKernelEx",
+      "pid": 2045693,
+      "tid": 2054196,
+      "ts": 7625768075903.359,
+      "dur": 8.379,
+      "args": {
+        "External id": 338782,
+        "cbid": 652,
+        "correlation": 4520870
+      }
+    }
+  ],
+  "conclusion": "The four-call deficit is already present in the filtered profiler.events() snapshot; all raw compute kernel names occur in the CSV. One candidate and its runtime launch have no External id; three candidates have cuDNN CPU associations in the trace. Exact upstream cause is not established. Reports and raw trace remain unmodified."
+}
