@@ -1,0 +1,12 @@
+[
+  {
+    "dataset": "gqa_train_balanced_reference",
+    "rows_checked": 3,
+    "media_checked": 3,
+    "missing": [],
+    "first_image_size": [
+      500,
+      270
+    ]
+  }
+]

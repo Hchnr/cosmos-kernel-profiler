@@ -1,0 +1,9 @@
+{
+  "status": "incomplete_stalled",
+  "observed_utc": "2026-09-28T10:57:07.659258+00:00",
+  "completed_steps": 23,
+  "completed_microbatches_per_rank": 69,
+  "stalled_next_dataset": "vlm_robotics_general_retention_v1_safe_general",
+  "reason": "No completed microbatch for several minutes at step24; mixed image/video FSDP call-order mismatch is a hypothesis, not confirmed. Stop own launcher and retain evidence; recapture homogeneous image VLM workload.",
+  "gpu_state": "index, memory.used [MiB], utilization.gpu [%]\n0, 28477 MiB, 100 %\n1, 53893 MiB, 100 %\n2, 58165 MiB, 100 %\n3, 20993 MiB, 100 %\n4, 56307 MiB, 100 %\n5, 28075 MiB, 100 %\n6, 28201 MiB, 100 %\n7, 28271 MiB, 100 %\n"
+}

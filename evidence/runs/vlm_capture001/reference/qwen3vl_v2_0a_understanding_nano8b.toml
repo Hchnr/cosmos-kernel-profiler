@@ -1,0 +1,168 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: OpenMDW-1.1
+
+# Cosmos3-Nano (Qwen3-VL-8B tier) pure-Understanding migration of the
+# frozen 2026-08-14 V2 reference-LMDB recipe. The 20 Parquet datasets remain
+# independent so their frozen V2 integer microbatch ratios are reproducible.
+
+[job]
+task       = "vfm"
+experiment = "understanding_sft_nano"
+project    = "cosmos3"
+group      = "understanding_verification"
+name       = "qwen3vl_v2_0a_understanding_nano8b"
+wandb_mode = "disabled"
+
+[model]
+precision                    = "bfloat16"
+max_num_tokens_after_packing = 8192
+joint_attn_implementation    = "two_way"
+load_vlm_visual              = true
+load_vision_tokenizer        = false
+vision_gen                   = false
+action_gen                   = false
+predict_text_tokens          = true
+
+[model.ema]
+enabled         = false
+rate            = 0.1
+iteration_shift = 0
+
+[model.parallelism]
+data_parallel_shard_degree     = -1
+data_parallel_replicate_degree = 1
+context_parallel_shard_degree  = 1
+cfg_parallel_shard_degree      = 1
+
+[model.compile]
+enabled         = false
+compile_dynamic = true
+
+[model.activation_checkpointing]
+mode               = "full"
+save_ops_regex     = ["fmha"]
+preserve_rng_state = true
+determinism_check  = "default"
+
+[optimizer]
+betas          = [0.9, 0.95]
+eps            = 1.0e-8
+fused          = true
+keys_to_select = []
+lr             = 1.0e-6
+weight_decay   = 0.1
+
+[scheduler]
+cycle_lengths      = [50]
+f_max              = [1.0]
+f_min              = [0.1]
+f_start            = [0.05]
+verbosity_interval = 0
+warm_up_steps      = [5]
+
+[trainer]
+distributed_parallelism = "fsdp"
+grad_accum_iter         = 8
+logging_iter            = 1
+max_iter                = 50
+
+[trainer.callbacks.compile_tokenizer]
+compile_after_iterations = 3
+enabled                  = false
+
+[trainer.callbacks.grad_clip]
+clip_norm    = 1.0
+force_finite = false
+
+[checkpoint]
+keys_to_skip_loading = ["net_ema."]
+load_path            = "${oc.env:BASE_CHECKPOINT_PATH}"
+save_iter            = 100
+
+[dataloader_train]
+max_samples_per_batch   = 48
+packing_pool_size       = 48
+max_sequence_length     = 8192
+enable_map_style_resume = true
+map_style_resume_mode   = "at_most_once"
+seed                    = 42
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p0_episodic_embodied"
+ratio = 6136
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p0_metric_3d_scene"
+ratio = 1356
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p0_multiview_memory"
+ratio = 1182
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p0_temporal_physical"
+ratio = 4907
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p1_episodic_embodied"
+ratio = 57
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p1_free_space_affordance"
+ratio = 61
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p1_metric_3d_scene"
+ratio = 879
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p1_multiview_memory"
+ratio = 214
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p1_temporal_physical"
+ratio = 2370
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_affordance_support_v1_robot_placement"
+ratio = 140
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_affordance_support_v1_semantic_affordance"
+ratio = 1
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_fullscan_v2r1_p2_visual_structured_retention"
+ratio = 4944
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/vlm_robotics_general_retention_v1_safe_general"
+ratio = 2472
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/gqa_train_balanced_reference"
+ratio = 446
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/mindcube_train_spatial_qa_reference"
+ratio = 45
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/sharerobot_planning_qa_v1_train"
+ratio = 4589
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/sharerobot_affordance_bbox_text_v1_train"
+ratio = 29
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/sharerobot_trajectory_points_text_v1_train"
+ratio = 31
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/msr3d_strict_object_image_qa_v1_train"
+ratio = 362
+
+[[dataloader_train.datasets]]
+path  = "/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/robobench_official_prompt_all_training_v1_train"
+ratio = 27

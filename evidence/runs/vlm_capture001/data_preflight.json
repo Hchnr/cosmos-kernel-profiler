@@ -1,0 +1,202 @@
+[
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p0_episodic_embodied",
+    "rows_checked": 3,
+    "media_checked": 9,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p0_metric_3d_scene",
+    "rows_checked": 3,
+    "media_checked": 8,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p0_multiview_memory",
+    "rows_checked": 3,
+    "media_checked": 6,
+    "missing": [],
+    "first_image_size": [
+      768,
+      432
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p0_temporal_physical",
+    "rows_checked": 3,
+    "media_checked": 9,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p1_episodic_embodied",
+    "rows_checked": 3,
+    "media_checked": 48,
+    "missing": [],
+    "first_image_size": [
+      336,
+      597
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p1_free_space_affordance",
+    "rows_checked": 3,
+    "media_checked": 9,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p1_metric_3d_scene",
+    "rows_checked": 3,
+    "media_checked": 3,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p1_multiview_memory",
+    "rows_checked": 3,
+    "media_checked": 44,
+    "missing": [],
+    "first_image_size": [
+      336,
+      597
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p1_temporal_physical",
+    "rows_checked": 3,
+    "media_checked": 48,
+    "missing": [],
+    "first_image_size": [
+      336,
+      584
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_affordance_support_v1_robot_placement",
+    "rows_checked": 3,
+    "media_checked": 9,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_affordance_support_v1_semantic_affordance",
+    "rows_checked": 3,
+    "media_checked": 4,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_fullscan_v2r1_p2_visual_structured_retention",
+    "rows_checked": 3,
+    "media_checked": 9,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "vlm_robotics_general_retention_v1_safe_general",
+    "rows_checked": 3,
+    "media_checked": 3,
+    "missing": [],
+    "first_image_size": [
+      640,
+      480
+    ]
+  },
+  {
+    "dataset": "gqa_train_balanced_reference",
+    "rows_checked": 3,
+    "media_checked": 3,
+    "missing": [],
+    "first_image_size": [
+      500,
+      270
+    ]
+  },
+  {
+    "dataset": "mindcube_train_spatial_qa_reference",
+    "rows_checked": 3,
+    "media_checked": 9,
+    "missing": [],
+    "first_image_size": [
+      480,
+      640
+    ]
+  },
+  {
+    "dataset": "sharerobot_planning_qa_v1_train",
+    "rows_checked": 3,
+    "media_checked": 75,
+    "missing": [],
+    "first_image_size": [
+      424,
+      240
+    ]
+  },
+  {
+    "dataset": "sharerobot_affordance_bbox_text_v1_train",
+    "rows_checked": 3,
+    "media_checked": 3,
+    "missing": [],
+    "first_image_size": [
+      128,
+      128
+    ]
+  },
+  {
+    "dataset": "sharerobot_trajectory_points_text_v1_train",
+    "rows_checked": 3,
+    "media_checked": 3,
+    "missing": [],
+    "first_image_size": [
+      128,
+      128
+    ]
+  },
+  {
+    "dataset": "msr3d_strict_object_image_qa_v1_train",
+    "rows_checked": 3,
+    "media_checked": 8,
+    "missing": [],
+    "first_image_size": [
+      959,
+      539
+    ]
+  },
+  {
+    "dataset": "robobench_official_prompt_all_training_v1_train",
+    "rows_checked": 3,
+    "media_checked": 48,
+    "missing": [],
+    "first_image_size": [
+      320,
+      180
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+2026-09-28 18:58:11.891 | DEBUG    | cosmos_framework.utils.config:_load_py_config:578 - get_config_module: took 10.82ms
+2026-09-28 18:58:52.490 | DEBUG    | cosmos_framework.utils.config:_load_py_config:583 - importlib.import_module: took 40599.44ms
+2026-09-28 18:58:53.020 | DEBUG    | cosmos_framework.utils.config:_load_py_config:588 - override: took 529.53ms
+2026-09-28 18:58:53.020 | DEBUG    | cosmos_framework.utils.config:load_config:567 - total time to load config: 41516.55ms
+2026-09-28 18:58:55.025 | INFO     | __main__:<module>:289 - Config:
+* model: {'config': {'tokenizer': {'bucket_name': '', 'object_store_credential_path_pretrained': '', 'vae_path': 'pretrained/tokenizers/video/wan2pt2/Wan2.2_VAE.pth', 'chunk_duration': 93, 'keep_decoder_cache': False, 'use_streaming_encode': False, 'encode_chunk_frames': {'256': 68, '480': 24, '720': 8, '768': 8}, 'encode_exact_durations': None, 'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'temporal_window': None, 'encode_bucket_multiple': None, 'causal': True, '_target_': <class 'cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface'>}, 'load_vision_tokenizer': False, 'net': None, 'ema': {'enabled': False, 'rate': 0.1, 'iteration_shift': 0}, 'parallelism': {'data_parallel_shard_degree': 8, 'data_parallel_replicate_degree': 1, 'context_parallel_shard_degree': 1, 'cfg_parallel_shard_degree': 1, 'enable_inference_mode': False, 'fsdp_master_dtype': 'float32', 'fsdp_reduce_dtype': None}, 'attention_io_layout': 'sequence_sharded', 'compile': {'enabled': False, 'compiled_region': 'language', 'compile_dynamic': True, 'use_cuda_graphs': False, 'ar_post_saturation_mode': 'default', 'max_autotune_pointwise': False, 'coordinate_descent_tuning': False}, 'quantization': {'method': None, 'fp8_granularity': 'per_row', 'include_regex': [], 'exclude_regex': [], 'modelopt_fp8_checkpoint_path': None, 'modelopt_fp8_target_fqns': []}, 'activation_checkpointing': {'mode': 'full', 'save_ops_regex': ['fmha'], 'preserve_rng_state': True, 'determinism_check': 'default'}, 'precision': 'bfloat16', 'lora_enabled': False, 'lora_rank': 16, 'lora_alpha': 32, 'lora_target_modules': 'q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen', 'rectified_flow_training_config': {'shift': {'256': 3, '480': 5, '720': 10}, 'shift_image': None, 'use_dynamic_shift': False, 'train_time_image_distribution': 'logitnormal', 'train_time_video_distribution': 'waver', 'train_time_action_distribution': 'logitnormal', 'train_time_sound_distribution': 'logitnormal', 'train_time_weight': 'uniform', 'loss_scale': 1.0, 'image_loss_scale': 1.0, 'sound_loss_scale': None, 'use_discrete_rf': False, 'action_loss_weight': 10.0, 'independent_action_schedule': False, 'shift_action': None, 'independent_sound_schedule': False, 'shift_sound': None, 'normalize_loss_by_active': False, 'sample_level_loss_averaging': False}, 'rectified_flow_inference_config': {'scheduler_type': 'unipc', 'num_train_timesteps': 1000, 'shift': 1, 'use_dynamic_shifting': False}, 'fixed_step_sampler_config': None, 'vlm_config': {'model_name': 'Qwen/Qwen3-VL-8B-Instruct', 'safetensors_path': '', 'pretrained_weights': {'enabled': True, 'backbone_path': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', 'credentials_path': '', 'enable_gcs_patch_in_boto3': True, 'checkpoint_format': None}, 'model_instance': {'config': {'base_config': {'json_file': 'cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json', '_target_': <bound method _MoTConfigBase.from_json_file of <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig'>>}, 'freeze_und': False, 'layer_module': 'MoTDecoderLayer', 'qk_norm_for_text': True, 'tie_word_embeddings': True, '_target_': <function create_vlm_config at 0x7f22af73d1c0>, 'include_visual': True}, '_target_': <class 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM'>}, 'tokenizer': {'config_variant': 'hf', 'pretrained_model_name': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', '_target_': <function create_qwen2_tokenizer_with_download at 0x7f22a21b5f80>}, 'layer_module': 'Qwen2MoTDecoderLayer', 'qk_norm': False, 'tie_word_embeddings': False, 'use_system_prompt': False}, 'diffusion_expert_config': {'timestep_range': 1.0, 'load_weights_from_pretrained': True, 'enable_vision_modality_embeddings': False, 'enable_media_modality_embedding': False, 'patch_spatial': 2, 'max_vae_latent_side_after_patchify': 20, 'enable_fps_modulation': True, 'base_fps': 24, 'sound_base_temporal_compression_factor': None, 'vision_temporal_position_mode': 'latent_index', 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000}, 'input_video_key': 'video', 'input_image_key': 'images', 'input_caption_key': 'ai_caption', 'gen_loss_scale': 1.0, 'und_loss_scale': 1.0, 'und_loss_reduction': 'sample_mean', 'und_loss_normalization': 'accumulation_window', 'load_vlm_visual': True, 'train_vlm_visual': True, 'state_ch': 48, 'state_t': 300, 'latent_downsample_factor': 16, 'resolution': '720', 'max_num_tokens_after_packing': 36000, 'joint_attn_implementation': 'two_way', 'flex_attention': {'enabled': False, 'backend': 'auto', 'mask': {'noisy_attention_scope': 'all_views'}}, 'natten_parameter_list': None, 'video_temporal_causal': False, 'causal_training_strategy': 'none', 'lbl': {'method': 'local', 'coeff_und': None, 'coeff_gen': None}, 'vision_gen': False, 'predict_text_tokens': True, 'text_loss_weight': 1.0, 'action_gen': False, 'max_action_dim': 64, 'num_embodiment_domains': 32, 'sound_gen': False, 'sound_tokenizer': None, 'sound_dim': None, 'sound_latent_fps': 25, 'enable_input_bias': True, 'log_enc_time_every_n': 100, 'exclude_reasoner_weights_from_checkpoint': False}, '_recursive_': False, '_target_': <class 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel'>}
+* optimizer: {'model': None, 'optimizer_type': 'AdamW', 'lr': 1e-05, 'weight_decay': 0.1, 'betas': [0.9, 0.95], 'eps': 1e-08, 'fused': True, 'keys_to_select': [], 'lr_multipliers': {'visual': 0.1}, 'disable_weight_decay_for_1d_params': False, '_target_': <function build_optimizer at 0x7f22a0818040>}
+* scheduler: {'optimizer': None, 'lr_scheduler_type': 'LambdaCosine', 'warm_up_steps': [1], 'cycle_lengths': [25], 'f_start': [0.01], 'f_max': [1.0], 'f_min': [0.01], 'verbosity_interval': 0, '_target_': <function build_lr_scheduler at 0x7f22a08185e0>}
+* dataloader_train: {'conditioning_config': {0: 0.7, 1: 0.2, 2: 0.1}, 'seed': 42, 'max_sequence_length': 36000, 'max_samples_per_batch': 48, 'packing_pool_size': 48, 'apply_understanding_long_sample_halving': False, 'max_caption_tokens': 2048, 'resolution': '720', 'num_workers': 4, 'prefetch_factor': 4, 'pin_memory': True, 'parallel_dims': None, 'media_config': {'decode_timeout_sec': 120.0, 'max_sampled_frames': 256, 'max_frame_pixels': 16777216, 'max_window_bytes': 1073741824, 'max_decode_frames_per_seek': 2048, 'parquet_handle_cache_size': 8, 'video_handle_cache_size': 8}, 'static_packing_config': {'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'latent_patch_size': 2, 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000, 'enable_fps_modulation': True, 'base_fps': 24.0, 'vision_temporal_position_mode': 'latent_index', 'video_temporal_causal': False, 'action_dim': 64}, 'enable_understanding_visual_pixel_fitting': False, 'require_understanding_visual_media': True, 'enable_map_style_resume': True, 'map_style_resume_mode': 'at_most_once', 'supervise_data_epochs': 1, 'dataset_specs': [{'path': '/share/project/eai_pwm/prepared_datasets/parquet_datasets/understanding/qwen3vl_v2_0a_20260814_reference_v1/gqa_train_balanced_reference', 'ratio': 446}], 'processor': {'repository': None, 'revision': None, 'subdir': '', 'tokenizer_type': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct', 'config_variant': 'hf', '_target_': <function build_processor_lazy at 0x7f22a237e480>}, '_target_': <function build_catalog_training_dataloader at 0x7f229e89a660>}
+* dataloader_val: None
+* job:
+   * project: kernel-list
+   * group: vlm
+   * name: vlm_preflight004
+   * wandb_mode: disabled
+   * cluster: None
+* trainer:
+   * type: <class 'cosmos_framework.trainer.ImaginaireTrainer'>
+   * callbacks: {'iter_speed': {'hit_thres': 50, 'save_s3': False, 'save_s3_every_log_n': 500, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.iter_speed.IterSpeed'>}, 'manual_gc': {'warm_up': 1, 'gc_level': 1, 'every_n': 5, '_target_': <class 'cosmos_framework.callbacks.manual_gc.ManualGarbageCollection'>}, 'wandb': {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.WandBCallback'>}, 'wandb_2x': {'logging_iter_multipler': 2, 'save_logging_iter_multipler': 1, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log.WandbCallback'>}, 'param_count': {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.param_count.ParamCount'>}, 'wandb_val': {'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.wandb_log_eval.WandbCallback'>}, 'moe_stability': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_stability_callback.MoEStabilityCallback'>}, 'moe_specialization': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoESpecializationCallback'>}, 'moe_router_geometry': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.moe_specialization_callback.MoERouterGeometryCallback'>}, 'parameter_geometry': {'every_n': 250, '_target_': <class 'cosmos_framework.callbacks.parameter_geometry_callback.ParameterGeometryCallback'>}, 'expert_heatmap': {'every_n': 1000, '_target_': <class 'cosmos_framework.callbacks.expert_heatmap.ExpertHeatmap'>}, 'load_pretrained': {'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.callbacks.load_pretrained.LoadPretrained'>}, 'compile_tokenizer': {'enabled': False, 'compile_after_iterations': 3, 'warmup_resolutions': None, 'backend': 'inductor', 'mode': 'reduce-overhead', 'fullgraph': False, 'dynamic': False, '_target_': <class 'cosmos_framework.callbacks.compile_tokenizer.CompileTokenizer'>}, 'norm_monitor': {'every_n': 100, 'step_size': 1, 'layer_norm_only': False, 'model_key': None, 'log_stat_wandb': True, 'save_s3': False, 'track_activations': True, '_target_': <class 'cosmos_framework.callbacks.norm_monitor.NormMonitor'>}, 'sigma_loss_analysis': {'every_n': 500, 'every_n_viz': 500, 'save_s3': False, '_target_': <class 'cosmos_framework.callbacks.sigma_loss_analysis.SigmaLossAnalysis'>}, 'sequence_packing_padding': {'every_n': 50, '_target_': <class 'cosmos_framework.callbacks.sequence_packing_padding.SequencePackingPadding'>}, 'sampled_media': {'enabled': False, 'output_uri': '/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/vlm_preflight004/job/kernel-list/vlm/vlm_preflight004/sampled_media.lance', 'creds_path': None, 'flush_every_n_batches': 100, 'record_caption': False, '_target_': <class 'cosmos_framework.callbacks.sampled_media_recorder.SampledMediaRecorder'>}, 'mfu': {'backwardpass_ratio': 2.0, 'hit_thres': 5, 'include_vae_encoder': True, 'include_padding': True, 'grad_accum_iter': 3, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.mfu.MFUCallback'>}, 'ofu': {'hit_thres': 5, 'every_n': 1, '_target_': <class 'cosmos_framework.callbacks.ofu.OFUCallback'>}, 'skip_nan_step': {'max_consecutive_nan': 100, '_target_': <class 'cosmos_framework.callbacks.skip_nan_step.SkipNaNStep'>}, 'grad_clip': {'clip_norm': 1.0, 'force_finite': False, 'track_per_modality': True, '_target_': <class 'cosmos_framework.callbacks.grad_clip.GradClip'>}, 'low_precision': {'update_iter': 1, 'config': None, 'trainer': None, '_target_': <class 'cosmos_framework.utils.callback.LowPrecisionCallback'>}, 'heart_beat': {'step_size': 1, 'update_interval_in_minute': 20, 'save_s3': False, 'every_n': 200, '_target_': <class 'cosmos_framework.callbacks.heart_beat.HeartBeat'>}, 'device_monitor': {'every_n': 200, 'step_size': 1, 'save_s3': False, 'upload_every_n_mul': 5, 'log_memory_detail': True, '_target_': <class 'cosmos_framework.callbacks.device_monitor.DeviceMonitor'>}, 'termination_signal_checkpoint': {'min_save_fraction': 0.3333333333333333, '_target_': <class 'cosmos_framework.callbacks.termination_signal_checkpoint.TerminationSignalCheckpoint'>}, 'dataloader_speed': {'every_n': 100, 'save_s3': False, 'step_size': 1}, 'training_stats': {'log_freq': 100}, 'kernel_phases': {'_target_': 'phase_audit.PhaseAudit'}, 'kernel_vlm_audit': {'_target_': 'vlm_audit.VLMAudit', 'output_dir': '/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/vlm_preflight004/batches'}, 'dataloader_state': {'outer_loader': None, '_target_': <class 'cosmos_framework.callbacks.cosmos_dataloader_state.JointCosmosDataLoaderStateCallback'>}}
+   * distributed_parallelism: fsdp
+   * cp_input_direct_broadcast_min_bytes: 9223372036854775807
+   * ddp:
+      * find_unused_parameters: False
+      * static_graph: True
+      * broadcast_buffers: True
+   * cudnn:
+      * deterministic: False
+      * benchmark: True
+   * seed: 42
+   * grad_scaler_args: {'enabled': False}
+   * max_iter: 10
+   * max_val_iter: None
+   * logging_iter: 1
+   * run_validation: False
+   * validation_iter: 100
+   * run_validation_on_start: False
+   * timeout_period: 999999999
+   * memory_format: torch.preserve_format
+   * grad_accum_iter: 3
+   * straggler_detection:
+      * enabled: False
+      * report_freq: 100
+      * profile_freq: 1
+      * max_diff: 2.0
+      * raise_error: True
+      * analyze_forward: True
+      * analyze_backward: True
+      * analyze_optimizer: True
+      * analyze_dataloading: True
+      * save_s3: False
+   * profiling:
+      * enable_profiling: True
+      * enable_nsys: False
+      * enable_memory_snapshot: False
+      * save_s3: False
+      * profile_freq: 10
+      * profile_warmup: 2
+      * profile_active: 3
+      * target_ranks: [0]
+      * record_shape: True
+      * profile_memory: False
+      * with_stack: False
+      * with_modules: False
+   * compile_config:
+      * recompile_limit: 8
+      * use_duck_shape: False
+   * save_zero_checkpoint: False
+* model_parallel: ModelParallelConfig(tensor_model_parallel_size=1, pipeline_model_parallel_comm_backend=None, pipeline_model_parallel_size=1, virtual_pipeline_model_parallel_size=None, sequence_parallel=False, context_parallel_size=1, hierarchical_context_parallel_sizes=None, expert_model_parallel_size=1, expert_tensor_parallel_size=1, moe_extended_tp=False, perform_initialization=True, use_cpu_initialization=False, fp16=False, bf16=False, params_dtype=torch.float32, timers=None, finalize_model_grads_func=None, grad_scale_func=None, no_sync_func=None, grad_sync_func=None, param_sync_func=None, deterministic_mode=False, enable_autocast=False, autocast_dtype=torch.float32, num_microbatches_with_partial_activation_checkpoints=None, gradient_accumulation_fusion=False, async_tensor_model_parallel_allreduce=False, use_te_rng_tracker=False, tp_comm_overlap=False, tp_comm_bulk_wgrad=True, tp_comm_bulk_dgrad=True, tp_comm_overlap_ag=True, tp_comm_overlap_rs=True, tp_comm_overlap_rs_dgrad=False, tp_comm_split_ag=True, tp_comm_atomic_ag=False, tp_comm_split_rs=True, tp_comm_atomic_rs=False, cross_entropy_loss_fusion=False, cross_entropy_fusion_impl='native', tp_comm_overlap_disable_qkv=False, tp_comm_overlap_disable_fc1=False, tp_comm_bootstrap_backend='nccl', overlap_moe_expert_parallel_comm=False, delay_wgrad_compute=False, ep_overlap_early_attn_memory_release=False, pipeline_dtype=None, variable_seq_lengths=False, overlap_p2p_comm=False, batch_p2p_comm=True, batch_p2p_sync=True, use_ring_exchange_p2p=False, deallocate_pipeline_outputs=False, defer_embedding_wgrad_compute=False, wgrad_deferral_limit=0, overlap_p2p_comm_warmup_flush=False, microbatch_group_size_per_vp_stage=1, cpu_offloading=False, cpu_offloading_num_layers=0, _cpu_offloading_context=None, cpu_offloading_activations=True, cpu_offloading_weights=False, cpu_offloading_double_buffering=False, barrier_with_L1_time=True)
+* checkpoint:
+   * type: {'callbacks': None, 'disable_async': False, '_target_': <class 'cosmos_framework.checkpoint.dcp.DistributedCheckpointer'>}
+   * dcp_async_mode_enabled: False
+   * dcp_load_dedup: True
+   * save_to_object_store:
+      * enabled: False
+      * credentials: 
+      * bucket: 
+   * save_iter: 1000000
+   * strict_resume: True
+   * load_from_object_store:
+      * enabled: False
+      * credentials: 
+      * bucket: 
+   * load_path: 
+   * load_training_state: False
+   * only_load_scheduler_state: False
+   * keys_to_skip_loading: ['net_ema.']
+   * jit:
+      * enabled: False
+      * input_shape: None
+      * device: cuda
+      * dtype: bfloat16
+      * strict: True
+   * verbose: True
+   * keys_not_to_resume: []
+   * broadcast_via_filesystem: False
+   * load_ema_to_reg: False
+   * enable_gcs_patch_in_boto3: True
+   * hf_export:
+      * enabled: False
+      * hf_repo_id: None
+      * upload_to_object_store:
+         * enabled: False
+         * credentials: 
+         * bucket: 
+      * export_every_n: 1
+* upload_reproducible_setup: False
+* data_setting:
+   * qwen_max_video_token_length: 8192
+* defaults: ['_self_', {'model': 'mot_fsdp'}, {'data_train': None}, {'data_val': None}, {'optimizer': 'adamw'}, {'scheduler': 'warmup_cosine_lr'}, {'checkpoint': 's3'}, {'callbacks': ['basic', 'optimization', 'job_monitor', 'generation']}, {'ema': 'power'}, {'tokenizer': 'wan2pt2_tokenizer'}, {'sound_tokenizer': None}, {'vlm_config': None}, {'ckpt_type': 'dcp'}, {'experiment': None}]
+/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/runs/vlm_preflight004/job/kernel-list/vlm/vlm_preflight004/config.yaml

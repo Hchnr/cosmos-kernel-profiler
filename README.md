@@ -39,6 +39,8 @@ python launch_profile.py --run-id <run-id> --dryrun
 
 已完成原USR配置、DP shard=8的正式采集 `resumed_capture001`，并通过训练完整性、四文件一致性及kernel覆盖验收。结果和四份文件见 [正式采集结果](evidence/captures/resumed_capture001/README.md)。历史小型探针仍保留在evidence/validation，勿与正式报告混用。
 
+纯图像 VLM 采集见 [vlm_capture002](evidence/captures/vlm_capture002/README.md)：Qwen3-VL-8B、LM+ViT、GQA、FSDP8、GA3，训练成功退出。CSV 包含全部 224 种计算 kernel 名称；相对原始 trace 有 4 次调用的已记录计数缺口。数据替换、复现命令及验证边界见 [VLM 执行说明](docs/vlm_execution.md)。
+
 ## 说明
 
 模型权重、数据集、训练 checkpoint、编译缓存和完整运行环境不随仓库分发。复现实验需要准备相应资产，并根据机器环境调整外部源码路径和启动配置。

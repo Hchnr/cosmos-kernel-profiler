@@ -1,0 +1,345 @@
+{
+  "status": "passed",
+  "method": "Match observed GPU kernel External id directly to trace CPU operators; representative samples, not an exhaustive proof of every attribution. Each sampled operator/kernel pair and its CPU input dimensions are present in the CSV.",
+  "trace_category_counts": {
+    "user_annotation": 8212,
+    "cpu_op": 1544403,
+    "fwdbwd": 129276,
+    "cuda_runtime": 511365,
+    "ac2g": 860015,
+    "gpu_memcpy": 21108,
+    "kernel": 205533,
+    "cuda_driver": 73139,
+    "gpu_memset": 48870,
+    "overhead": 19939,
+    "gpu_user_annotation": 5107,
+    "": 70,
+    "Trace": 1
+  },
+  "sampled_correlations": {
+    "vision_convolution": {
+      "operator": "aten::cudnn_convolution",
+      "kernel_name": "void implicit_convolveNd_sgemm<__nv_bfloat16, 3, 128, 6, 7, 3, 3, 5, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_convNd_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool)",
+      "external_id": 14505,
+      "correlation": 3449479,
+      "kernel_time_us": 7185.876,
+      "cpu_input_dims": [
+        [
+          38848,
+          3,
+          2,
+          16,
+          16
+        ],
+        [
+          1152,
+          3,
+          2,
+          16,
+          16
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "ScalarList",
+        "ScalarList",
+        "ScalarList",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar"
+      ],
+      "matching_report_variants": 9,
+      "exact_input_dims_found": true
+    },
+    "gemm": {
+      "operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_256x152_64x4_1x2_h_bz_coopA_TNT",
+      "external_id": 53773,
+      "correlation": 3562111,
+      "kernel_time_us": 461.146,
+      "cpu_input_dims": [
+        [
+          10823,
+          4096
+        ],
+        [
+          4096,
+          4096
+        ]
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16"
+      ],
+      "matching_report_variants": 6,
+      "exact_input_dims_found": true
+    },
+    "attention_forward": {
+      "operator": "flash_attn_3::fwd",
+      "kernel_name": "void flash::prepare_varlen_num_blocks_kernel<2, true>(int, int, int, int const*, int const*, int const*, int const*, int const*, int const*, int, int, int, int, int, cutlass::FastDivmod, cutlass::FastDivmod, int*, int*, int*, int*, int*, bool, bool, bool, int)",
+      "external_id": 53903,
+      "correlation": 3562640,
+      "kernel_time_us": 3.712,
+      "cpu_input_dims": [
+        [
+          10823,
+          32,
+          128
+        ],
+        [
+          10823,
+          8,
+          128
+        ],
+        [
+          10823,
+          8,
+          128
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          49
+        ],
+        [
+          49
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "",
+        "",
+        "",
+        "",
+        "int",
+        "int",
+        "",
+        "",
+        "",
+        "Scalar",
+        "Scalar",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "",
+        "Scalar",
+        "",
+        "Scalar"
+      ],
+      "matching_report_variants": 9,
+      "exact_input_dims_found": true
+    },
+    "cross_entropy_softmax": {
+      "operator": "aten::_log_softmax",
+      "kernel_name": "void at::native::(anonymous namespace)::cunn_SoftMaxForward<4, float, float, float, at::native::(anonymous namespace)::LogSoftMaxForwardEpilogue>(float*, float const*, int)",
+      "external_id": 66155,
+      "correlation": 3616483,
+      "kernel_time_us": 106.271,
+      "cpu_input_dims": [
+        [
+          111,
+          151936
+        ],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "float",
+        "Scalar",
+        "Scalar"
+      ],
+      "matching_report_variants": 7,
+      "exact_input_dims_found": true
+    },
+    "optimizer": {
+      "operator": "aten::_fused_adamw_",
+      "kernel_name": "void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::FusedOptimizerTensorListMetadata<4>, at::native::(anonymous namespace)::FusedAdamMathFunctor<c10::BFloat16, 4, (at::native::ADAM_MODE)1, false>, float const*, double, double, double, double, double, bool, float const*, float const*>(at::native::(anonymous namespace)::FusedOptimizerTensorListMetadata<4>, at::native::(anonymous namespace)::FusedAdamMathFunctor<c10::BFloat16, 4, (at::native::ADAM_MODE)1, false>, float const*, double, double, double, double, double, bool, float const*, float const*)",
+      "external_id": 515955,
+      "correlation": 5100856,
+      "kernel_time_us": 72.319,
+      "cpu_input_dims": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "TensorList",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "",
+        ""
+      ],
+      "matching_report_variants": 1,
+      "exact_input_dims_found": true
+    },
+    "attention_backward": {
+      "operator": "flash_attn_3::bwd",
+      "kernel_name": "void cutlass::device_kernel<flash::FlashAttnBwdPreprocess<cute::tuple<cute::C<64>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, true> >(flash::FlashAttnBwdPreprocess<cute::tuple<cute::C<64>, cute::C<128> >, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, true>::Params)",
+      "external_id": 1127706,
+      "correlation": 7124332,
+      "kernel_time_us": 134.91,
+      "cpu_input_dims": [
+        [
+          10894,
+          32,
+          128
+        ],
+        [
+          10894,
+          32,
+          128
+        ],
+        [
+          10894,
+          8,
+          128
+        ],
+        [
+          10894,
+          8,
+          128
+        ],
+        [
+          10894,
+          32,
+          128
+        ],
+        [
+          32,
+          10894
+        ],
+        [
+          10894,
+          32,
+          128
+        ],
+        [
+          10894,
+          8,
+          128
+        ],
+        [
+          10894,
+          8,
+          128
+        ],
+        [
+          49
+        ],
+        [
+          49
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "cpu_input_type": [
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "float",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "c10::BFloat16",
+        "int",
+        "int",
+        "",
+        "",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar",
+        "Scalar"
+      ],
+      "matching_report_variants": 9,
+      "exact_input_dims_found": true
+    }
+  }
+}

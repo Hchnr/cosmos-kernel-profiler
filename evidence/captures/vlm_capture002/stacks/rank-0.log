@@ -1,0 +1,101 @@
+Thread 0x00007fb63e7fc6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb63effd6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb63f7fe6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb63ffff6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb8baffd6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb8bb7fe6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb8bbfff6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fb8bea9f6c0 (most recent call first):
+  <no Python frame>
+
+Thread 0x00007fbfa61e86c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 359 in wait
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/queues.py", line 249 in _feed
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007fbfa49fc6c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 359 in wait
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/queues.py", line 249 in _feed
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007fbfa41fb6c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 359 in wait
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/queues.py", line 249 in _feed
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007fbfa39fa6c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 359 in wait
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/queues.py", line 249 in _feed
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007fbfa31f96c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/selectors.py", line 398 in select
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/connection.py", line 1174 in wait
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/connection.py", line 445 in _poll
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/connection.py", line 262 in poll
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/multiprocessing/queues.py", line 111 in get
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/utils/data/_utils/pin_memory.py", line 28 in do_one_step
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/utils/data/_utils/pin_memory.py", line 52 in _pin_memory_loop
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007fbacf7fe6c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-vlm-kernel-20260928/cosmos_framework/callbacks/ofu.py", line 133 in _reader_loop
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Thread 0x00007fbacffff6c0 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/selectors.py", line 452 in select
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 2022 in _run_once
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 683 in run_forever
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/asyncio/base_events.py", line 712 in run_until_complete
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 119 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/asyncio/runners.py", line 196 in run
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/wandb/sdk/lib/asyncio_compat.py", line 76 in run
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/wandb/sdk/lib/asyncio_manager.py", line 234 in _main
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 995 in run
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1044 in _bootstrap_inner
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/threading.py", line 1015 in _bootstrap
+
+Current thread 0x00007fc074a7f740 (most recent call first):
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/autograd/profiler.py", line 687 in _parse_kineto_results
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/autograd/profiler.py", line 441 in _ensure_function_events
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/autograd/profiler.py", line 468 in function_events
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/profiler/profiler.py", line 368 in events
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/profile_hook.py", line 119 in handler
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/profiler/profiler.py", line 910 in _trace_ready
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/profiler/profiler.py", line 916 in _transit_action
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/profiler/profiler.py", line 882 in step
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-vlm-kernel-20260928/cosmos_framework/trainer/__init__.py", line 424 in train
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-vlm-kernel-20260928/cosmos_framework/scripts/train.py", line 221 in launch
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-vlm-kernel-20260928/cosmos_framework/utils/training_telemetry/telemetry.py", line 65 in wrapper
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/loguru/_logger.py", line 1297 in catch_wrapper
+  File "/share/project/eai_pwm/home/hcr/worktrees/cosmos-vlm-kernel-20260928/cosmos_framework/scripts/train.py", line 299 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 234 in run_module
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_profile.py", line 91 in main
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_profile.py", line 100 in <module>
