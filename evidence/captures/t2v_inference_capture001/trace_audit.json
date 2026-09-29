@@ -1,0 +1,33 @@
+{
+  "kernel_events": 299393,
+  "all_unique_kernel_names": 146,
+  "cpu_ops": 1316576,
+  "backward_cpu_ops": {},
+  "attention_cpu_ops": {
+    "aten::scaled_dot_product_attention": 170,
+    "aten::_scaled_dot_product_efficient_attention": 170,
+    "aten::_efficient_attention_forward": 170,
+    "triton_poi_fused__flash_attn_forward__to_copy_add_cat_mean_mul_neg_pow_rsqrt_slice_squeeze_unsqueeze_view_2": 3600,
+    "flash_attn_3::_flash_attn_forward": 7200,
+    "flash_attn_3::fwd": 7200,
+    "triton_poi_fused__flash_attn_forward__to_copy_add_cat_mean_mul_neg_pow_rsqrt_slice_squeeze_unsqueeze_view_7": 3600
+  },
+  "vae_convolution_cpu_ops": {
+    "aten::conv3d": 5565,
+    "aten::convolution": 6415,
+    "aten::_convolution": 6415,
+    "aten::cudnn_convolution": 6415,
+    "aten::conv2d": 850
+  },
+  "attention_kernels": {
+    "fmha_cutlassF_bf16_aligned_32x128_gmem_sm80(PyTorchMemEffAttention::AttentionKernel<cutlass::bfloat16_t, cutlass::arch::Sm80, true, 32, 128, 65536, true, true>::Params)": 170,
+    "triton_poi_fused__flash_attn_forward__to_copy_add_cat_mean_mul_neg_pow_rsqrt_slice_squeeze_unsqueeze_view_2": 3600,
+    "void flash::prepare_varlen_num_blocks_kernel<1, true>(int, int, int, int const*, int const*, int const*, int const*, int const*, int const*, int, int, int, int, int, cutlass::FastDivmod, cutlass::FastDivmod, int*, int*, int*, int*, int*, bool, bool, bool, int)": 7200,
+    "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<128>, cute::C<128>, cute::C<128> >, 128, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, false, false, true, false, false, false, true, true, true, false, false>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<128>, cute::C<128>, cute::C<128> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 256, true, true, false, false>, flash::VarlenDynamicPersistentTileScheduler<128, 128, 256, 128, false, true, true, true, true, true> > > >(flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<128>, cute::C<128>, cute::C<128> >, 128, cutlass::bfloat16_t, float, cutlass::arch::Sm90, true, false, false, true, false, false, false, true, true, true, false, false>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<128>, cute::C<128>, cute::C<128> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 256, true, true, false, false>, flash::VarlenDynamicPersistentTileScheduler<128, 128, 256, 128, false, true, true, true, true, true> > >::Params)": 3600,
+    "triton_poi_fused__flash_attn_forward__to_copy_add_cat_mean_mul_neg_pow_rsqrt_slice_squeeze_unsqueeze_view_7": 3600,
+    "void cutlass::device_kernel<flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<128>, cute::C<176>, cute::C<128> >, 128, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, false, false, true, true, true, false, false>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<128>, cute::C<128>, cute::C<176> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 256, true, true, false, false>, flash::VarlenDynamicPersistentTileScheduler<128, 176, 256, 128, false, true, true, false, true, true> > > >(flash::enable_sm90_or_later<flash::FlashAttnFwdSm90<flash::CollectiveMainloopFwdSm90<2, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cute::tuple<cute::C<128>, cute::C<176>, cute::C<128> >, 128, cutlass::bfloat16_t, float, cutlass::arch::Sm90, false, false, false, true, false, false, false, true, true, true, false, false>, flash::CollectiveEpilogueFwd<cute::tuple<cute::C<128>, cute::C<128>, cute::C<176> >, cute::tuple<cute::C<1>, cute::C<1>, cute::C<1> >, cutlass::bfloat16_t, cutlass::arch::Sm90, 256, true, true, false, false>, flash::VarlenDynamicPersistentTileScheduler<128, 176, 256, 128, false, true, true, false, true, true> > >::Params)": 3600
+  },
+  "devices": [
+    "0"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "table_validation": "passed",
+  "rank": 0,
+  "detail_variants": 374,
+  "operator_kernel_mappings": 111,
+  "operator_groups": 46,
+  "unique_report_kernels": 104,
+  "trace_cpu_ops": 213810,
+  "trace_kernel_events": 73663,
+  "trace_compute_kernel_events": 73663,
+  "trace_compute_kernel_time_us": 388999.15299999964,
+  "trace_communication_kernel_events": 0,
+  "trace_communication_kernel_time_us": 0.0,
+  "trace_memory_events": 672,
+  "report_kernel_calls": 73663,
+  "report_kernel_time_us": 388999.153,
+  "missing_metadata": {
+    "input_shapes": {
+      "variant_rows": 0,
+      "kernel_calls": 0,
+      "kernel_time_us": 0
+    },
+    "input_dtypes": {
+      "variant_rows": 6,
+      "kernel_calls": 4760,
+      "kernel_time_us": 16982.808
+    }
+  },
+  "kernel_name_count_mismatches": [],
+  "excess_report_kernel_names": [],
+  "phase_annotations": {
+    "kernel_list.inference_request": 1,
+    "kernel_list.prefill": 1,
+    "kernel_list.vision": 1,
+    "kernel_list.decode": 31
+  },
+  "compile_timed_ranges": {},
+  "top_kernel_mappings": [
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_TNT",
+      "kernel_call_count": "2232",
+      "kernel_time_us": "81090.892",
+      "percent": "20.846%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_64x8_64x16_2x1_v_bz_splitK_TNT",
+      "kernel_call_count": "3348",
+      "kernel_time_us": "71614.547",
+      "percent": "18.410%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mul",
+      "kernel_name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "kernel_call_count": "6986",
+      "kernel_time_us": "19269.904",
+      "percent": "4.954%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_192x192_64x4_1x2_h_bz_coopB_TNN",
+      "kernel_call_count": "73",
+      "kernel_time_us": "16208.804",
+      "percent": "4.167%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::_cudnn_attention_forward",
+      "kernel_name": "cudnn_generated_fort_native_sdpa_sm90_flash_fprop_wgmma_f16_knob_7_64x128x128_4x1x1_cga1x1x1_kernel0_0",
+      "kernel_call_count": "63",
+      "kernel_time_us": "15289.254",
+      "percent": "3.930%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::copy_",
+      "kernel_name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",
+      "kernel_call_count": "4673",
+      "kernel_time_us": "14911.915",
+      "percent": "3.833%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mul",
+      "kernel_name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",
+      "kernel_call_count": "4749",
+      "kernel_time_us": "13510.622",
+      "percent": "3.473%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mean",
+      "kernel_name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, 4, 4>)",
+      "kernel_call_count": "4640",
+      "kernel_time_us": "13391.454",
+      "percent": "3.443%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_64x8_64x16_4x1_v_bz_splitK_TNT",
+      "kernel_call_count": "2232",
+      "kernel_time_us": "13044.451",
+      "percent": "3.353%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_384x8_64x4_2x1_v_bz_TNT",
+      "kernel_call_count": "31",
+      "kernel_time_us": "12843.485",
+      "percent": "3.302%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "nvjet_sm90_tst_128x192_64x5_2x1_v_bz_coopB_TNN",
+      "kernel_call_count": "108",
+      "kernel_time_us": "11682.479",
+      "percent": "3.003%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::mm",
+      "kernel_name": "void cublasLt::splitKreduce_kernel<32, 16, int, float, __nv_bfloat16, float, __nv_bfloat16, false, float, __nv_bfloat16, __nv_bfloat16, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, __nv_bfloat16 const*, float*, __nv_bfloat16*, float const*, float const*, __nv_bfloat16 const*, float const*, __nv_bfloat16*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+      "kernel_call_count": "5580",
+      "kernel_time_us": "10322.317",
+      "percent": "2.654%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::cat",
+      "kernel_name": "void at::native::(anonymous namespace)::CatArrayBatchedCopy_vectorized<at::native::(anonymous namespace)::OpaqueType<2u>, unsigned int, 3, 128, 1, 16, 8>(char*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<at::native::(anonymous namespace)::OpaqueType<2u>, unsigned int, 128, 1>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",
+      "kernel_call_count": "2232",
+      "kernel_time_us": "8044.006",
+      "percent": "2.068%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::copy_",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<8, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul>)",
+      "kernel_call_count": "4759",
+      "kernel_time_us": "7692.111",
+      "percent": "1.977%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::add",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<8, at::native::CUDAFunctor_add<c10::BFloat16>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<c10::BFloat16>, std::array<char*, 3ul>)",
+      "kernel_call_count": "4597",
+      "kernel_time_us": "7424.304",
+      "percent": "1.909%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::cat",
+      "kernel_name": "void at::native::(anonymous namespace)::CatArrayBatchedCopy<at::native::(anonymous namespace)::OpaqueType<2u>, unsigned int, 4, 64, 64>(at::native::(anonymous namespace)::OpaqueType<2u>*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<at::native::(anonymous namespace)::OpaqueType<2u>, unsigned int, 64, 64>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",
+      "kernel_call_count": "2376",
+      "kernel_time_us": "6968.721",
+      "percent": "1.791%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::_cudnn_attention_forward",
+      "kernel_name": "cudnn_generated_fort_native_sdpa_sm80_flash_fprop_wmma_f16_knob_35_16x128x128_1x4x1_cga1x1x1_kernel0_0",
+      "kernel_call_count": "1116",
+      "kernel_time_us": "6856.437",
+      "percent": "1.763%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::pow",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase&, float)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase&, float)::{lambda(float)#1}, std::array<char*, 2ul>)",
+      "kernel_call_count": "4640",
+      "kernel_time_us": "6739.934",
+      "percent": "1.733%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::rsqrt",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::rsqrt_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::rsqrt_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+      "kernel_call_count": "4640",
+      "kernel_time_us": "6617.934",
+      "percent": "1.701%"
+    },
+    {
+      "custom_operator": "null",
+      "execution_operator": "aten::add",
+      "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)",
+      "kernel_call_count": "4640",
+      "kernel_time_us": "6242.616",
+      "percent": "1.605%"
+    }
+  ],
+  "files": [
+    {
+      "name": "rank-0.json.gz",
+      "bytes": 11048439,
+      "sha256": "6e19331fe1ec114a28f09b963b02ee48958c2769339d4146acd12f5dd7f8e22b"
+    },
+    {
+      "name": "rank-0_kernel_details_report.csv",
+      "bytes": 231255,
+      "sha256": "752ab4320f78c57d71bcc103bdea8d3f99422ca07d9e45e077ed5c1d6dd2c78f"
+    },
+    {
+      "name": "rank-0_kernel_summary.csv",
+      "bytes": 50000,
+      "sha256": "40366ae0ee3fcde4687c3e1106538c7efbe253511419a16dc008a83ae0e243fa"
+    },
+    {
+      "name": "rank-0_operator_list.csv",
+      "bytes": 48896,
+      "sha256": "2186e08528939a07fa4b1ccff646b02112ae8df42abafe82335ff535fd69cfb2"
+    }
+  ],
+  "coverage_note": "GPU classification by kernel name; CPU communication-parent filtering can also exclude kernels. Count agreement is a coverage check, not independent proof of exact event attribution."
+}

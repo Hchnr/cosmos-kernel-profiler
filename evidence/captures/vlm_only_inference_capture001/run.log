@@ -1,0 +1,9 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:18<00:55, 18.39s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:34<00:34, 17.33s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:48<00:15, 15.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:52<00:00, 10.79s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:52<00:00, 13.02s/it]
+WARMUP_BEGIN
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+WARMUP_COMPLETE
+/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/profiler/profiler.py:217: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+CAPTURE_COMPLETE exporting
+REPORT_COMPLETE 104 73663

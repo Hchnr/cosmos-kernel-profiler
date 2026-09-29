@@ -1,0 +1,12 @@
+{
+  "python": "3.13.14",
+  "torch": "2.10.0+cu130",
+  "transformers": "4.57.6",
+  "triton": "3.6.0",
+  "flash-attn": "2.7.4.post1+cu130.torch210",
+  "flash-attn-3-nv": "1.0.3+cu130.torch210",
+  "nvidia-cudnn-cu13": "9.15.1.9",
+  "pyarrow": "21.0.0",
+  "diffusers": "0.39.0",
+  "accelerate": "1.13.0"
+}

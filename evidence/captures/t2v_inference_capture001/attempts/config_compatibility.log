@@ -1,0 +1,509 @@
+[09-29 17:56:05|job=|CRITICAL] Initialized distributed training with local rank 2 using nccl with timeout 1800
+[09-29 17:56:07|job=|CRITICAL] Initialized distributed training with local rank 1 using nccl with timeout 1800
+[09-29 17:56:07|job=|CRITICAL] Initialized distributed training with local rank 3 using nccl with timeout 1800
+[09-29 17:56:07|job=|CRITICAL] Initialized distributed training with local rank 0 using nccl with timeout 1800
+[09-29 17:56:07|job=|INFO] Training with 4 GPUs.
+[09-29 17:56:20|job=|INFO] Console log saved to /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/evidence/captures/t2v_inference_capture001/outputs_worldarena/console.log
+[09-29 17:56:20|job=|INFO] Debug log saved to /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/evidence/captures/t2v_inference_capture001/outputs_worldarena/debug.log
+[09-29 17:56:20|job=|INFO] Loaded 16 samples
+[09-29 17:56:22|job=|INFO] OmniMoTModel: config {'action_gen': False, 'action_tower_attention_backend': 'auto', 'action_tower_execution': 'native', 'action_tower_init': 'checkpoint', 'action_tower_preset': 'full', 'action_tower_projection_mode': 'routed', 'action_tower_und_short_tokens': 0, 'activation_checkpointing': {'determinism_check': 'default', 'mode': 'none', 'preserve_rng_state': True, 'save_ops_regex': ['fmha']}, 'attention_io_layout': 'sequence_sharded', 'causal_training_strategy': 'none', 'compile': {'enabled': True, 'compiled_region': 'language', 'compile_dynamic': True, 'use_cuda_graphs': False, 'ar_post_saturation_mode': 'default', 'max_autotune_pointwise': False, 'coordinate_descent_tuning': False, 'mix_order_reduction_split_size': None, '_type': 'cosmos_framework.configs.base.defaults.compile.CompileConfig'}, 'diffusion_expert_config': {'base_fps': 24, 'enable_fps_modulation': True, 'enable_media_modality_embedding': False, 'enable_vision_modality_embeddings': False, 'load_weights_from_pretrained': False, 'max_vae_latent_side_after_patchify': 20, 'patch_spatial': 2, 'sound_base_temporal_compression_factor': None, 'timestep_range': 1.0, 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000, 'vision_temporal_position_mode': 'latent_index'}, 'ema': {'enabled': False, 'iteration_shift': 0, 'rate': 0.1}, 'enable_input_bias': True, 'exclude_reasoner_weights_from_checkpoint': False, 'fixed_sequence_length': {'action_tokens': 0, 'enabled': False, 'gen_tokens': 0, 'und_tokens': 0, 'understanding_tokens': 0}, 'fixed_step_sampler_config': None, 'flex_attention': {'backend': 'auto', 'enabled': False, 'mask': {'noisy_attention_scope': 'all_views'}}, 'gen_loss_scale': 1.0, 'input_caption_key': 'ai_caption', 'input_image_key': 'images', 'input_video_key': 'video', 'input_video_latent_key': 'video_latent', 'joint_attn_implementation': 'two_way', 'latent_downsample_factor': 16, 'lbl': {'coeff_gen': None, 'coeff_und': None, 'method': 'local'}, 'load_vision_tokenizer': True, 'load_vlm_visual': False, 'log_enc_time_every_n': 100, 'lora_alpha': 32, 'lora_enabled': False, 'lora_rank': 16, 'lora_target_modules': 'q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen', 'max_action_dim': 64, 'max_num_tokens_after_packing': 101376, 'natten_parameter_list': None, 'net': None, 'num_embodiment_domains': 32, 'parallelism': {'data_parallel_shard_degree': 4, 'data_parallel_replicate_degree': 1, 'context_parallel_shard_degree': 1, 'cfg_parallel_shard_degree': 1, 'enable_inference_mode': True, 'fsdp_master_dtype': 'float32', 'fsdp_reduce_dtype': None, '_type': 'cosmos_framework.configs.base.defaults.parallelism.ParallelismConfig'}, 'precision': 'bfloat16', 'predict_text_tokens': False, 'quantization': {'method': None, 'fp8_granularity': 'per_row', 'modelopt_fp8_checkpoint_path': None, 'include_regex': ['language_model.model.layers'], 'exclude_regex': [], 'modelopt_fp8_target_fqns': [], '_type': 'cosmos_framework.configs.base.defaults.quantization.QuantizationConfig'}, 'rectified_flow_inference_config': {'num_train_timesteps': 1000, 'scheduler_type': 'unipc', 'shift': 1, 'use_dynamic_shifting': False}, 'rectified_flow_training_config': {'action_loss_weight': 10.0, 'image_loss_scale': 1.0, 'independent_action_schedule': False, 'independent_sound_schedule': False, 'loss_scale': 1.0, 'normalize_loss_by_active': False, 'sample_level_loss_averaging': False, 'shift': {'256': 3, '480': 5, '720': 10}, 'shift_action': None, 'shift_image': None, 'shift_sound': None, 'sound_loss_scale': None, 'train_time_action_distribution': 'logitnormal', 'train_time_image_distribution': 'logitnormal', 'train_time_sound_distribution': 'logitnormal', 'train_time_video_distribution': 'waver', 'train_time_weight': 'uniform', 'use_discrete_rf': False, 'use_dynamic_shift': False}, 'resolution': '480', 'sound_dim': None, 'sound_gen': False, 'sound_latent_fps': 25, 'sound_tokenizer': None, 'state_ch': 48, 'state_t': 300, 'text_loss_weight': 1.0, 'tokenizer': {'bucket_name': '', 'object_store_credential_path_pretrained': '', 'vae_path': '/share/project/eai_pwm/models/wan22_vae/Wan2.2_VAE.pth', 'chunk_duration': 93, 'keep_decoder_cache': False, 'use_streaming_encode': False, 'encode_chunk_frames': {'256': 68, '480': 24, '720': 8, '768': 8}, 'encode_exact_durations': None, 'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'temporal_window': None, 'encode_bucket_multiple': None, 'causal': True, '_target_': 'cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface'}, 'tower_structure': 'two_tower', 'train_vlm_visual': False, 'und_loss_scale': 1.0, 'video_temporal_causal': False, 'vision_gen': True, 'vision_vae_mode': 'online', 'vlm_config': {'layer_module': 'Qwen2MoTDecoderLayer', 'model_instance': {'_target_': 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM', 'config': {'_target_': 'cosmos_framework.configs.base.defaults.reasoner.create_vlm_config', 'base_config': {'_target_': 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig.from_json_file', 'json_file': 'cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json'}, 'freeze_und': False, 'layer_module': 'MoTDecoderLayer', 'qk_norm_for_text': True, 'tie_word_embeddings': True}}, 'model_name': 'Qwen/Qwen3-VL-8B-Instruct', 'pretrained_weights': {'backbone_path': 's3://bucket0/cosmos3/pretrained/huggingface/Qwen/Qwen3-VL-8B-Instruct/', 'checkpoint_format': None, 'credentials_path': '', 'enable_gcs_patch_in_boto3': True, 'enabled': False}, 'qk_norm': False, 'safetensors_path': '', 'tie_word_embeddings': False, 'tokenizer': {'_target_': 'cosmos_framework.configs.base.defaults.reasoner.create_qwen2_tokenizer_with_download', 'config_variant': 'hf', 'pretrained_model_name': '/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct'}, 'use_system_prompt': False}}
+[09-29 17:56:22|job=|WARNING] OmniMoTModel: precision torch.bfloat16
+[09-29 17:56:24|job=|INFO] loading /share/project/eai_pwm/models/wan22_vae/Wan2.2_VAE.pth
+[09-29 17:56:24|job=|INFO] Synchronizing model states from rank 0 to all ranks in process group [0, 1, 2, 3].
+[09-29 17:56:25|job=|INFO] Time spent on OmniMoTModel: set_up_tokenizers: 2.67 s
+[09-29 17:56:25|job=|INFO] dp_replicate is set to -1, will be automatically determined based on world_size 4 // dp_shard 4.
+[09-29 17:56:25|job=|INFO] dp_replicate is set to 1.
+[09-29 17:56:25|job=|INFO] Building 2-D device mesh with ['dp_replicate', 'dp_shard'], [1, 4]
+[09-29 17:56:25|job=|INFO] Time spent on Creating PyTorch model and ema if enabled: 0.73 s
+[09-29 17:56:25|job=|INFO] Time spent on OmniMoTModel: set_up_model: 0.73 s
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+[rank0]:     return _target_(*args, **kwargs)
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 197, in __init__
+[rank0]:     self.set_up_model()
+[rank0]:     ~~~~~~~~~~~~~~~~~^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 549, in set_up_model
+[rank0]:     self.net = self.build_net(dtype=self.precision)
+[rank0]:                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 376, in build_net
+[rank0]:     vision_spatial_position_mode=self.config.diffusion_expert_config.vision_spatial_position_mode,
+[rank0]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 355, in __getattr__
+[rank0]:     self._format_and_raise(
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         key=key, value=None, cause=e, type_override=ConfigAttributeError
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+[rank0]:     format_and_raise(
+[rank0]:     ~~~~~~~~~~~~~~~~^
+[rank0]:         node=self,
+[rank0]:         ^^^^^^^^^^
+[rank0]:     ...<4 lines>...
+[rank0]:         type_override=type_override,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+[rank0]:     _raise(ex, cause)
+[rank0]:     ~~~~~~^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 797, in _raise
+[rank0]:     raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 351, in __getattr__
+[rank0]:     return self._get_impl(
+[rank0]:            ~~~~~~~~~~~~~~^
+[rank0]:         key=key, default_value=_DEFAULT_MARKER_, validate_key=False
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 442, in _get_impl
+[rank0]:     node = self._get_child(
+[rank0]:         key=key, throw_on_missing_key=True, validate_key=validate_key
+[rank0]:     )
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/basecontainer.py", line 73, in _get_child
+[rank0]:     child = self._get_node(
+[rank0]:         key=key,
+[rank0]:     ...<3 lines>...
+[rank0]:         throw_on_missing_key=throw_on_missing_key,
+[rank0]:     )
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 480, in _get_node
+[rank0]:     raise ConfigKeyError(f"Missing key {key!s}")
+[rank0]: omegaconf.errors.ConfigAttributeError: Missing key vision_spatial_position_mode
+[rank0]:     full_key: config.diffusion_expert_config.vision_spatial_position_mode
+[rank0]:     object_type=dict. Did you mean: 'vision_temporal_position_mode'?
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 164, in <module>
+[rank0]:     main()
+[rank0]:     ~~~~^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 159, in main
+[rank0]:     (t2v if args.mode == 't2v' else vlm)(args.output, rest)
+[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 83, in t2v
+[rank0]:     cli.main()
+[rank0]:     ~~~~~~~~^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 85, in main
+[rank0]:     inference(args)
+[rank0]:     ~~~~~~~~~^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 54, in inference
+[rank0]:     pipe = setup_args.get_inference_cls().create(setup_args)
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/common/inference.py", line 136, in create
+[rank0]:     return cls._create(setup_args, guardrails=guardrails, _timer=timer)
+[rank0]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/inference.py", line 1286, in _create
+[rank0]:     model = Cosmos3OmniModel.from_pretrained_dcp(
+[rank0]:             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         checkpoint_path,
+[rank0]:         ^^^^^^^^^^^^^^^^
+[rank0]:     ...<6 lines>...
+[rank0]:         ),
+[rank0]:         ^^
+[rank0]:     ).model
+[rank0]:     ^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 723, in from_pretrained_dcp
+[rank0]:     model = cls(config)
+[rank0]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 673, in __init__
+[rank0]:     self.model: "OmniMoTModel" = hydra.utils.instantiate(model_dict)
+[rank0]:                                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+[rank0]:     return instantiate_node(
+[rank0]:         config, *args, recursive=_recursive_, convert=_convert_, partial=_partial_
+[rank0]:     )
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+[rank0]:     return _call_target(_target_, partial, args, kwargs, full_key)
+[rank0]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+[rank0]:     raise InstantiationException(msg) from e
+[rank0]: hydra.errors.InstantiationException: Error in call to target 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel':
+[rank0]: ConfigAttributeError('Missing key vision_spatial_position_mode\n    full_key: config.diffusion_expert_config.vision_spatial_position_mode\n    object_type=dict')
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+[rank3]:     return _target_(*args, **kwargs)
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 197, in __init__
+[rank3]:     self.set_up_model()
+[rank3]:     ~~~~~~~~~~~~~~~~~^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 549, in set_up_model
+[rank3]:     self.net = self.build_net(dtype=self.precision)
+[rank3]:                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 376, in build_net
+[rank3]:     vision_spatial_position_mode=self.config.diffusion_expert_config.vision_spatial_position_mode,
+[rank3]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 355, in __getattr__
+[rank3]:     self._format_and_raise(
+[rank3]:     ~~~~~~~~~~~~~~~~~~~~~~^
+[rank3]:         key=key, value=None, cause=e, type_override=ConfigAttributeError
+[rank3]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:     )
+[rank3]:     ^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+[rank3]:     format_and_raise(
+[rank3]:     ~~~~~~~~~~~~~~~~^
+[rank3]:         node=self,
+[rank3]:         ^^^^^^^^^^
+[rank3]:     ...<4 lines>...
+[rank3]:         type_override=type_override,
+[rank3]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:     )
+[rank3]:     ^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+[rank3]:     _raise(ex, cause)
+[rank3]:     ~~~~~~^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 797, in _raise
+[rank3]:     raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+[rank3]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 351, in __getattr__
+[rank3]:     return self._get_impl(
+[rank3]:            ~~~~~~~~~~~~~~^
+[rank3]:         key=key, default_value=_DEFAULT_MARKER_, validate_key=False
+[rank3]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:     )
+[rank3]:     ^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 442, in _get_impl
+[rank3]:     node = self._get_child(
+[rank3]:         key=key, throw_on_missing_key=True, validate_key=validate_key
+[rank3]:     )
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/basecontainer.py", line 73, in _get_child
+[rank3]:     child = self._get_node(
+[rank3]:         key=key,
+[rank3]:     ...<3 lines>...
+[rank3]:         throw_on_missing_key=throw_on_missing_key,
+[rank3]:     )
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 480, in _get_node
+[rank3]:     raise ConfigKeyError(f"Missing key {key!s}")
+[rank3]: omegaconf.errors.ConfigAttributeError: Missing key vision_spatial_position_mode
+[rank3]:     full_key: config.diffusion_expert_config.vision_spatial_position_mode
+[rank3]:     object_type=dict. Did you mean: 'vision_temporal_position_mode'?
+
+[rank3]: The above exception was the direct cause of the following exception:
+
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 164, in <module>
+[rank3]:     main()
+[rank3]:     ~~~~^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 159, in main
+[rank3]:     (t2v if args.mode == 't2v' else vlm)(args.output, rest)
+[rank3]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 83, in t2v
+[rank3]:     cli.main()
+[rank3]:     ~~~~~~~~^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 85, in main
+[rank3]:     inference(args)
+[rank3]:     ~~~~~~~~~^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 54, in inference
+[rank3]:     pipe = setup_args.get_inference_cls().create(setup_args)
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/common/inference.py", line 136, in create
+[rank3]:     return cls._create(setup_args, guardrails=guardrails, _timer=timer)
+[rank3]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/inference.py", line 1286, in _create
+[rank3]:     model = Cosmos3OmniModel.from_pretrained_dcp(
+[rank3]:             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank3]:         checkpoint_path,
+[rank3]:         ^^^^^^^^^^^^^^^^
+[rank3]:     ...<6 lines>...
+[rank3]:         ),
+[rank3]:         ^^
+[rank3]:     ).model
+[rank3]:     ^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 723, in from_pretrained_dcp
+[rank3]:     model = cls(config)
+[rank3]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 673, in __init__
+[rank3]:     self.model: "OmniMoTModel" = hydra.utils.instantiate(model_dict)
+[rank3]:                                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+[rank3]:     return instantiate_node(
+[rank3]:         config, *args, recursive=_recursive_, convert=_convert_, partial=_partial_
+[rank3]:     )
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+[rank3]:     return _call_target(_target_, partial, args, kwargs, full_key)
+[rank3]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+[rank3]:     raise InstantiationException(msg) from e
+[rank3]: hydra.errors.InstantiationException: Error in call to target 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel':
+[rank3]: ConfigAttributeError('Missing key vision_spatial_position_mode\n    full_key: config.diffusion_expert_config.vision_spatial_position_mode\n    object_type=dict')
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+[rank1]:     return _target_(*args, **kwargs)
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 197, in __init__
+[rank1]:     self.set_up_model()
+[rank1]:     ~~~~~~~~~~~~~~~~~^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 549, in set_up_model
+[rank1]:     self.net = self.build_net(dtype=self.precision)
+[rank1]:                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 376, in build_net
+[rank1]:     vision_spatial_position_mode=self.config.diffusion_expert_config.vision_spatial_position_mode,
+[rank1]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 355, in __getattr__
+[rank1]:     self._format_and_raise(
+[rank1]:     ~~~~~~~~~~~~~~~~~~~~~~^
+[rank1]:         key=key, value=None, cause=e, type_override=ConfigAttributeError
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:     )
+[rank1]:     ^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+[rank1]:     format_and_raise(
+[rank1]:     ~~~~~~~~~~~~~~~~^
+[rank1]:         node=self,
+[rank1]:         ^^^^^^^^^^
+[rank1]:     ...<4 lines>...
+[rank1]:         type_override=type_override,
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:     )
+[rank1]:     ^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+[rank1]:     _raise(ex, cause)
+[rank1]:     ~~~~~~^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 797, in _raise
+[rank1]:     raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+[rank1]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 351, in __getattr__
+[rank1]:     return self._get_impl(
+[rank1]:            ~~~~~~~~~~~~~~^
+[rank1]:         key=key, default_value=_DEFAULT_MARKER_, validate_key=False
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:     )
+[rank1]:     ^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 442, in _get_impl
+[rank1]:     node = self._get_child(
+[rank1]:         key=key, throw_on_missing_key=True, validate_key=validate_key
+[rank1]:     )
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/basecontainer.py", line 73, in _get_child
+[rank1]:     child = self._get_node(
+[rank1]:         key=key,
+[rank1]:     ...<3 lines>...
+[rank1]:         throw_on_missing_key=throw_on_missing_key,
+[rank1]:     )
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 480, in _get_node
+[rank1]:     raise ConfigKeyError(f"Missing key {key!s}")
+[rank1]: omegaconf.errors.ConfigAttributeError: Missing key vision_spatial_position_mode
+[rank1]:     full_key: config.diffusion_expert_config.vision_spatial_position_mode
+[rank1]:     object_type=dict. Did you mean: 'vision_temporal_position_mode'?
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 164, in <module>
+[rank1]:     main()
+[rank1]:     ~~~~^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 159, in main
+[rank1]:     (t2v if args.mode == 't2v' else vlm)(args.output, rest)
+[rank1]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 83, in t2v
+[rank1]:     cli.main()
+[rank1]:     ~~~~~~~~^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 85, in main
+[rank1]:     inference(args)
+[rank1]:     ~~~~~~~~~^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 54, in inference
+[rank1]:     pipe = setup_args.get_inference_cls().create(setup_args)
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/common/inference.py", line 136, in create
+[rank1]:     return cls._create(setup_args, guardrails=guardrails, _timer=timer)
+[rank1]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/inference.py", line 1286, in _create
+[rank1]:     model = Cosmos3OmniModel.from_pretrained_dcp(
+[rank1]:             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank1]:         checkpoint_path,
+[rank1]:         ^^^^^^^^^^^^^^^^
+[rank1]:     ...<6 lines>...
+[rank1]:         ),
+[rank1]:         ^^
+[rank1]:     ).model
+[rank1]:     ^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 723, in from_pretrained_dcp
+[rank1]:     model = cls(config)
+[rank1]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 673, in __init__
+[rank1]:     self.model: "OmniMoTModel" = hydra.utils.instantiate(model_dict)
+[rank1]:                                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+[rank1]:     return instantiate_node(
+[rank1]:         config, *args, recursive=_recursive_, convert=_convert_, partial=_partial_
+[rank1]:     )
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+[rank1]:     return _call_target(_target_, partial, args, kwargs, full_key)
+[rank1]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+[rank1]:     raise InstantiationException(msg) from e
+[rank1]: hydra.errors.InstantiationException: Error in call to target 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel':
+[rank1]: ConfigAttributeError('Missing key vision_spatial_position_mode\n    full_key: config.diffusion_expert_config.vision_spatial_position_mode\n    object_type=dict')
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+[rank2]:     return _target_(*args, **kwargs)
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 197, in __init__
+[rank2]:     self.set_up_model()
+[rank2]:     ~~~~~~~~~~~~~~~~~^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/timer.py", line 154, in wrapper
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 549, in set_up_model
+[rank2]:     self.net = self.build_net(dtype=self.precision)
+[rank2]:                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 376, in build_net
+[rank2]:     vision_spatial_position_mode=self.config.diffusion_expert_config.vision_spatial_position_mode,
+[rank2]:                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 355, in __getattr__
+[rank2]:     self._format_and_raise(
+[rank2]:     ~~~~~~~~~~~~~~~~~~~~~~^
+[rank2]:         key=key, value=None, cause=e, type_override=ConfigAttributeError
+[rank2]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:     )
+[rank2]:     ^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+[rank2]:     format_and_raise(
+[rank2]:     ~~~~~~~~~~~~~~~~^
+[rank2]:         node=self,
+[rank2]:         ^^^^^^^^^^
+[rank2]:     ...<4 lines>...
+[rank2]:         type_override=type_override,
+[rank2]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:     )
+[rank2]:     ^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+[rank2]:     _raise(ex, cause)
+[rank2]:     ~~~~~~^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/_utils.py", line 797, in _raise
+[rank2]:     raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+[rank2]:     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 351, in __getattr__
+[rank2]:     return self._get_impl(
+[rank2]:            ~~~~~~~~~~~~~~^
+[rank2]:         key=key, default_value=_DEFAULT_MARKER_, validate_key=False
+[rank2]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:     )
+[rank2]:     ^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 442, in _get_impl
+[rank2]:     node = self._get_child(
+[rank2]:         key=key, throw_on_missing_key=True, validate_key=validate_key
+[rank2]:     )
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/basecontainer.py", line 73, in _get_child
+[rank2]:     child = self._get_node(
+[rank2]:         key=key,
+[rank2]:     ...<3 lines>...
+[rank2]:         throw_on_missing_key=throw_on_missing_key,
+[rank2]:     )
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/omegaconf/dictconfig.py", line 480, in _get_node
+[rank2]:     raise ConfigKeyError(f"Missing key {key!s}")
+[rank2]: omegaconf.errors.ConfigAttributeError: Missing key vision_spatial_position_mode
+[rank2]:     full_key: config.diffusion_expert_config.vision_spatial_position_mode
+[rank2]:     object_type=dict. Did you mean: 'vision_temporal_position_mode'?
+
+[rank2]: The above exception was the direct cause of the following exception:
+
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 164, in <module>
+[rank2]:     main()
+[rank2]:     ~~~~^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 159, in main
+[rank2]:     (t2v if args.mode == 't2v' else vlm)(args.output, rest)
+[rank2]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 83, in t2v
+[rank2]:     cli.main()
+[rank2]:     ~~~~~~~~^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 85, in main
+[rank2]:     inference(args)
+[rank2]:     ~~~~~~~~~^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 54, in inference
+[rank2]:     pipe = setup_args.get_inference_cls().create(setup_args)
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/common/inference.py", line 136, in create
+[rank2]:     return cls._create(setup_args, guardrails=guardrails, _timer=timer)
+[rank2]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/inference.py", line 1286, in _create
+[rank2]:     model = Cosmos3OmniModel.from_pretrained_dcp(
+[rank2]:             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank2]:         checkpoint_path,
+[rank2]:         ^^^^^^^^^^^^^^^^
+[rank2]:     ...<6 lines>...
+[rank2]:         ),
+[rank2]:         ^^
+[rank2]:     ).model
+[rank2]:     ^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 723, in from_pretrained_dcp
+[rank2]:     model = cls(config)
+[rank2]:   File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 673, in __init__
+[rank2]:     self.model: "OmniMoTModel" = hydra.utils.instantiate(model_dict)
+[rank2]:                                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+[rank2]:     return instantiate_node(
+[rank2]:         config, *args, recursive=_recursive_, convert=_convert_, partial=_partial_
+[rank2]:     )
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+[rank2]:     return _call_target(_target_, partial, args, kwargs, full_key)
+[rank2]:   File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+[rank2]:     raise InstantiationException(msg) from e
+[rank2]: hydra.errors.InstantiationException: Error in call to target 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel':
+[rank2]: ConfigAttributeError('Missing key vision_spatial_position_mode\n    full_key: config.diffusion_expert_config.vision_spatial_position_mode\n    object_type=dict')
+W0929 17:56:37.376000 2733068 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 2733218 closing signal SIGTERM
+W0929 17:56:37.378000 2733068 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 2733219 closing signal SIGTERM
+W0929 17:56:37.379000 2733068 torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 2733220 closing signal SIGTERM
+E0929 17:56:37.908000 2733068 torch/distributed/elastic/multiprocessing/api.py:984] failed (exitcode: 1) local_rank: 0 (pid: 2733217) of binary: /share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/bin/python
+E0929 17:56:37.926000 2733068 torch/distributed/elastic/multiprocessing/errors/error_handler.py:145] no error file defined for parent, to copy child error file (/tmp/torchelastic_9q1724j5/462649d4-aedb-4e92-8907-e269bfb10f4d_9uv4z1ks/attempt_0/0/error.json)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/distributed/run.py", line 995, in <module>
+    main()
+    ~~~~^^
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+    ~~~^^^^^^
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+    ...<2 lines>...
+    )
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-29_17:56:25
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 1 (local_rank: 1)
+  exitcode  : -15 (pid: 2733218)
+  error_file: /tmp/torchelastic_9q1724j5/462649d4-aedb-4e92-8907-e269bfb10f4d_9uv4z1ks/attempt_0/1/error.json
+  traceback : NoneType: None
+  
+[2]:
+  time      : 2026-09-29_17:56:25
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : -15 (pid: 2733219)
+  error_file: /tmp/torchelastic_9q1724j5/462649d4-aedb-4e92-8907-e269bfb10f4d_9uv4z1ks/attempt_0/2/error.json
+  traceback : NoneType: None
+  
+[3]:
+  time      : 2026-09-29_17:56:25
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 2733220)
+  error_file: /tmp/torchelastic_9q1724j5/462649d4-aedb-4e92-8907-e269bfb10f4d_9uv4z1ks/attempt_0/3/error.json
+  traceback : NoneType: None
+  
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-29_17:56:25
+  host      : job-c17f88d9-a1cc-483d-b95d-25251e64afa9-master-0
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2733217)
+  error_file: /tmp/torchelastic_9q1724j5/462649d4-aedb-4e92-8907-e269bfb10f4d_9uv4z1ks/attempt_0/0/error.json
+  traceback : NoneType: None
+  
+============================================================

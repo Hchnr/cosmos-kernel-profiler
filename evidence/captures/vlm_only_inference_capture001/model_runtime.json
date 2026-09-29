@@ -1,0 +1,13 @@
+{
+  "class": "Qwen3VLForConditionalGeneration",
+  "checkpoint": "/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct",
+  "attention_implementation": "sdpa",
+  "text_attention": "sdpa",
+  "vision_attention": "sdpa",
+  "parameters": 8767123696,
+  "dtype": "torch.bfloat16",
+  "batch_size": 1,
+  "max_new_tokens": 128,
+  "do_sample": false,
+  "use_cache": true
+}

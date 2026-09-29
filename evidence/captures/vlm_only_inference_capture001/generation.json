@@ -1,0 +1,13 @@
+{
+  "response": [
+    "A humanoid robot with a white, articulated body stands upright in the center of a modern, well-lit living room, appearing to be observing its surroundings."
+  ],
+  "input_tokens": 1529,
+  "generated_tokens": 32,
+  "warmup_matches_capture": true,
+  "phase_calls": {
+    "prefill": 1,
+    "decode": 31,
+    "vision": 1
+  }
+}
