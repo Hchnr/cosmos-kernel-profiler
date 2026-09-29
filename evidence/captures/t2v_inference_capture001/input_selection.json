@@ -1,0 +1,88 @@
+{
+  "source": "/share/project/liyue/data/eval/worldarena-eval25-640x480-20260909/worldarena-eval25.parquet",
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    13,
+    14,
+    16,
+    17,
+    18
+  ],
+  "selection": "All 16 pure T2V rows with native length <=245 frames; no prompt, frame, fps or media edits. Four requests per rank.",
+  "samples": [
+    {
+      "id": "worldarena-eval25:episode19#0-5933:t2v:R5",
+      "num_frames": 177
+    },
+    {
+      "id": "worldarena-eval25:episode163#0-4966:t2v:R5",
+      "num_frames": 149
+    },
+    {
+      "id": "worldarena-eval25:episode26#0-5566:t2v:R5",
+      "num_frames": 165
+    },
+    {
+      "id": "worldarena-eval25:episode883#0-7133:t2v:R5",
+      "num_frames": 213
+    },
+    {
+      "id": "worldarena-eval25:episode640#0-5133:t2v:R5",
+      "num_frames": 153
+    },
+    {
+      "id": "worldarena-eval25:episode223#0-3200:t2v:R5",
+      "num_frames": 93
+    },
+    {
+      "id": "worldarena-eval25:episode57#0-4866:t2v:R5",
+      "num_frames": 145
+    },
+    {
+      "id": "worldarena-eval25:episode11#0-7400:t2v:R5",
+      "num_frames": 221
+    },
+    {
+      "id": "worldarena-eval25:episode387#0-3933:t2v:R5",
+      "num_frames": 117
+    },
+    {
+      "id": "worldarena-eval25:episode781#0-7366:t2v:R5",
+      "num_frames": 221
+    },
+    {
+      "id": "worldarena-eval25:episode100#0-8166:t2v:R5",
+      "num_frames": 245
+    },
+    {
+      "id": "worldarena-eval25:episode782#0-4466:t2v:R5",
+      "num_frames": 133
+    },
+    {
+      "id": "worldarena-eval25:episode954#0-3500:t2v:R5",
+      "num_frames": 105
+    },
+    {
+      "id": "worldarena-eval25:episode652#0-7433:t2v:R6",
+      "num_frames": 221
+    },
+    {
+      "id": "worldarena-eval25:episode541#0-4900:t2v:R6",
+      "num_frames": 145
+    },
+    {
+      "id": "worldarena-eval25:episode821#0-7200:t2v:R6",
+      "num_frames": 213
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image",
+          "image": "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/inputs/prompt_upsampler/image_inputs/humanoid_robot.jpg"
+        },
+        {
+          "type": "text",
+          "text": "Describe what is happening in this image in one sentence."
+        }
+      ]
+    }
+  ],
+  "max_new_tokens": 128
+}

@@ -1,0 +1,7 @@
+{
+  "framework_root": "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm",
+  "framework_sha": "aae543c1e4f221650cf96fdf3aa94592f8e73885",
+  "profiler_sha": "662eed581756c986c3ae6f0725d250561e6d7337",
+  "gpu_constraint": "physical GPUs 4-7 only after user clarification",
+  "input_rationale": "User-specified WorldArena Eval25. Select all 16 pure T2V samples <=245 frames, unchanged prompts and durations; 4 samples per rank, FSDP4 x replicate1 adapted from FSDP4 x replicate2; 21k online checkpoint, 50-step UniPC CFG5 shift10, language dynamic compile, no sound/action/guardrails/CUDA graphs."
+}

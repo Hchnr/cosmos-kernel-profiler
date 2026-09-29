@@ -1,0 +1,164 @@
+{
+  "mode": "t2v",
+  "report_validation": "passed",
+  "kernel_names": 144,
+  "compute_kernel_calls": 295739,
+  "batches": [
+    {
+      "rank": "rank-0",
+      "samples": [
+        {
+          "name": "001_t2v",
+          "num_frames": 177,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 17595
+        },
+        {
+          "name": "005_t2v",
+          "num_frames": 153,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 15249
+        },
+        {
+          "name": "009_t2v",
+          "num_frames": 117,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 11730
+        },
+        {
+          "name": "015_t2v",
+          "num_frames": 105,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 10557
+        }
+      ],
+      "packed_vision_tokens_per_cfg_branch": 55131
+    },
+    {
+      "rank": "rank-1",
+      "samples": [
+        {
+          "name": "002_t2v",
+          "num_frames": 149,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 14858
+        },
+        {
+          "name": "006_t2v",
+          "num_frames": 93,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 9384
+        },
+        {
+          "name": "010_t2v",
+          "num_frames": 221,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 21896
+        },
+        {
+          "name": "017_t2v",
+          "num_frames": 221,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 21896
+        }
+      ],
+      "packed_vision_tokens_per_cfg_branch": 68034
+    },
+    {
+      "rank": "rank-2",
+      "samples": [
+        {
+          "name": "003_t2v",
+          "num_frames": 165,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 16422
+        },
+        {
+          "name": "007_t2v",
+          "num_frames": 145,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 14467
+        },
+        {
+          "name": "012_t2v",
+          "num_frames": 245,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 24242
+        },
+        {
+          "name": "018_t2v",
+          "num_frames": 145,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 14467
+        }
+      ],
+      "packed_vision_tokens_per_cfg_branch": 69598
+    },
+    {
+      "rank": "rank-3",
+      "samples": [
+        {
+          "name": "004_t2v",
+          "num_frames": 213,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 21114
+        },
+        {
+          "name": "008_t2v",
+          "num_frames": 221,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 21896
+        },
+        {
+          "name": "014_t2v",
+          "num_frames": 133,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 13294
+        },
+        {
+          "name": "019_t2v",
+          "num_frames": 213,
+          "width": 736,
+          "height": 544,
+          "vision_tokens": 21114
+        }
+      ],
+      "packed_vision_tokens_per_cfg_branch": 77418
+    }
+  ],
+  "videos": [
+    "outputs_worldarena/001_t2v/vision.mp4",
+    "outputs_worldarena/005_t2v/vision.mp4",
+    "outputs_worldarena/009_t2v/vision.mp4",
+    "outputs_worldarena/015_t2v/vision.mp4",
+    "outputs_worldarena/002_t2v/vision.mp4",
+    "outputs_worldarena/006_t2v/vision.mp4",
+    "outputs_worldarena/010_t2v/vision.mp4",
+    "outputs_worldarena/017_t2v/vision.mp4",
+    "outputs_worldarena/003_t2v/vision.mp4",
+    "outputs_worldarena/007_t2v/vision.mp4",
+    "outputs_worldarena/012_t2v/vision.mp4",
+    "outputs_worldarena/018_t2v/vision.mp4",
+    "outputs_worldarena/004_t2v/vision.mp4",
+    "outputs_worldarena/008_t2v/vision.mp4",
+    "outputs_worldarena/014_t2v/vision.mp4",
+    "outputs_worldarena/019_t2v/vision.mp4"
+  ],
+  "token_formula": "((frames-1)//4+1) * (736//32) * (544//32); VAE 4x16x16 and patch2; excludes text tokens",
+  "status": "passed"
+}

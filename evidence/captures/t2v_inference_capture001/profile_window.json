@@ -1,0 +1,10 @@
+{
+  "warmup_requests": 1,
+  "active_requests": 1,
+  "rank": 0,
+  "torch": "2.10.0+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "elapsed_with_export_s": 861.1881291866302,
+  "scope": "complete warmed generation request; excludes checkpoint loading"
+}

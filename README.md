@@ -44,3 +44,12 @@ python launch_profile.py --run-id <run-id> --dryrun
 ## 说明
 
 模型权重、数据集、训练 checkpoint、编译缓存和完整运行环境不随仓库分发。复现实验需要准备相应资产，并根据机器环境调整外部源码路径和启动配置。
+
+## 推理 kernel list
+
+推理 runner `run_inference_profile.py` 使用真实推理模型与输入，先完整预热，再记录一个完整请求/batch；复用训练采集的三份 CSV 导出器和 trace 覆盖校验器，不修改框架源码。
+
+- [T2V / WorldArena](evidence/captures/t2v_inference_capture001/README.md)：USR v2 21k online checkpoint，480p、50-step UniPC、CFG5、四卡 FSDP4、每卡 batch4，记录 rank0，包含去噪和 VAE 解码。
+- [vlm_only / 图像理解](evidence/captures/vlm_only_inference_capture001/README.md)：Qwen3-VL-8B-Instruct，batch1，包含 ViT、prefill、KV-cache decode。
+
+每个目录包含 `launch.sh`、输入、环境、实现快照、原始 trace、三份 CSV、覆盖校验和生成结果。`validate_inference_run.py <capture>` 复核完成状态、kernel 计数、无采集期编译，以及真实生成输出；T2V 视频核验需要 `ffprobe`。具体数据规模、统计边界及校验结果以各 capture 的 README 为准。

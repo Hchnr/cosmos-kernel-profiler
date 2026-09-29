@@ -1,0 +1,28 @@
+{
+  "t5_text_embeddings": {
+    "shape": [
+      4,
+      512,
+      1024
+    ],
+    "dtype": "torch.bfloat16"
+  },
+  "fps": {
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float32"
+  },
+  "conditioning_fps": {
+    "shape": [
+      4
+    ],
+    "dtype": "torch.float32"
+  },
+  "num_frames": {
+    "shape": [
+      4
+    ],
+    "dtype": "torch.int64"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "framework_root": "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm",
+  "framework_sha": "aae543c1e4f221650cf96fdf3aa94592f8e73885",
+  "profiler_sha": "662eed581756c986c3ae6f0725d250561e6d7337",
+  "gpu_constraint": "physical GPUs 4-7 only after user clarification",
+  "input_rationale": "Same Qwen3-VL-8B-Instruct checkpoint as VLM training capture; production standalone evaluation HF generate path adapted to repository local humanoid robot image and canonical image-description prompt; batch 1, no sequence packing, natural EOS."
+}

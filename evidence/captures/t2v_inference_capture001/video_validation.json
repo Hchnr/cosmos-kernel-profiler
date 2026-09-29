@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "videos": [
+    {
+      "sample": "001_t2v",
+      "frames": 177,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "002_t2v",
+      "frames": 149,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "003_t2v",
+      "frames": 165,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "004_t2v",
+      "frames": 213,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "005_t2v",
+      "frames": 153,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "006_t2v",
+      "frames": 93,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "007_t2v",
+      "frames": 145,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "008_t2v",
+      "frames": 221,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "009_t2v",
+      "frames": 117,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "010_t2v",
+      "frames": 221,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "012_t2v",
+      "frames": 245,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "014_t2v",
+      "frames": 133,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "015_t2v",
+      "frames": 105,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "017_t2v",
+      "frames": 221,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "018_t2v",
+      "frames": 145,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    },
+    {
+      "sample": "019_t2v",
+      "frames": 213,
+      "size": [
+        736,
+        544
+      ],
+      "fps": 30,
+      "audio_streams": 0
+    }
+  ]
+}

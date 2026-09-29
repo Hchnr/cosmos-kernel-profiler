@@ -1,0 +1,97 @@
+[09-29 17:52:30|job=|INFO] Console log saved to /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/evidence/captures/t2v_inference_capture001/outputs/console.log
+[09-29 17:52:30|job=|INFO] Debug log saved to /share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/evidence/captures/t2v_inference_capture001/outputs/debug.log
+[09-29 17:52:30|job=|INFO] Loaded 1 samples
+[09-29 17:52:30|job=|INFO] VLM processor: using checkpoint-bundled processor files at /share/project/eai_pwm/models/Cosmos3-Nano
+[09-29 17:52:30|job=|INFO] OmniMoTModel: config {'tokenizer': {'bucket_name': None, 'object_store_credential_path_pretrained': 'credentials/gcp_training.secret', 'vae_path': '/share/project/eai_pwm/models/wan22_vae/Wan2.2_VAE.pth', 'chunk_duration': 93, 'keep_decoder_cache': False, 'use_streaming_encode': False, 'encode_chunk_frames': {'256': 68, '480': 24, '720': 8, '768': 8}, 'encode_exact_durations': [17, 61, 73], 'spatial_compression_factor': 16, 'temporal_compression_factor': 4, 'temporal_window': None, 'encode_bucket_multiple': None, 'causal': True, '_target_': 'cosmos_framework.model.generator.tokenizers.wan2pt2_vae_4x16x16.Wan2pt2VAEInterface'}, 'load_vision_tokenizer': True, 'vision_vae_mode': 'online', 'net': None, 'ema': {'enabled': False, 'rate': 0.1, 'iteration_shift': 0, '_type': 'cosmos_framework.configs.base.defaults.ema.EMAConfig'}, 'parallelism': {'data_parallel_shard_degree': 1, 'data_parallel_replicate_degree': 1, 'context_parallel_shard_degree': 1, 'cfg_parallel_shard_degree': 1, 'enable_inference_mode': True, 'fsdp_master_dtype': 'float32', 'fsdp_reduce_dtype': None, '_type': 'cosmos_framework.configs.base.defaults.parallelism.ParallelismConfig'}, 'attention_io_layout': 'sequence_sharded', 'compile': {'enabled': True, 'compiled_region': 'all', 'compile_dynamic': True, 'use_cuda_graphs': False, 'ar_post_saturation_mode': 'default', 'max_autotune_pointwise': False, 'coordinate_descent_tuning': False, 'mix_order_reduction_split_size': None, '_type': 'cosmos_framework.configs.base.defaults.compile.CompileConfig'}, 'fixed_sequence_length': {'enabled': False, 'understanding_tokens': 0, 'und_tokens': 0, 'gen_tokens': 0, 'action_tokens': 0}, 'quantization': {'method': None, 'fp8_granularity': 'per_row', 'modelopt_fp8_checkpoint_path': None, 'include_regex': ['language_model.model.layers'], 'exclude_regex': [], 'modelopt_fp8_target_fqns': [], '_type': 'cosmos_framework.configs.base.defaults.quantization.QuantizationConfig'}, 'activation_checkpointing': {'mode': 'none', 'preserve_rng_state': True, 'determinism_check': 'default', 'save_ops_regex': ['fmha'], '_type': 'cosmos_framework.configs.base.defaults.activation_checkpointing.ActivationCheckpointingConfig'}, 'precision': 'bfloat16', 'lora_enabled': False, 'lora_rank': 16, 'lora_alpha': 32, 'lora_target_modules': 'q_proj_moe_gen,k_proj_moe_gen,v_proj_moe_gen,o_proj_moe_gen', 'rectified_flow_training_config': {'shift': {'256': 3, '480': 5, '720': 10}, 'shift_image': None, 'use_dynamic_shift': False, 'train_time_image_distribution': 'logitnormal', 'train_time_video_distribution': 'waver', 'train_time_action_distribution': 'logitnormal', 'train_time_sound_distribution': 'logitnormal', 'train_time_weight': 'uniform', 'loss_scale': 10.0, 'image_loss_scale': None, 'sound_loss_scale': 2.0, 'use_discrete_rf': False, 'action_loss_weight': 10.0, 'independent_action_schedule': False, 'shift_action': None, 'independent_sound_schedule': False, 'shift_sound': None, 'normalize_loss_by_active': False, 'sample_level_loss_averaging': False, 'high_sigma_ratio': 0.05, 'high_sigma_timesteps_max': 1000, 'high_sigma_timesteps_min': 995, 'use_high_sigma_strategy': False, 'use_high_sigma_strategy_action': False, 'use_high_sigma_strategy_sound': False, '_type': 'cosmos_framework.configs.base.defaults.model_config.RectifiedFlowTrainingConfig'}, 'rectified_flow_inference_config': {'scheduler_type': 'unipc', 'num_train_timesteps': 1000, 'shift': 1, 'use_dynamic_shifting': False, '_type': 'cosmos_framework.configs.base.defaults.model_config.RectifiedFlowInferenceConfig'}, 'fixed_step_sampler_config': None, 'vlm_config': {'model_name': 'nvidia/Cosmos3-Nano-Reasoner', 'safetensors_path': '', 'pretrained_weights': {'enabled': False, 'backbone_path': 's3://bucket/cosmos3/pretrained/huggingface/Cosmos-Reason/Cosmos3-Nano-Reasoner-bb9c6f5/', 'credentials_path': 'credentials/gcp_checkpoint.secret', 'enable_gcs_patch_in_boto3': True, 'checkpoint_format': None, '_type': 'cosmos_framework.configs.base.defaults.reasoner.PretrainedWeightsConfig'}, 'model_instance': {'_target_': 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLTextForCausalLM', 'config': {'_target_': 'cosmos_framework.configs.base.defaults.reasoner.create_vlm_config', 'base_config': {'_target_': 'cosmos_framework.model.generator.mot.unified_mot.Qwen3VLMoTConfig.from_json_file', 'json_file': 'cosmos_framework/model/generator/reasoner/qwen3_vl/configs/Qwen3-VL-8B-Instruct.json'}, 'include_visual': True, 'qk_norm_for_text': True}}, 'tokenizer': {'repository': None, 'revision': None, 'subdir': '', '_target_': 'cosmos_framework.data.generator.processors.build_processor_lazy', 'tokenizer_type': '/share/project/eai_pwm/models/Cosmos3-Nano'}, 'layer_module': None, 'qk_norm': False, 'tie_word_embeddings': False, 'use_system_prompt': False, '_type': 'cosmos_framework.configs.base.defaults.reasoner.VLMConfig'}, 'diffusion_expert_config': {'timestep_range': 1.0, 'load_weights_from_pretrained': False, 'enable_vision_modality_embeddings': False, 'enable_media_modality_embedding': False, 'patch_spatial': 2, 'max_vae_latent_side_after_patchify': 20, 'enable_fps_modulation': True, 'base_fps': 24, 'sound_base_temporal_compression_factor': None, 'vision_temporal_position_mode': 'latent_index', 'vision_spatial_position_mode': 'canvas', 'unified_3d_mrope_reset_spatial_ids': True, 'unified_3d_mrope_temporal_modality_margin': 15000, '_type': 'cosmos_framework.configs.base.defaults.model_config.DiffusionExpertConfig'}, 'input_video_key': 'video', 'input_video_latent_key': 'video_latent', 'input_image_key': 'images', 'input_caption_key': 'ai_caption', 'gen_loss_scale': 1.0, 'und_loss_scale': 1.0, 'load_vlm_visual': False, 'train_vlm_visual': False, 'state_ch': 48, 'state_t': 300, 'latent_downsample_factor': 16, 'resolution': '720', 'max_num_tokens_after_packing': 74000, 'tower_structure': 'two_tower', 'action_tower_preset': 'full', 'action_tower_init': 'checkpoint', 'action_tower_execution': 'native', 'action_tower_attention_backend': 'auto', 'action_tower_und_short_tokens': 0, 'action_tower_projection_mode': 'routed', 'joint_attn_implementation': 'two_way', 'flex_attention': {'enabled': False, 'backend': 'auto', 'mask': {'noisy_attention_scope': 'all_views'}}, 'natten_parameter_list': None, 'video_temporal_causal': False, 'causal_training_strategy': 'none', 'lbl': {'method': 'local', 'coeff_und': None, 'coeff_gen': None, '_type': 'cosmos_framework.configs.base.defaults.model_config.LBLConfig'}, 'vision_gen': True, 'predict_text_tokens': False, 'text_loss_weight': 1.0, 'action_gen': True, 'max_action_dim': 64, 'action128_spec': None, 'num_embodiment_domains': 32, 'sound_gen': True, 'sound_tokenizer': {'bucket_name': 'bucket', 'object_store_credential_path_pretrained': 'credentials/gcp_training.secret', 'avae_path': 'pretrained/tokenizers/audio/avae/avae_48k_noncausal_25hz_64ch.ckpt', 'avae_config_path': '', 'sample_rate': 48000, 'audio_channels': 2, 'io_channels': 64, 'hop_size': 1920, 'normalize_latents': False, 'normalization_type': 'none', 'tanh_input_scale': 1.5, 'tanh_output_scale': 3.5, 'tanh_clamp': 0.995, 'latent_mean': None, 'latent_std': None, '_target_': 'cosmos_framework.model.generator.tokenizers.audio.avae.AVAEInterface'}, 'sound_dim': 64, 'sound_latent_fps': 25, 'enable_input_bias': True, 'log_enc_time_every_n': 100, 'exclude_reasoner_weights_from_checkpoint': False, '_type': 'cosmos_framework.configs.base.defaults.model_config.OmniMoTModelConfig'}
+[09-29 17:52:30|job=|WARNING] OmniMoTModel: precision torch.bfloat16
+[09-29 17:52:30|job=|INFO] Successfully loaded processor from local cache
+[09-29 17:52:33|job=|INFO] loading /share/project/eai_pwm/models/wan22_vae/Wan2.2_VAE.pth
+[09-29 17:52:33|job=|INFO] Downloading checkpoint AVAE(3302d39239a0436a86f7326f2e9f2e01)
+[09-29 17:52:33|job=|INFO] uv run --isolated --project /share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/hf_cli --locked --no-default-groups hf download --format=json nvidia/Cosmos3-Nano --repo-type model --revision main --include 'sound_tokenizer/*'
+Installed 16 packages in 69ms
+Bytecode compiled 472 files in 1.14s
+Error: Local entry not found. Cannot reach https://huggingface.co/api/models/nvidia/Cosmos3-Nano/revision/main: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+Incomplete snapshot available at: /root/.cache/huggingface/hub/models--nvidia--Cosmos3-Nano/snapshots/e59a53c25979a090fa8706c9acc0c254a6e89b92
+Hint: set HF_DEBUG=1 as environment variable for full traceback.
+[09-29 17:52:35|job=|INFO] Time spent on OmniMoTModel: set_up_tokenizers: 5.65 s
+Traceback (most recent call last):
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 191, in __init__
+    self.set_up_tokenizers()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/timer.py", line 154, in wrapper
+    return func(*args, **kwargs)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/omni_mot_model.py", line 279, in set_up_tokenizers
+    self.tokenizer_sound_gen = lazy_instantiate(self.config.sound_tokenizer)
+                               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/lazy_config/instantiate.py", line 103, in instantiate
+    return cls(*args, **instantiate_kwargs)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/model/generator/tokenizers/audio/avae.py", line 363, in __init__
+    vae_dir = download_checkpoint_v2(vae_dir)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/checkpoint_db.py", line 470, in download_checkpoint_v2
+    return checkpoint.download()
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/checkpoint_db.py", line 339, in download
+    path = self.hf.download()
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/checkpoint_db.py", line 214, in download
+    self._path = self._download()
+                 ~~~~~~~~~~~~~~^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/checkpoint_db.py", line 277, in _download
+    path = _hf_download(cmd_args)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/checkpoint_db.py", line 175, in _hf_download
+    output = subprocess.run(
+        cmd,
+    ...<4 lines>...
+        env=env,
+    )
+  File "/share/project/eai_pwm/home/hcr/venv/uv-python/cpython-3.13.14-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['uv', 'run', '--isolated', '--project', '/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/hf_cli', '--locked', '--no-default-groups', 'hf', 'download', '--format=json', 'nvidia/Cosmos3-Nano', '--repo-type', 'model', '--revision', 'main', '--include', 'sound_tokenizer/*']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 153, in <module>
+    main()
+    ~~~~^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 148, in main
+    (t2v if args.mode == 't2v' else vlm)(args.output, rest)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py", line 72, in t2v
+    cli.main()
+    ~~~~~~~~^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 85, in main
+    inference(args)
+    ~~~~~~~~~^^^^^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/scripts/inference.py", line 54, in inference
+    pipe = setup_args.get_inference_cls().create(setup_args)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/common/inference.py", line 136, in create
+    return cls._create(setup_args, guardrails=guardrails, _timer=timer)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/inference.py", line 1286, in _create
+    model = Cosmos3OmniModel.from_pretrained_dcp(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        checkpoint_path,
+        ^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        ),
+        ^^
+    ).model
+    ^
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 723, in from_pretrained_dcp
+    model = cls(config)
+  File "/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/inference/model.py", line 673, in __init__
+    self.model: "OmniMoTModel" = hydra.utils.instantiate(model_dict)
+                                 ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+        config, *args, recursive=_recursive_, convert=_convert_, partial=_partial_
+    )
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+  File "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/lib/python3.13/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'cosmos_framework.model.generator.omni_mot_model.OmniMoTModel':
+CalledProcessError(1, ['uv', 'run', '--isolated', '--project', '/share/project/eai_pwm/home/hcr/repos/cosmos-framework-pwm/cosmos_framework/utils/hf_cli', '--locked', '--no-default-groups', 'hf', 'download', '--format=json', 'nvidia/Cosmos3-Nano', '--repo-type', 'model', '--revision', 'main', '--include', 'sound_tokenizer/*'])

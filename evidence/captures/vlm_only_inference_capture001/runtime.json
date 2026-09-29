@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/run_inference_profile.py",
+    "--mode",
+    "vlm_only",
+    "--output",
+    "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/evidence/captures/vlm_only_inference_capture001",
+    "--checkpoint",
+    "/share/project/eai_pwm/models/Qwen3-VL-8B-Instruct",
+    "--input",
+    "/share/project/eai_pwm/home/hcr/repos/cosmos-kernel-profiler/evidence/captures/vlm_only_inference_capture001/input.json"
+  ],
+  "python": "/share/project/eai_pwm/home/hcr/venv/cosmos-framework-pwm-cu130-train/bin/python",
+  "torch": "2.10.0+cu130",
+  "cuda": "13.0",
+  "visible_devices": "5"
+}

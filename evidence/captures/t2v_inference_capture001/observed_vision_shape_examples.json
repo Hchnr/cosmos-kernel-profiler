@@ -1,0 +1,122 @@
+[
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::_index_put_impl_",
+    "kernel_name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+    "variant_index": "1",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[66503,4096],[],[55131,4096],[],[]]",
+    "input_dtypes": "[\"c10::BFloat16\",\"\",\"c10::BFloat16\",\"Scalar\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "132012.5"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::_index_put_impl_",
+    "kernel_name": "void at::native::index_elementwise_kernel<128, 4, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1}>(long, at::native::gpu_index_kernel<at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1}>(at::TensorIteratorBase&, c10::ArrayRef<long>, c10::ArrayRef<long>, at::native::index_put_kernel_impl<at::native::OpaqueType<2> >(at::TensorIterator&, c10::ArrayRef<long>, c10::ArrayRef<long>)::{lambda(char*, char const*, long)#1} const&, bool)::{lambda(int)#1})",
+    "variant_index": "2",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[56049,4096],[],[55131,4096],[],[]]",
+    "input_dtypes": "[\"c10::BFloat16\",\"\",\"c10::BFloat16\",\"Scalar\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "117683.976"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::add",
+    "kernel_name": "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)",
+    "variant_index": "5",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[55131,1],[],[]]",
+    "input_dtypes": "[\"float\",\"double\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "183.456"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::addmm",
+    "kernel_name": "nvjet_sm90_tst_192x144_64x5_1x2_h_bz_coopB_bias_TNT",
+    "variant_index": "1",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[192],[55131,4096],[4096,192],[],[]]",
+    "input_dtypes": "[\"c10::BFloat16\",\"c10::BFloat16\",\"c10::BFloat16\",\"Scalar\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "17343.635"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::addmm",
+    "kernel_name": "nvjet_sm90_tst_256x152_64x4_2x1_v_bz_coopA_bias_TNT",
+    "variant_index": "1",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[4096],[55131,192],[192,4096],[],[]]",
+    "input_dtypes": "[\"c10::BFloat16\",\"c10::BFloat16\",\"c10::BFloat16\",\"Scalar\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "18775.866"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::addmm",
+    "kernel_name": "sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize128x128x8_stage3_warpsize2x2x1_ffma_aligna4_alignc4_execute_kernel__5x_cublas",
+    "variant_index": "1",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[4096],[55131,4096],[4096,4096],[],[]]",
+    "input_dtypes": "[\"float\",\"float\",\"float\",\"Scalar\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "4559543.482"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::addmm",
+    "kernel_name": "sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize128x128x8_stage3_warpsize2x2x1_ffma_aligna4_alignc4_execute_kernel__5x_cublas",
+    "variant_index": "2",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[4096],[55131,256],[256,4096],[],[]]",
+    "input_dtypes": "[\"float\",\"float\",\"float\",\"Scalar\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "307039.751"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::copy_",
+    "kernel_name": "void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1} const&)::{lambda(int)#1})",
+    "variant_index": "6",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[55131],[55131],[]]",
+    "input_dtypes": "[\"float\",\"float\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "185.062"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::copy_",
+    "kernel_name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#4}::operator()() const::{lambda(long)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",
+    "variant_index": "1",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[55131],[55131],[]]",
+    "input_dtypes": "[\"long int\",\"int\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "402",
+    "kernel_time_us": "1602.894"
+  },
+  {
+    "\ufeffcustom_operator": "null",
+    "execution_operator": "aten::copy_",
+    "kernel_name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",
+    "variant_index": "1",
+    "mapping_status": "operator_shape_matched",
+    "input_shapes": "[[55131,4096],[55131,4096],[]]",
+    "input_dtypes": "[\"float\",\"c10::BFloat16\",\"Scalar\"]",
+    "candidate_operators": "null",
+    "kernel_event_count": "100",
+    "kernel_time_us": "77317.65"
+  }
+]
